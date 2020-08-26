@@ -1,0 +1,68 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Mapbox
+	p.mb-4.lead Mapbox GL JS is a JavaScript library that uses WebGL to render interactive maps. Read the 
+		|
+		|
+		a(href="https://docs.mapbox.com/mapbox-gl-js/api/") plugin&nbsp;documentation
+
+	h5.mb-3 How to use
+	p.mb-0 To start using Mapbox you'll need a Mapbox 
+		|
+		code.bg-secondary-light.text-secondary.py-1.px-2.rounded accessToken
+		|
+		|
+		| , which you can get on
+		|
+		|
+		a(href="https://account.mapbox.com/access-tokens") access tokens page
+		|, and then please replace the original access token with yours
+
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+	.border.mb-5.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|script(src='/js/mapbox-gl.js')
+						|div.rounded#map(style='width: 100%; height: 380px;')
+						|script.
+						|	mapboxgl.accessToken = '***YOUR_ACCESS_TOKEN***';
+						|	var map = new mapboxgl.Map({
+						|		container: 'map',
+						|		style: 'mapbox://styles/mapbox/streets-v11',
+						|		center: [-122.39, 37.77], // starting position [lng, lat]
+						|		zoom: 15 // starting zoom
+						|	});
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;script src="/js/mapbox-gl.js">&lt;/script>
+						|&lt;div class="rounded" id="map" style="width: 100%; height: 380px;">
+						|&lt;/div>
+						|&lt;script>
+						|	mapboxgl.accessToken = '***YOUR_ACCESS_TOKEN***';
+						|	var map = new mapboxgl.Map({
+						|		container: 'map',
+						|		style: 'mapbox://styles/mapbox/streets-v11',
+						|		center: [-122.39, 37.77], // starting position [lng, lat]
+						|		zoom: 15 // starting zoom
+						|	});
+						|&lt;/script>
+		.bg-white.p-3.rounded.rounded-bottom
+			script(src='/js/mapbox-gl.js')
+			div.rounded#map(style='width: 100%; height: 380px;')
+			script.
+				mapboxgl.accessToken = 'pk.eyJ1IjoiYWxleGV5bGk0NCIsImEiOiJjazJseDJxeXkwYjFmM2NvZm8zdTc3enNsIn0.gdidA526YuiOQwOWFljLdw';
+				var map = new mapboxgl.Map({
+					container: 'map',
+					style: 'mapbox://styles/mapbox/streets-v11',
+					center: [-122.39, 37.77], // starting position [lng, lat]
+					zoom: 15 // starting zoom
+				});

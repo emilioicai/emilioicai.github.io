@@ -1,0 +1,76 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Badges
+	p.mb-3.lead Documentation and examples for badges, our small count and labeling component. Read 
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/badge/") Bootstrap documentation
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+	.border.mb-5.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|span.badge.mr-2.badge-primary.rounded-lg Primary
+						|span.badge.mr-2.badge-secondary
+						|	i.fa.fa-bolt.mr-2
+						|	| Secondary
+						|span.badge.mr-2.badge-success Success
+						|span.badge.mr-2.badge-danger Danger
+						|span.badge.mr-2.badge-warning Warning
+						|span.badge.mr-2.badge-info Info
+						|span.badge.mr-2.badge-gray Light
+						|span.badge.mr-2.badge-dark Dark
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;span class="badge mr-2 badge-primary rounded-lg">
+						|	Primary
+						|&lt;/span>
+						|&lt;span class="badge mr-2 badge-secondary">
+						|	&lt;i class="fa fa-bolt mr-2">&lt;/i>
+						|	Secondary
+						|&lt;/span>
+						|&lt;span class="badge mr-2 badge-success">
+						|	Success
+						|&lt;/span>
+						|&lt;span class="badge mr-2 badge-danger">
+						|	Danger
+						|&lt;/span>
+						|&lt;span class="badge mr-2 badge-warning">
+						|	Warning
+						|&lt;/span>
+						|&lt;span class="badge mr-2 badge-info">
+						|	Info
+						|&lt;/span>
+						|&lt;span class="badge mr-2 badge-gray">
+						|	Light
+						|&lt;/span>
+						|&lt;span class="badge mr-2 badge-dark">
+						|	Dark
+						|&lt;/span>
+		.bg-white.p-3.rounded.rounded-bottom
+			span.badge.mr-2.badge-primary.rounded-lg Primary
+			span.badge.mr-2.badge-secondary
+				i.fa.fa-bolt.mr-2
+				| Secondary
+			span.badge.mr-2.badge-success Success
+			span.badge.mr-2.badge-danger Danger
+			span.badge.mr-2.badge-warning Warning
+			span.badge.mr-2.badge-info Info
+			span.badge.mr-2.badge-gray Light
+			span.badge.mr-2.badge-dark Dark
+
+	p.lead Visit
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/forms/") 
+			| Bootstrap documentation
+		|
+		| to learn more about this component

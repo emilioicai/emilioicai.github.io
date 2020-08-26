@@ -1,0 +1,50 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Collapse
+	p.mb-3.lead Toggle the visibility of content across your project with a few classes and our JavaScript plugins. Read 
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/collapse/") Bootstrap documentation
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+	.border.mb-5.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|.card.accordion.p-0.bg-white
+						|	a.card-header.collapsed.border-0.px-3(href="#" data-toggle='collapse', data-target="#a1", aria-expanded='true', aria-controls="a1", id= "q1")
+						|		span.lead.text-dark.mb-0.pb-0.mr-5 Question
+						|	.card-body.collapse.py-0.px-3.border-0(id= "a1", aria-labelledby = "q1")
+						|		p.my-3.py-0.text-muted Answer 
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;div class="card accordion p-0 bg-white">
+						|	&lt;a class="card-header collapsed border-0 px-3" href="#" data-toggle="collapse" data-target="#a1" aria-expanded="true" aria-controls="a1" id="q1">
+						|		&lt;span class="lead text-dark mb-0 pb-0 mr-5">Question&lt;/span>
+						|	&lt;/a>
+						|	&lt;div class="card-body collapse py-0 px-3 border-0" id="a1" aria-labelledby="q1">
+						|		&lt;p class="my-3 py-0 text-muted">Answer&lt;/p>
+						|	&lt;/div>
+						|&lt;/div>
+		.bg-white.p-3.rounded.rounded-bottom
+
+			.card.accordion.p-0.bg-white
+				a.card-header.collapsed.border-0.px-3(href="#" data-toggle='collapse', data-target="#a1", aria-expanded='true', aria-controls="a1", id= "q1")
+					span.lead.text-dark.mb-0.pb-0.mr-5 Question
+				.card-body.collapse.py-0.px-3.border-0(id= "a1", aria-labelledby = "q1")
+					p.my-3.py-0.text-muted Answer 
+
+	p.lead Visit
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/collapse/") 
+			| Bootstrap documentation
+		|
+		| to learn more about this component

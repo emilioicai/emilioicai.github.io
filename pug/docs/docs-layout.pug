@@ -1,0 +1,270 @@
+doctype html
+html(lang="en")
+	head
+		include /utilities/_head.pug
+	body.line-numbers
+
+
+		// HEADER 
+		#header
+			include /utilities/_navbar.pug
+			+navbar-mixin('navbar-light', 'btn-secondary')
+			#breadcrumbs.container
+				.row
+					.col
+						hr.mt-10
+						include /utilities/_breadcrumb.pug
+						+breadcrumb-mixin('text-muted', ['Home', 'Documentation'])
+
+		
+		// CONTENT
+		#content
+			.container.pt-2
+
+				.row
+					#menu-mobile.col-lg-4.col-md-12.col-sm-12.pb-lg-10.d-lg-none.d-xl-none
+
+						.card.accordion.py-2.px-3.border-primary
+							a.card-header.btn.btn-link.px-1.py-1.mb-0.text-dark.collapsed.lead.border-0.text-left.rounded.d-flex(href="#" data-toggle='collapse', data-target="#a", aria-expanded='true', aria-controls="a", id= "q")
+								span.lead.text-primary.mb-0.pb-0.mr-5 Contents
+							.card-body.collapse.text-muted.pt-0.pb-0.px-1.border-0(id= "a", aria-labelledby = "q")
+					
+								ul.mx-0.px-0.pt-4.list-unstyled
+									li.mb-3
+										span.initialism Getting started
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/getting_started/docs-introduction.html')
+											| Introduction
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/getting_started/docs-changelog.html')
+											| Changelog
+											small.mb-1.ml-1
+												mark.bg-white.border.border-gray.text-muted.rounded-lg.px-2.font-weight-normal 2.0.0
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/getting_started/docs-support.html')
+											| Support
+
+								ul.mx-0.px-0.pt-4.list-unstyled
+									li.mb-3
+										span.initialism Graphics
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/graphics/docs-icons.html')
+											| Icons
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/graphics/docs-illustrations.html')
+											| Illustrations
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/graphics/docs-backgrounds.html')
+											| Backgrounds
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/graphics/docs-devices.html')
+											| Devices mockups
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/graphics/docs-photos.html')
+											| Photos
+
+								ul.mx-0.px-0.pt-4.list-unstyled
+									li.mb-3
+										span.initialism Plugins
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/plugins/docs-carousel.html')
+											| Carousel
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/plugins/docs-fa.html')
+											| Font Awesome
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/plugins/docs-scroll.html')
+											| Smooth scroll
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/plugins/docs-preloader.html')
+											| Preloader
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/plugins/docs-animations.html')
+											| Animations
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/plugins/docs-fancybox.html')
+											| Fancybox
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/plugins/docs-counters.html')
+											| Counters
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/plugins/docs-parallax.html')
+											| Parallax
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/plugins/docs-typed.html')
+											| Typed.js
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/plugins/docs-map.html')
+											| Map
+
+								ul.mx-0.px-0.pt-4.list-unstyled
+									li.mb-3
+										span.initialism Components
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/components/docs-alerts.html')
+											| Alerts
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/components/docs-badges.html')
+											| Badges
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/components/docs-breadcrumb.html')
+											| Breadcrumb
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/components/docs-buttons.html')
+											| Buttons
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/components/docs-cards.html')
+											| Cards
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/components/docs-collapse.html')
+											| Collapse
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/components/docs-forms.html')
+											| Forms
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/components/docs-modal.html')
+											| Modal
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/components/docs-tabs.html')
+											| Tabs
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/components/docs-pagination.html')
+											| Pagination
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/components/docs-progress.html')
+											| Progress
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/components/docs-spinners.html')
+											| Spinners
+									li.mb-2
+										a.btn-link.text-primary(href='/docs/components/docs-tooltips.html')
+											| Tooltips
+				.row
+					#menu.col-lg-4.col-md-12.col-sm-12.pb-lg-10.d-none.d-lg-block.d-xl-block
+
+						ul.mx-0.px-0.pt-12.list-unstyled
+							li.mb-3
+								span.initialism Getting started
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/getting_started/docs-introduction.html')
+									| Introduction
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/getting_started/docs-changelog.html')
+									| Changelog
+									small.mb-1.ml-1
+										mark.bg-white.border.border-gray.text-muted.rounded-lg.px-2.font-weight-normal 2.0.0
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/getting_started/docs-support.html')
+									| Support
+
+						ul.mx-0.px-0.pt-4.list-unstyled
+							li.mb-3
+								span.initialism Graphics
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/graphics/docs-icons.html')
+									| Icons
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/graphics/docs-illustrations.html')
+									| Illustrations
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/graphics/docs-backgrounds.html')
+									| Backgrounds
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/graphics/docs-devices.html')
+									| Devices mockups
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/graphics/docs-photos.html')
+									| Photos
+
+						ul.mx-0.px-0.pt-4.list-unstyled
+							li.mb-3
+								span.initialism Plugins
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/plugins/docs-carousel.html')
+									| Carousel
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/plugins/docs-fa.html')
+									| Font Awesome
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/plugins/docs-scroll.html')
+									| Smooth scroll
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/plugins/docs-preloader.html')
+									| Preloader
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/plugins/docs-animations.html')
+									| Animations
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/plugins/docs-fancybox.html')
+									| Fancybox
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/plugins/docs-counters.html')
+									| Counters
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/plugins/docs-parallax.html')
+									| Parallax
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/plugins/docs-typed.html')
+									| Typed.js
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/plugins/docs-map.html')
+									| Map
+
+						ul.mx-0.px-0.pt-4.list-unstyled
+							li.mb-3
+								span.initialism Components
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/components/docs-alerts.html')
+									| Alerts
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/components/docs-badges.html')
+									| Badges
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/components/docs-breadcrumb.html')
+									| Breadcrumb
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/components/docs-buttons.html')
+									| Buttons
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/components/docs-cards.html')
+									| Cards
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/components/docs-collapse.html')
+									| Collapse
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/components/docs-forms.html')
+									| Forms
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/components/docs-modal.html')
+									| Modal
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/components/docs-tabs.html')
+									| Tabs
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/components/docs-pagination.html')
+									| Pagination
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/components/docs-progress.html')
+									| Progress
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/components/docs-spinners.html')
+									| Spinners
+							li.mb-2
+								a.btn-link.text-primary(href='/docs/components/docs-tooltips.html')
+									| Tooltips
+
+					#text.col-lg-8.col-md-12.col-sm-12.pt-12.pb-12
+						block content
+						hr.mt-5.mb-4 
+						span.text-muted Version 2.0.0,
+							|
+							|
+							a.text-muted(href="mailto:hello@getreplacer.com") hello@getreplacer.com
+
+
+		// FOOTER
+		include /utilities/_footer.pug
+		// light-footer(lead_bg_color, lead_border_color, lead_text_color, lead_btn_color, footer_bg, title_bg, text_color, link_color, subscribe_bg, subscribe_button, logo_file)
+		+light-footer('bg-light', '', '', 'btn-secondary', 'bg-white', 'text-dark', 'text-muted', 'text-muted', '', 'btn-gray', '/images/logo-mono-green.svg')
+
+		include /utilities/_scripts.pug

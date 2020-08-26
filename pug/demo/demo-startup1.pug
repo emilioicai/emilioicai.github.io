@@ -1,0 +1,512 @@
+doctype html
+html(lang="en")
+	head
+		include /utilities/_head.pug
+	body
+		include /utilities/_navbar.pug
+		+navbar-mixin('navbar-light', 'btn-primary')
+
+
+		// HERO 
+		#hero.overflow-hidden.bg-gray-light
+			.container.d-flex.flex-column.jarallax(style="min-height: 46rem; background: url('/images/bg/bg_04.svg') center center no-repeat;")
+				.row.my-auto 
+					.col-lg-5.col-md-12.col-sm-12.pt-16.pt-lg-6.my-auto(data-aos="fade")
+						h1.display-3.mb-2 Do it better with&nbsp;Replacer 
+						p.lead.mb-4
+							| Replacer is a modern and powerful theme for perfectionists with deadlines. It provides content-oriented, clean and mobile-first design
+						.input-group.mb-3
+							input.form-control.rounded.border-0.mr-2.bg-white(type='text', placeholder="Enter your email", aria-label="Email")
+							button.btn.btn-secondary(type='button') Get started
+								i.fas.fa-arrow-right.ml-2.small
+						.form-check.mb-4
+							input.form-check-input.mr-2(type='checkbox', value='', id='checkbox1')
+							label.form-check-label.small.text-muted(for="checkbox1")
+								| I agree with
+								|
+								a(href="/pages/page-privacy.html") Privacy Policy
+								|
+								| and
+								|
+								a(href="/pages/page-privacy.html") Terms
+						.mb-3.small.text-muted
+							| You can use social networks to register:
+						a.btn.btn-facebook.rounded-pill.btn-sm.px-3.mr-2(href='#')
+							i.fab.fa-facebook-f.mr-2
+							| Continue
+						a.icon.btn.btn-outline-twitter.rounded-circle.mr-2(href="#")
+							i.fab.fa-twitter
+						a.icon.btn.btn-outline-google.rounded-circle(href="#")
+							i.fab.fa-google
+					.col-lg-6.col-md-12.ml-auto(style="min-height: 46rem;", data-aos="fade-up")
+						img.fixed-bottom.position-absolute(alt='Macbook' src='/images/devices/macbook_iphone.png', width="1130")
+
+
+		// NOTICE
+		#notice(data-aos="fade")
+			.alert.alert-primary-light.rounded-0.border-0.py-3.my-1(role="alert")
+				.container
+					.row.no-gutters
+						.col.d-flex.flex-column.flex-lg-row.flex-xl-row
+							.my-auto.mr-auto.text-muted
+								span.icon.icon-sm.bg-secondary.text-white.rounded.border.mr-2
+									i.fas.fa-user
+								|  Develop beautiful landing pages, using top-notch layouts
+							.my-auto.py-2
+								a.btn-link.hvr-icon-forward.my-auto(href="/pages/page-apply.html")
+									| Request a demo
+									small
+										i.fas.fa-chevron-right.ml-2.hvr-icon
+
+
+		// COUNTERS
+		#counters.pt-14.pb-6
+			.container(data-aos="fade")
+				.row
+					.col-lg-4.col-md-6.col-sm-12.mb-5.text-center
+						h2.display-4.mb-2.text-dark
+							| $
+							span.counter#counter_4
+						.initialism.text-muted.mb-3 Main prize
+						p.lead.mx-2 If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.col-lg-4.col-md-6.col-sm-12.mb-5.text-center.mx-auto
+						h2.display-4.mb-2.text-dark
+							span.counter#counter_3
+						.initialism.text-muted.mb-3 Professionals
+						p.lead.mx-2 If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.col-lg-4.col-md-6.col-sm-12.mb-5.text-center
+						h2.display-4.mb-2.text-dark
+							span.counter#counter_1
+						.initialism.text-muted.mb-3 Experts
+						p.lead.mx-2 If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+		
+
+		// TABS
+		#tabs.mb-9
+			.container
+				.row
+					.col.text-center
+						nav.mb-5
+							.nav.nav-tabs.d-inline-flex.mx-auto(role="tablist")
+								a.nav-item.nav-link.px-4.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+									h5 Billing
+								a.nav-item.nav-link.px-4(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+									h5 Profile
+								a.nav-item.nav-link.px-4(id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="true")
+									h5 Admin
+				.tab-content
+					.tab-pane.fade.show.active(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+						.row
+							.col-lg-8.col-md-12.col-sm-12.order-lg-1.order-xl-1.my-auto(data-aos="fade-up")
+								img.w-100.mb-5(alt='Macbook' src='/images/devices/macbook_02.png')
+							.col-lg-2.col-md-12.col-sm-12.my-auto.order-lg-0.order-xl-0(data-aos="fade-right")
+								.icon.rounded.text-secondary.bg-secondary-light.mb-3
+									i.fas.fa-cloud-download-alt
+								h3.h5 Free updates
+								p.text-muted.mb-5 Replacer is constantly growing and updatable theme, and we have long-term plans to making it better according to your feedback
+							.col-lg-2.col-md-12.col-sm-12.my-auto.order-lg-2.order-xl-2(data-aos="fade-left")
+								.icon.rounded.text-secondary.bg-secondary-light.mb-3
+									i.fas.fa-adjust
+								h3.h5 Background system
+								p.text-muted.mb-5 If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system
+					.tab-pane.fade.show(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+						.row
+							.col-lg-8.col-md-12.col-sm-12.order-lg-1.order-xl-1.my-auto
+								img.w-100.mb-5(alt='Macbook' src='/images/devices/macbook_01.png')
+							.col-lg-2.col-md-12.col-sm-12.my-auto.order-lg-0.order-xl-0
+								.icon.rounded.text-secondary.bg-secondary-light.mb-3
+									i.fas.fa-paint-brush
+								h3.h5 Content-oriented design
+								p.text-muted.mb-5 Replacer has an extremely solid and clean design to focus your visitors on what you want to tell them
+							.col-lg-2.col-md-12.col-sm-12.my-auto.order-lg-2.order-xl-2
+								.icon.rounded.text-secondary.bg-secondary-light.mb-3
+									i.fas.fa-image
+								h3.h5 Exclusive illustrations
+								p.text-muted.mb-5 We made illustrations and line icons, especially for Replacer. Feel free to customize them in Figma file, which also included
+					.tab-pane.fade.show(id="tab-3" role="tabpanel" aria-labelledby="nav-tab-3")
+						.row
+							.col-lg-8.col-md-12.col-sm-12.order-lg-1.order-xl-1.my-auto
+								img.w-100.mb-5(alt='Macbook' src='/images/devices/macbook_03.png')
+							.col-lg-2.col-md-12.col-sm-12.my-auto.order-lg-0.order-xl-0
+								.icon.rounded.text-secondary.bg-secondary-light.mb-3
+									i.fas.fa-file
+								h3.h5 Easy to understand
+								p.text-muted.mb-5 Replacer uses Bootstrap components to the fullest. We didn't code new CSS styles if Bootstrap already had the solution
+							.col-lg-2.col-md-12.col-sm-12.my-auto.order-lg-2.order-xl-2
+								.icon.rounded.text-secondary.bg-secondary-light.mb-3
+									i.fas.fa-question-circle
+								h3.h5 6 months free support
+								p.text-muted.mb-5 We are here for you to provide excellent support for 6 months, feel free to ask anything 
+
+
+		// FEATURES
+		#features.mb-12.bg-light.border-top.border-bottom
+			.container
+				.row
+					.col-lg-6.col-md-12.my-auto(data-aos="fade-right")
+						img.my-5.w-100(alt='Illustration' src='/images/illustrations/illustration_8.png')
+					.col-lg-6.col-md-12.my-auto.mr-auto.py-12
+						.mb-4.d-flex.align-items-center
+							span.icon.icon-sm.bg-primary.rounded.text-white.mr-2
+								i.fas.fa-clock
+							span.text-muted Killer feature
+						p.lead.mb-4.mr-8
+							| Replacer is constantly growing and updatable teme, and we have long-term plans to making it better according to your feedback
+						.row
+							.col
+								.mb-2
+									span.display-4.text-dark.mr-2 320
+									span.initialism.text-muted gb
+								p.text-muted Replacer uses Bootstrap components to the fullest. We didn't code new CSS styles if Bootstrap already had the solution, so the theme loads quickly and easy to customize
+							.col
+								.mb-2
+									span.display-4.text-dark.mr-2 2.4
+									span.initialism.text-muted millions
+								p.text-muted Replacer uses Bootstrap components to the fullest. We didn't code new CSS styles if Bootstrap already had the solution, so the theme loads quickly and easy to customize
+						hr.mt-2.mb-4
+						a.btn-link.text-primary.hvr-icon-forward(href="/pages/page-apply.html")
+							| Request a demo
+							small
+								i.fas.fa-chevron-right.ml-2.hvr-icon
+
+
+		// PRICING
+		#pricing
+			.container
+				.row(data-aos="fade")
+					.col.text-center
+						h2.display-3.mb-5 Simple pricing
+						nav.mb-5
+							.nav.nav-tabs.d-inline-flex.mx-auto(role="tablist")
+								a.nav-item.nav-link.px-4.active(id="nav-tab-4" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="true")
+									h5
+										| Monthly 
+								a.nav-item.nav-link.px-4(id="nav-tab-5" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-5" aria-selected="true")
+									h5 
+										| Annually
+										small.mb-1.ml-1
+											mark.bg-white.border.border-primary.text-primary.rounded-lg.px-2.font-weight-normal &minus;20%
+				.tab-content.rounded(data-aos="fade-up")
+					.tab-pane.fade.active.show(id="tab-4" role="tabpanel" aria-labelledby="nav-tab-4")
+						.row
+							.col-lg-12.mx-lg-auto
+								.card-group
+									.card
+										.card-body.pt-6.px-6
+											.icon.mb-4
+												img(alt='Icon' src='/images/icons/primary/home.svg', height='64')
+											h3.h5 Personal
+											p.lead.mb-4 For personal usage
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span 5 Collaborators
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Export reports
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Mobile app
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Integrations
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Support
+										.card-footer.bg-transparent.border-0.px-6.py-0
+											div.mb-4
+												span.display-4
+													| $29
+												span.initialism.text-muted
+													| 
+													|
+													| / Month
+											a.btn.btn-outline-primary.w-100.mb-5(href='#') Get started
+									.card
+										.card-body.pt-6.px-6
+											.icon.mb-4
+												img(alt='Icon' src='/images/icons/primary/users-group.svg', height='64')
+											h3.h5 Team
+											p.lead.mb-4 For teams up to 5 members
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span 5 Collaborators
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Export reports
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Mobile app
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Integrations
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Support
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span HTTPS
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+										.card-footer.bg-transparent.border-0.px-6.py-0
+											div.mb-4
+												span.display-4
+													| $129
+												span.initialism.text-muted
+													| 
+													|
+													| / Month
+											a.btn.btn-secondary.w-100.mb-5(href='#') Get started
+									.card
+										.card-body.pt-6.px-6
+											.icon.mb-4
+												img(alt='Icon' src='/images/icons/primary/moon.svg', height='64')
+											h3.h5 Enterprise
+											p.lead.mb-4 For real big teams
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span 5 Collaborators
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Export reports
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Mobile app
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Integrations
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Support
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span HTTPS
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-5.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span SSL
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+										.card-footer.bg-transparent.border-0.px-6.py-0
+											div.mb-4
+												span.display-4
+													| $999
+												span.initialism.text-muted
+													| 
+													|
+													| / Month
+											a.btn.btn-outline-primary.w-100.mb-5(href='#') Get started 
+					.tab-pane.fade.show(id="tab-5" role="tabpanel" aria-labelledby="nav-tab-5")
+						.row
+							.col-lg-12.mx-lg-auto
+								.card-group
+									.card
+										.card-body.pt-6.px-6
+											.icon.mb-4
+												img(alt='Icon' src='/images/icons/primary/home.svg', height='64')
+											h3.h5 Personal
+												|
+												|
+												span.text-muted.font-weight-normal (annually)
+											p.lead.mb-4 For personal usage
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span 5 Collaborators
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Export reports
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Mobile app
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Integrations
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Support
+										.card-footer.bg-transparent.border-0.px-6.py-0
+											div.mb-4
+												span.display-4
+													| $129
+												span.initialism.text-muted
+													| 
+													|
+													| / Month
+											a.btn.btn-outline-primary.w-100.mb-5(href='#') Get started
+									.card
+										.card-body.pt-6.px-6
+											.icon.mb-4
+												img(alt='Icon' src='/images/icons/primary/users-group.svg', height='64')
+											h3.h5 Team
+												|
+												|
+												span.text-muted.font-weight-normal (annually)
+											p.lead.mb-4 For teams up to 5 members
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span 5 Collaborators
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Export reports
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Mobile app
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Integrations
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Support
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span HTTPS
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+										.card-footer.bg-transparent.border-0.px-6.py-0
+											div.mb-4
+												span.display-4
+													| $999
+												span.initialism.text-muted
+													| 
+													|
+													| / Month
+											a.btn.btn-secondary.w-100.mb-5(href='#') Get started
+									.card
+										.card-body.pt-6.px-6
+											.icon.mb-4
+												img(alt='Icon' src='/images/icons/primary/moon.svg', height='64')
+											h3.h5 Enterprise
+												|
+												|
+												span.text-muted.font-weight-normal (annually)
+											p.lead.mb-4 For real big teams
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span 5 Collaborators
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Export reports
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Mobile app	
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Integrations
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Support
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span HTTPS
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-5.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span SSL
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+										.card-footer.bg-transparent.border-0.px-6.py-0
+											div.mb-4
+												span.display-4
+													| $1999
+												span.initialism.text-muted
+													| 
+													|
+													| / Month
+											a.btn.btn-outline-primary.w-100.mb-5(href='#') Get started 
+
+
+		// LEAD
+		#lead_section(data-aos="fade")
+			.container.py-12.jarallax(style="background: url('/images/bg/bg_05.svg') center center no-repeat;")
+				.row.text-center
+					.col-lg-7.col-md-12.col-sm-12.mx-auto
+						.icon.bg-primary-light.rounded-lg.mb-5.p-2
+							img(alt='Icon' src='/images/icons/primary/cursor-click-2.svg', height='48')
+						h5.mb-3 Content-oriented design
+						p.lead.mb-5.mx-0.mx-md-6.mx-lg-8 Replacer is a perfect tool to start making landing pages with Bootstrap 4. We provide content-oriented, clean, and mobile-first layouts, which you can easily customize for your needs. Here are some carefully designed demos, use it out of the box or customize the way you want
+						a.btn-link.text-primary.hvr-icon-forward(href="/pages/page-apply.html")
+							| Request a demo
+							small
+								i.fas.fa-chevron-right.ml-2.hvr-icon
+
+
+		// FOOTER
+		include /utilities/_footer.pug
+		// light-footer(lead_bg_color, lead_border_color, lead_text_color, lead_btn_color, footer_bg, title_bg, text_color, link_color, subscribe_bg, subscribe_button, logo_file)
+
+		+light-footer('bg-white', '', '', 'btn-secondary', 'bg-light', 'text-dark', 'text-muted', 'text-muted', '', 'btn-gray', '/images/logo-mono-green.svg')
+
+		include /utilities/_scripts.pug

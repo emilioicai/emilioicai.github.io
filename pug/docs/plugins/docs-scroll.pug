@@ -1,0 +1,39 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Smooth scroll
+	p.mb-4.lead A lightweight script to animate scrolling to anchor links. Read the 
+		|
+		|
+		a(href="https://github.com/cferdinandi/smooth-scroll") plugin&nbsp;documentation
+
+	h5.mb-3 How to use
+	p.mb-0 This plugin works automatically after initialisation with anchor links, but if you need some customization, please visit 
+		a(href="https://github.com/cferdinandi/smooth-scroll") github.com/cferdinandi/smooth-scroll
+		|
+		|
+		| for more information
+
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+	.border.mb-5.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|a.btn.mr-2(href="#") To top
+						|a.btn.mr-2(href="#footer") To bottom
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;a class="btn btn-primary mr-2" href="#">To top&lt;/a>
+						|&lt;a class="btn btn-primary mr-2" href="#footer">To bottom&lt;/a>
+
+
+		.bg-white.p-3.rounded.rounded-bottom
+			a.btn.btn-primary.mr-2(href="#") To top
+			a.btn.btn-primary.mr-2(href="#footer") To bottom

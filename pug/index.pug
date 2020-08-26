@@ -1,0 +1,220 @@
+doctype html
+html(lang="en")
+	head
+		include /utilities/_head.pug
+	body
+		include /utilities/_navbar.pug
+		+navbar-mixin('navbar-light', 'btn-dark')
+
+
+		// HERO
+		#hero.overflow-hidden.bg-gray-light
+			.container.d-flex.flex-column.jarallax(style="min-height: 46rem; background: url('/images/bg/bg_10.svg') center center no-repeat;")
+				.row.my-auto 
+					.col-lg-5.my-auto.pt-16.pb-6.pt-lg-8.pb-lg-0.mr-auto
+						.mb-3.d-flex.align-items-center
+							.icon.icon-sm.bg-gray.rounded.text-muted.mr-2
+								i.fas.fa-clock
+							span.text-muted Version 2.0.0 
+						h1.display-3.mb-2 Do it 
+							span#typed
+							|
+							| with&nbsp;Replacer
+						p.lead.mb-5
+							| Replacer is a perfect tool to start making landing pages with Bootstrap 4, it provides content-oriented, clean, modular and mobile-first design, which you can easily customize
+						.mb-5
+							a.btn.rounded-pill.btn-secondary.px-4.mr-3(href="https://themes.getbootstrap.com/product/replacer-2/")
+								| Purchase
+							a.btn.rounded-pill.btn-white.px-4.mr-3(href="/docs/getting_started/docs-introduction.html")
+								| Documentation
+						span.text-warning.small
+							i.fas.fa-star.mr-1
+							i.fas.fa-star.mr-1
+							i.fas.fa-star.mr-1
+							i.fas.fa-star.mr-1
+							i.fas.fa-star.mr-2
+						span.text-muted.small 5.0 points, based on 3 reviews
+					.col-lg-6.col-md-12.ml-auto.d-none.d-lg-block.d-xl-block(style="min-height: 46rem;", data-aos="fade-up")
+						img.fixed-bottom.position-absolute(alt='Demo' src='/images/homepage/promo.png', width="1240") 
+
+
+		// NOTICE
+		#notice.bg-white
+			.container(data-aos="fade")
+				.row.py-3
+					.col
+						.alert.py-0.my-0.mx-auto.d-flex.flex-column.flex-lg-row.justify-content-center
+							.my-auto.py-2.text-center
+								span.icon.icon-sm.bg-secondary-light.text-secondary.rounded.mr-2
+									i.fas.fa-bolt
+								| Replacer 2 is here! Tons of updates delivered, 
+								a(href="/docs/getting_started/docs-changelog.html") look at the changelog
+				hr
+
+
+		// DEMOS
+		#demos.bg-white
+			.container.rounded-lg(data-aos="fade")
+				.row.text-center
+					.col.mt-8.mb-6
+						span.text-muted.initialism Choose your demo
+
+				.row
+					.col-lg-6.col-md-6.col-sm-12.p-3
+						a(href="/demo/demo-basic.html")
+							img.w-100.hvr-float.rounded.border(alt='Demo 1' src='/images/homepage/demo1.jpg')
+					.col-lg-6.col-md-6.col-sm-12.p-3
+						a(href="/demo/demo-startup1.html")
+							img.w-100.hvr-float.rounded(alt='Demo 2' src='/images/homepage/demo2.jpg')
+				.row
+					.col-lg-6.col-md-6.col-sm-12.p-3
+						a(href="/demo/demo-startup2.html")
+							img.w-100.hvr-float.rounded.border(alt='Demo 3' src='/images/homepage/demo3.jpg')
+					.col-lg-6.col-md-6.col-sm-12.p-3
+						a(href="/demo/demo-startup3.html")
+							img.w-100.hvr-float.rounded.border(alt='Demo 4' src='/images/homepage/demo4.jpg')
+				.row
+					.col-lg-6.col-md-6.col-sm-12.p-3
+						a(href="/demo/demo-saas1.html")
+							img.w-100.hvr-float.rounded(alt='Demo 5' src='/images/homepage/demo5.jpg')
+					.col-lg-6.col-md-6.col-sm-12.p-3
+						a(href="/demo/demo-saas2.html")
+							img.w-100.hvr-float.rounded(alt='Demo 6' src='/images/homepage/demo6.jpg')
+				.row
+					.col-lg-6.col-md-6.col-sm-12.p-3
+						a(href="/demo/demo-mobile.html")
+							img.w-100.hvr-float.rounded.border(alt='Demo 7' src='/images/homepage/demo7.jpg')
+					.col-lg-6.col-md-6.col-sm-12.p-3
+						a(href="/demo/demo-meetup.html")
+							img.w-100.hvr-float.rounded(alt='Demo 8' src='/images/homepage/demo8.jpg')
+
+
+		// TESTIMONIALS
+		#testimonials.pb-7.pt-10
+			.container(data-aos="fade")
+				.row
+					.col-lg-4.col-md-12.text-center.mb-6
+						.mb-3.text-warning.mx-auto
+							i.fas.fa-star.mr-1
+							i.fas.fa-star.mr-1
+							i.fas.fa-star.mr-1
+							i.fas.fa-star.mr-1
+							i.fas.fa-star.mr-1
+						h5.mb-3.initialism
+							| Ron
+						p.mb-0.text-muted.lead
+							| Needed to put up a site pretty quickly and was able to hit the ground running with Replacer. We had a couple of bone-headed questions as we were customizing and these were answered quickly and professionally. Well worth the money. No doubt!
+					.col-lg-4.col-md-12.text-center.mb-6
+						.mb-3.text-warning.mx-auto
+							i.fas.fa-star.mr-1
+							i.fas.fa-star.mr-1
+							i.fas.fa-star.mr-1
+							i.fas.fa-star.mr-1
+							i.fas.fa-star.mr-1
+						h5.mb-3.initialism
+							| Luis
+						p.mb-0.text-muted.lead
+							| Actually the simplicity of this theme makes it almost some sort of meta-theme, (a theme for other themes) since basically the theme does not have any added js or SCSS, (just plain bootstrap 4) that makes it perfect for integrating its beautiful components to other bootstrap 4 themes...
+					.col-lg-4.col-md-12.text-center.mb-6
+						.mb-3.text-warning.mx-auto
+							i.fas.fa-star.mr-1
+							i.fas.fa-star.mr-1
+							i.fas.fa-star.mr-1
+							i.fas.fa-star.mr-1
+							i.fas.fa-star.mr-1
+						h5.mb-3.initialism
+							| Karthik
+						p.mb-0.text-muted.lead
+							| I was looking for a simple, but professional landing page theme for my restaurant food ordering service. It perfectly met my needs. Looks like it was built with bootstrap 4.0 beta. Hope, they will soon update it with the latest 4.x version.
+
+
+		// FEATURES
+		#features.pt-12.bg-light.border-top.border-bottom
+			.container
+				.row.mb-6.text-center(data-aos="fade")
+					.col
+						h2.display-3.mb-4
+							| Key features
+						a.btn-link.hvr-icon-forward(href="mailto:hello@getreplacer.com")
+							| Request a feature
+							small
+								i.fas.fa-chevron-right.ml-2.hvr-icon
+				.row.py-2(data-aos="fade")
+					.col-lg-3.col-md-6.col-sm-12.mb-4
+						.icon.bg-white.rounded-lg.mb-3.p-2.border.border-gray
+							img.mx-auto(alt='Icon' src='/images/icons/primary/cursor-click-2.svg', height='32')
+						h3.h5.mb-2.mr-4 Content-oriented design
+						p.text-muted.mr-5
+							| Replacer has an extremely solid and clean design to focus your visitors on what you want to tell them, and this lightweight design will never go out of trends
+					.col-lg-3.col-md-6.col-sm-12.mb-4
+						.icon.bg-white.rounded-lg.mb-3.p-2.border.border-gray
+							img.mx-auto(alt='Icon' src='/images/icons/primary/mixer.svg', height='32')
+						h3.h5.mb-2 Built on near-vanilla Bootstrap
+						p.text-muted.mr-5
+							| Replacer uses Bootstrap to the fullest. We didn't code new CSS styles if Bootstrap already had the solution, so the theme loads quickly and easy to customize
+					.col-lg-3.col-md-6.col-sm-12.mb-4
+						.icon.bg-white.rounded-lg.mb-3.p-2.border.border-gray
+							img.mx-auto(alt='Icon' src='/images/icons/primary/support.svg', height='32')
+						h3.h5.mb-2.mr-5 Trustworthy and&nbsp;quick support
+						p.text-muted.mr-5
+							| We value our work and happy to provide our customers with first-class and fast support, which has already proven itself
+					.col-lg-3.col-md-6.col-sm-12.mb-4
+						.icon.bg-white.rounded-lg.mb-3.p-2.border.border-gray
+							img.mx-auto(alt='Icon' src='/images/icons/primary/eye-1.svg', height='32')
+						h3.h5.mb-2.mr-4 Consistency and&nbsp;harmony
+						p.text-muted.mr-5
+							| Each of 40+ sections (like features, testimonials and etc.), provided by Replacer, fits perfectly with each other, because of minimalistic and solid design
+
+				.row.pb-7(data-aos="fade")
+					.col-lg-3.col-md-6.col-sm-12.mb-4
+						.icon.bg-white.rounded-lg.mb-3.p-2.border.border-gray
+							img.mx-auto(alt='Icon' src='/images/icons/primary/pen-3.svg', height='32')
+						h3.h5.mb-2 Exclusive illustrations and&nbsp;icons
+						p.text-muted.mr-5
+							| We made illustrations and line icons, especially for Replacer. Feel free to customize them in Figma file, which is also included
+					.col-lg-3.col-md-6.col-sm-12.mb-4
+						.icon.bg-white.rounded-lg.mb-3.p-2.border.border-gray
+							img.mx-auto(alt='Icon' src='/images/icons/primary/magic-1.svg', height='32')
+						h3.h5.mb-2 Background system
+						p.text-muted.mr-5
+							| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.col-lg-3.col-md-6.col-sm-12.mb-4
+						.icon.bg-white.rounded-lg.mb-3.p-2.border.border-gray
+							img.mx-auto(alt='Icon' src='/images/icons/primary/file-download.svg', height='32')
+						h3.h5.mb-2.mr-5 Long-term upgrade plans
+						p.text-muted.mr-5
+							| Replacer is constantly growing and updatable theme, and we have long-term plans to making it better according to your feedback
+					.col-lg-3.col-md-6.col-sm-12.mb-4
+						.icon.bg-white.rounded-lg.mb-3.p-2.border.border-gray
+							img.mx-auto(alt='Icon' src='/images/icons/primary/settings-4.svg', height='32')
+						h3.h5.mb-2 PUG support
+						p.text-muted.mr-5
+							| PUG is a high-performance template engine, which provides a comfortable environment for developers, working with HTML
+
+
+		// LEAD
+		#lead-text.bg-white
+			.container.py-11.jarallax(style="background: url('/images/bg/bg_03.svg') center center;")
+				.row(data-aos="fade")
+					.col-lg-9.mx-auto.text-center
+						.mb-3.text-muted.initialism Version 2
+						h5.display-3.mb-3 Get Replacer theme
+						p.lead.mx-0.mx-lg-15.pb-4
+							| Replacer is a perfect tool to start making landing pages with Bootstrap 4, it provides content-oriented, clean, modular and mobile-first design, which you can easily customize
+						.mb-5
+							a.btn.rounded-pill.btn-secondary.px-4.mx-2(href="https://themes.getbootstrap.com/product/replacer-2/")
+								| Purchase
+							a.btn.rounded-pill.btn-gray.px-4.mx-2(href="/docs/getting_started/docs-introduction.html")
+								| Documentation
+						p.mt-2.mb-0.small.text-muted.text-center
+							i.fas.fa-check-circle.mr-2.text-primary
+							span 100% money back guarantee
+
+
+		// FOOTER
+		include /utilities/_footer.pug
+		// light-footer(lead_bg_color, lead_border_color, lead_text_color, lead_btn_color, footer_bg, title_bg, text_color, link_color, subscribe_bg, subscribe_button, logo_file)
+
+		+light-footer('bg-white', '', '', 'btn-gray', 'bg-light', 'text-dark', 'text-muted', 'text-muted', '', 'btn-gray', '/images/logo-mono-green.svg')
+
+		include /utilities/_scripts.pug

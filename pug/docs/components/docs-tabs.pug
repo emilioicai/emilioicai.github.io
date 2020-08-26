@@ -1,0 +1,73 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Tabs
+	p.mb-3.lead Documentation and examples for how to use Bootstrap’s included navigation components. Read 
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/navs/") Bootstrap documentation
+
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+	.border.mb-5.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|nav
+						|	.nav.nav-tabs.mb-3(role="tablist")
+						|		a.nav-item.nav-link.active(id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="true")
+						|			| First tab
+						|		a.nav-item.nav-link(id="nav-tab-4" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="true")
+						|			| Second tab
+						|	.tab-content
+						|		.tab-pane.fade.bg-gray.p-4.rounded.active.show(id="tab-3" role="tabpanel" aria-labelledby="nav-tab-3")
+						|			| First tab content
+						|		.tab-pane.fade.bg-gray.p-4.rounded(id="tab-4" role="tabpanel" aria-labelledby="nav-tab-4")
+						|			| Second tab content
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;nav>
+						|	&lt;div class="nav nav-tabs mb-3" role="tablist">
+						|		&lt;a class="nav-item nav-link active" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="true">
+						|			First tab
+						|		&lt;/a>
+						|		&lt;a class="nav-item nav-link" id="nav-tab-4" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="true">
+						|			Second tab
+						|		&lt;/a>
+						|	&lt;/div>
+						|	&lt;div class="tab-content">
+						|		&lt;div class="tab-pane fade bg-gray p-4 rounded active show" id="tab-3" role="tabpanel" aria-labelledby="nav-tab-3">
+						|			First tab content
+						|		&lt;/div>
+						|		&lt;div class="tab-pane fade bg-gray p-4 rounded" id="tab-4" role="tabpanel" aria-labelledby="nav-tab-4">
+						|			Second tab content
+						|		&lt;/div>
+						|	&lt;/div>
+						|&lt;/nav>
+		.bg-white.p-3.rounded.rounded-bottom
+			nav.pt-0
+				.nav.nav-tabs.mb-3.pt-0(role="tablist")
+					a.nav-item.nav-link.active(id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="true")
+						| First tab
+					a.nav-item.nav-link(id="nav-tab-4" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="true")
+						| Second tab
+				.tab-content
+					.tab-pane.fade.bg-gray.p-4.rounded.active.show(id="tab-3" role="tabpanel" aria-labelledby="nav-tab-3")
+						| First tab content
+					.tab-pane.fade.bg-gray.p-4.rounded(id="tab-4" role="tabpanel" aria-labelledby="nav-tab-4")
+						| Second tab content
+
+	p.lead Visit
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/navs/") 
+			| Bootstrap documentation
+		|
+		| to learn more about this component
+		

@@ -1,0 +1,250 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Slick carousel
+	p.mb-3.lead Fully responsive carousel plugin. For more information read the 
+		|
+		|
+		a(href="http://kenwheeler.github.io/slick/") plugin&nbsp;documentation
+
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+			a.nav-item.nav-link(id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="true")
+				| JS
+	.border.mb-3.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|// 3 elements with dots
+						|.carousel-3-dots.mx-2.mb-9.mt-2
+						|	.card.border.border-white.bg-primary.py-8
+						|	.card.border.border-white.bg-primary.py-8
+						|	.card.border.border-white.bg-primary.py-8
+						|	.card.border.border-white.bg-primary.py-8
+						|	.card.border.border-white.bg-primary.py-8
+						|	.card.border.border-white.bg-primary.py-8
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;!-- 3 elements with dots -->
+						|&lt;div class="carousel-3-dots mx-2 mb-9 mt-2">
+						|	&lt;div class="card border border-white bg-primary py-8">&lt;/div>
+						|	&lt;div class="card border border-white bg-primary py-8">&lt;/div>
+						|	&lt;div class="card border border-white bg-primary py-8">&lt;/div>
+						|	&lt;div class="card border border-white bg-primary py-8">&lt;/div>
+						|	&lt;div class="card border border-white bg-primary py-8">&lt;/div>
+						|	&lt;div class="card border border-white bg-primary py-8">&lt;/div>
+						|&lt;/div>
+			.tab-pane.fade(id="tab-3" role="tabpanel" aria-labelledby="nav-tab-3")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-js
+						|$('.carousel-3-dots').slick({
+						|	slidesToShow:   3,
+						|	slidesToScroll: 2,
+						|	infinite: true,
+						|	dots: true,
+						|	autoplaySpeed: 3000,
+						|	lazyLoad: 'ondemand',
+						|	dotsClass: 'slick-dots',
+						|	arrows: false,
+						|	responsive: [
+						|		{
+						|		breakpoint: 992,
+						|		settings: {
+						|			slidesToShow: 2,
+						|			slidesToScroll: 1
+						|			}
+						|		},
+						|		{
+						|		breakpoint: 768,
+						|		settings: {
+						|			slidesToShow: 1,
+						|			slidesToScroll: 1
+						|			}
+						|		},
+						|		{
+						|		breakpoint: 576,
+						|		settings: {
+						|			slidesToShow: 1,
+						|			slidesToScroll: 1
+						|			}
+						|		}
+						|	]
+						|});
+		.bg-white.p-2.rounded.rounded-bottom
+			// 3 elements with dots 
+			.carousel-3-dots.mx-2.mb-9.mt-2
+				.card.border.border-white.bg-primary.py-8
+				.card.border.border-white.bg-primary.py-8
+				.card.border.border-white.bg-primary.py-8
+				.card.border.border-white.bg-primary.py-8
+				.card.border.border-white.bg-primary.py-8
+				.card.border.border-white.bg-primary.py-8
+
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-4" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-5" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-5" aria-selected="true")
+				| HTML
+			a.nav-item.nav-link(id="nav-tab-6" data-toggle="tab" href="#tab-6" role="tab" aria-controls="tab-6" aria-selected="true")
+				| JS
+	.border.mb-3.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-4" role="tabpanel" aria-labelledby="nav-tab-4")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|// 1 element with arrows
+						|.carousel-1-arrows.mx-2.mb-2.mt-2
+						|	.card.border.border-white.bg-primary.py-16
+						|	.card.border.border-white.bg-primary.py-16
+						|	.card.border.border-white.bg-primary.py-16
+			.tab-pane.fade(id="tab-5" role="tabpanel" aria-labelledby="nav-tab-5")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;!-- 1 element with arrows-->
+						|&lt;div class="carousel-1-arrows mx-2 mb-2 mt-2">
+						|	&lt;div class="card border border-white bg-primary py-16">&lt;/div>
+						|	&lt;div class="card border border-white bg-primary py-16">&lt;/div>
+						|	&lt;div class="card border border-white bg-primary py-16">&lt;/div>
+						|&lt;/div>
+			.tab-pane.fade(id="tab-6" role="tabpanel" aria-labelledby="nav-tab-6")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-js
+						|$('.carousel-1-arrows').slick({
+						|	slidesToShow:   1,
+						|	slidesToScroll: 1,
+						|	infinite: true,
+						|	dots: false,
+						|	arrows: true,
+						|	autoplay: false,
+						|	autoplaySpeed: 3000,
+						|	lazyLoad: 'ondemand',
+						|	responsive: [
+						|		{
+						|		breakpoint: 992,
+						|		settings: {
+						|			slidesToShow: 1,
+						|			slidesToScroll: 1
+						|			}
+						|		},
+						|		{
+						|		breakpoint: 768,
+						|		settings: {
+						|			slidesToShow: 1,
+						|			slidesToScroll: 1,
+						|			arrows: false,
+						|			autoplay: true
+						|			}
+						|		},
+						|		{
+						|		breakpoint: 576,
+						|		settings: {
+						|			slidesToShow: 1,
+						|			slidesToScroll: 1,
+						|			arrows: false,
+						|			autoplay: true
+						|			}
+						|		}
+						|	]
+						|});
+		.bg-white.p-2.rounded.rounded-bottom
+			// 1 element with arrows
+			.carousel-1-arrows.mx-2.mb-2.mt-2
+				.card.border.border-white.bg-primary.py-16
+				.card.border.border-white.bg-primary.py-16
+				.card.border.border-white.bg-primary.py-16
+
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-7" data-toggle="tab" href="#tab-7" role="tab" aria-controls="tab-7" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-8" data-toggle="tab" href="#tab-8" role="tab" aria-controls="tab-8" aria-selected="true")
+				| HTML
+			a.nav-item.nav-link(id="nav-tab-9" data-toggle="tab" href="#tab-9" role="tab" aria-controls="tab-9" aria-selected="true")
+				| JS
+	.border.mb-3.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-7" role="tabpanel" aria-labelledby="nav-tab-7")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|// 6 elements with autoplay
+						|.carousel-6.mx-2.mb-2.mt-2
+						|	.card.border.border-white.bg-primary.py-8
+						|	.card.border.border-white.bg-primary.py-8
+						|	.card.border.border-white.bg-primary.py-8
+						|	.card.border.border-white.bg-primary.py-8
+						|	.card.border.border-white.bg-primary.py-8
+						|	.card.border.border-white.bg-primary.py-8
+						|	.card.border.border-white.bg-primary.py-8
+						|	.card.border.border-white.bg-primary.py-8
+						|	.card.border.border-white.bg-primary.py-8
+			.tab-pane.fade(id="tab-8" role="tabpanel" aria-labelledby="nav-tab-8")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;!-- 6 elements with autoplay-->
+						|&lt;div class="carousel-6 mx-2 mb-2 mt-2">
+						|	&lt;div class="card border border-white bg-primary py-8">&lt;/div>
+						|	&lt;div class="card border border-white bg-primary py-8">&lt;/div>
+						|	&lt;div class="card border border-white bg-primary py-8">&lt;/div>
+						|	&lt;div class="card border border-white bg-primary py-8">&lt;/div>
+						|	&lt;div class="card border border-white bg-primary py-8">&lt;/div>
+						|	&lt;div class="card border border-white bg-primary py-8">&lt;/div>
+						|	&lt;div class="card border border-white bg-primary py-8">&lt;/div>
+						|	&lt;div class="card border border-white bg-primary py-8">&lt;/div>
+						|	&lt;div class="card border border-white bg-primary py-8">&lt;/div>
+						|&lt;/div>
+			.tab-pane.fade(id="tab-9" role="tabpanel" aria-labelledby="nav-tab-9")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-js
+						|$('.carousel-6').slick({
+						|	slidesToShow:   6,
+						|	slidesToScroll: 1,
+						|	infinite: true,
+						|	dots: false,
+						|	arrows: false,
+						|	autoplay: true,
+						|	autoplaySpeed: 2000,
+						|	lazyLoad: 'ondemand',
+						|	responsive: [
+						|		{
+						|		breakpoint: 992,
+						|		settings: {
+						|			slidesToShow: 4,
+						|			slidesToScroll: 2
+						|			}
+						|		},
+						|		{
+						|		breakpoint: 768,
+						|		settings: {
+						|			slidesToShow: 4,
+						|			slidesToScroll: 2
+						|			}
+						|		},
+						|		{
+						|		breakpoint: 576,
+						|		settings: {
+						|			slidesToShow: 2,
+						|			slidesToScroll: 1
+						|			}
+						|		}
+						|	]
+						|
+						|});
+		.bg-white.p-2.rounded.rounded-bottom
+			// 6 elements with autoplay
+			.carousel-6.mx-2.mb-2.mt-2
+				.card.border.border-white.bg-primary.py-8
+				.card.border.border-white.bg-primary.py-8
+				.card.border.border-white.bg-primary.py-8
+				.card.border.border-white.bg-primary.py-8
+				.card.border.border-white.bg-primary.py-8
+				.card.border.border-white.bg-primary.py-8
+				.card.border.border-white.bg-primary.py-8
+				.card.border.border-white.bg-primary.py-8
+				.card.border.border-white.bg-primary.py-8

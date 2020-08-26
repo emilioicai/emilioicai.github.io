@@ -1,0 +1,250 @@
+doctype html
+html(lang="en")
+	head
+		include /utilities/_head.pug
+	body
+		include /utilities/_navbar.pug
+		+navbar-mixin('navbar-light', 'btn-primary')
+
+
+		// HERO
+		#hero.bg-warning-light
+			.container
+				.row.jarallax(style="min-height: 46rem; background: url('/images/bg/bg_08.svg') center center no-repeat;")  
+					.col-lg-5.my-auto.pt-16.pt-lg-6.mr-auto(data-aos="fade")
+						.mb-3.d-flex.align-items-center
+							.icon.icon-sm.bg-primary.rounded.text-white.mr-2
+								i.fas.fa-clock
+							span.text-muted Version 2.0.0 
+						h1.display-3.mb-2 Do it better with&nbsp;Replacer
+						p.lead.mb-5.pr-4
+							| Replacer is a perfect tool to start making landing pages with Bootstrap 4. We provide content-oriented, clean and mobile-first layouts, which you can easily customize
+						.mb-4
+							a.btn.btn-secondary.rounded-pill.px-5.mr-3(href="#")
+								| Register account
+							a.hvr-grow(href='https://www.youtube.com/watch?v=9E6b3swbnWg', data-fancybox='gallery')
+								img.shadow-sm.rounded-circle(alt='Play' src='/images/assets/video-play.svg', height='50')
+						span.text-muted.small
+							span
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star-half-alt.mr-2
+							span 4.8 points, based on 267 reviews
+					.col-lg-6.mt-auto(data-aos="fade")
+						img.mt-auto.w-100(alt='Photo' src='/images/photos/boris.jpg')
+
+
+		// NOTICE
+		#notice
+			.container(data-aos="fade")
+				.row.py-3
+					.col
+						.alert.py-0.my-0.mx-auto.d-flex.flex-column.flex-lg-row.justify-content-center
+							.my-auto.py-2.text-center
+								span.my-3.badge.badge-pill.badge-primary-light.text-primary.initialism.mx-3.d-inline
+									i.fa.fa-bolt.mr-2
+									| Discount
+							.my-auto.py-2.text-center
+								span.text-muted To get &ndash;10% off use this coupone code: 
+								mark.rounded.px-2 RPLCR10
+				hr
+
+
+		// FEATURES
+		#features1.pt-5(data-aos="fade")
+			.container
+				.row.py-5
+					.col-lg-4.col-md-12.mb-4.text-center
+						.icon.bg-secondary-light.rounded-lg.mb-4.p-2
+							img(alt='Icon' src='/images/icons/secondary/number-1.svg', height='40')
+						h5.mb-3 Content-oriented design
+						p.mx-2.lead
+							| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.col-lg-4.col-md-12.mb-4.text-center
+						.icon.bg-secondary-light.rounded-lg.mb-4.p-2
+							img(alt='Icon' src='/images/icons/secondary/number-2.svg', height='40')
+						h5.mb-3 Background system
+						p.mx-2.lead
+							| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.col-lg-4.col-md-12.mb-4.text-center
+						.icon.bg-secondary-light.rounded-lg.mb-4.p-2
+							img(alt='Icon' src='/images/icons/secondary/number-3.svg', height='40')
+						h5.mb-3 Free updates
+						p.mx-2.lead
+							| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+
+
+		// FEATURES
+		#features2.bg-light.mb-1.border-top.border-bottom
+			.container
+				.row.py-6
+					.col-lg-5.col-md-12.mr-auto.my-auto.py-8(data-aos="fade")
+						.mb-3.initialism.text-primary Killer features
+						p.lead.mb-5.mr-6
+							| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system
+						.row
+							.col-lg-6.col-md-12
+								.icon.icon-sm.rounded.text-secondary.bg-secondary-light.mb-3
+									i.fa.fa-bone
+								h3.h5.mb-2 Design
+								p.text-muted.mb-0
+									| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own
+							.col-lg-6.col-md-12
+								.icon.icon-sm.rounded.text-secondary.bg-secondary-light.mb-3
+									i.fas.fa-adjust
+								h3.h5.mb-2 Marketing
+								p.text-muted.mb-0
+									| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own
+					.col-lg-6.col-md-12.my-auto(data-aos="fade-left")
+						img.m-auto.w-100.shadow-sm.rounded.border(src='/images/devices/browser_01.png', alt='Screenshot')
+
+		
+		// FORM
+		#form.pt-12.pb-5
+			.container(data-aos="fade-up")
+				.row.text-center.mb-5
+					.col-lg-6.mx-auto
+						h2.display-3.mb-3 Write to us
+						p.lead If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background
+				.row
+					.col-lg-9.col-md-12.mx-auto
+						form.mb-2
+							.form-row 
+								.form-group.col-lg-4.col-md-12.col-sm-12.pr-2
+									label.text-muted(for='forms-3-first-name')
+										small
+											| First name
+									input#forms-3-first-name.form-control.rounded(type='text', placeholder='Jon')
+								.form-group.col-lg-4.col-md-12.col-sm-12.px-2
+									label.text-muted(for='forms-3-last-name')
+										small
+											| Last name
+									input#forms-3-last-name.form-control.rounded(type='text', placeholder='Snow')
+								.form-group.col-lg-4.col-md-12.col-sm-12.pl-2
+									label.text-muted(for='forms-3-org')
+										small
+											| Organization
+									input#forms-3-org.form-control.rounded(type='text', placeholder='Acme')
+							.form-group.mb-7
+								label.text-muted.small(for='exampleFormControlTextarea1') Message
+								textarea#exampleFormControlTextarea1.form-control.rounded(rows='6', placeholder="Your comment")
+							.text-center
+								button.btn.btn-outline-primary.mb-3.mx-auto.px-6.rounded-pill(type='submit')
+									| Request free demo 
+
+
+		// TESTIMONIALS
+		#testimonials.pb-17
+			.container
+				.row.carousel-3-dots(data-aos="fade-up")
+					.card.pt-3.rounded-0.border-0.mx-1.bg-transparent
+						.card-body.text-center
+							.mb-3.text-warning
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star-half-alt.mr-2
+							h5.mb-4
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.pt-3.rounded-0.border-0.mx-1.bg-transparent
+						.card-body.text-center
+							.mb-3.text-warning
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star-half-alt.mr-2
+							h5.mb-4
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.pt-3.rounded-0.border-0.mx-1.bg-transparent
+						.card-body.text-center
+							.mb-3.text-warning
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star-half-alt.mr-2
+							h5.mb-4
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.pt-3.rounded-0.border-0.mx-1.bg-transparent
+						.card-body.text-center
+							.mb-3.text-warning
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star-half-alt.mr-2
+							h5.mb-4
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.pt-3.rounded-0.border-0.mx-1.bg-transparent
+						.card-body.text-center
+							.mb-3.text-warning
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star-half-alt.mr-2
+							h5.mb-4
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.pt-3.rounded-0.border-0.mx-1.bg-transparent
+						.card-body.text-center
+							.mb-3.text-warning
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star-half-alt.mr-2
+							h5.mb-4
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+
+
+		// FAQ
+		#faq.bg-light.border-top
+			.container.py-10.jarallax(style="background: url('/images/bg/bg_09.svg') center center; background-size: auto 100%;")
+				.row
+					.col-lg-9.col-md-12.col-sm-12.mx-auto
+						.mb-8.initialism.text-muted.text-center Popular questions
+						ul.list-group.mb-9.rounded
+							mixin question(number, question, answer)
+								.card.accordion.border-0.p-0
+									a.card-header.btn.btn-link.px-1.py-2.mb-0.text-dark.collapsed.lead.text-left.border-0.rounded.d-flex(href="#" data-toggle='collapse', data-target="#a" + number, aria-expanded='true', aria-controls="a" + number, id= "q" + number)
+										span.lead.text-dark.mb-0.pb-0.mr-5= question
+									.card-body.collapse.text-muted.pt-0.pb-0.px-1.border-0(id= "a" + number, aria-labelledby = "q" + number)
+										p.my-3.py-0= answer 
+							li.list-group-item
+								+question(1, "How do I cancel service? ", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(2, "Do I need another web host?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(3, "Can I switch plans?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(4, "Do I need another web host?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+						.text-center
+							a.btn-link.text-primary.hvr-icon-forward(href="/pages/page-apply.html")
+								| Ask your question
+								small
+									i.fas.fa-chevron-right.ml-2.hvr-icon
+
+
+		// FOOTER 
+		include /utilities/_footer.pug
+		// light-footer(lead_bg_color, lead_border_color, lead_text_color, lead_btn_color, footer_bg, title_bg, text_color, link_color, subscribe_bg, subscribe_button, logo_file)
+
+		+light-footer('bg-white', '', '', 'btn-secondary', 'bg-white', 'text-dark', 'text-muted', 'text-muted', 'bg-gray', 'btn-gray', '/images/logo-mono-green.svg')
+
+		include /utilities/_scripts.pug

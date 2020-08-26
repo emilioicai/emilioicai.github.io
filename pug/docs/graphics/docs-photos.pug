@@ -1,0 +1,22 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Photos
+	p.mb-4.lead All photos included in the theme have a free license
+	p.mb-4 We used such free photo libraries as 
+		|
+		|
+		a(href="https://unsplash.com/") Unsplash
+		|
+		| and
+		|
+		a(href="https://icons8.com/") Icons8
+
+	#slider.py-2
+		.carousel-1-arrows.arrows-white
+			.card.rounded-lg.overflow-hidden.border-0
+				img.w-100(alt='Photo' src='/images/photos/slide3.jpg')
+			.card.rounded-lg.overflow-hidden.border-0
+				img.w-100(alt='Photo' src='/images/photos/slide2.jpg')
+			.card.rounded-lg.overflow-hidden.border-0
+				img.w-100(alt='Photo' src='/images/photos/slide1.jpg')

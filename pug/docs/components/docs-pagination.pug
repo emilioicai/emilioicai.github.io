@@ -1,0 +1,75 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Pagination
+	p.mb-3.lead Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages. Read 
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/pagination/") Bootstrap documentation
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+	.border.mb-5.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|nav(aria-label="Pagination")
+						|	ul.pagination.mb-0
+						|		li.page-item
+						|			a.page-link.text-muted(href="#") Previous
+						|		li.page-item
+						|			a.page-link(href="#") 1
+						|		li.page-item
+						|			a.page-link(href="#") 2
+						|		li.page-item
+						|			a.page-link(href="#") 3
+						|		li.page-item
+						|			a.page-link.text-muted(href="#") Next
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;nav aria-label="Pagination">
+						|	&lt;ul class="pagination mb-0">
+						|		&lt;li class="page-item">
+						|			&lt;a class="page-link text-muted" href="#">Previous&lt;/a>
+						|		&lt;/li>
+						|		&lt;li class="page-item">
+						|			&lt;a class="page-link" href="#">1&lt;/a>
+						|		&lt;/li>
+						|		&lt;li class="page-item">
+						|			&lt;a class="page-link" href="#">2&lt;/a>
+						|		&lt;/li>
+						|		&lt;li class="page-item">
+						|			&lt;a class="page-link" href="#">3&lt;/a>
+						|		&lt;/li>
+						|		&lt;li class="page-item">
+						|			&lt;a class="page-link text-muted" href="#">Next&lt;/a>
+						|		&lt;/li>
+						|	&lt;/ul>
+						|&lt;/nav>
+		.bg-white.p-3.rounded.rounded-bottom
+			nav(aria-label="Pagination")
+				ul.pagination.mb-0
+					li.page-item
+						a.page-link.text-muted(href="#") Previous
+					li.page-item
+						a.page-link(href="#") 1
+					li.page-item
+						a.page-link(href="#") 2
+					li.page-item
+						a.page-link(href="#") 3
+					li.page-item
+						a.page-link.text-muted(href="#") Next
+
+
+	p.lead Visit
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/pagination/") 
+			| Bootstrap documentation
+		|
+		| to learn more about this component

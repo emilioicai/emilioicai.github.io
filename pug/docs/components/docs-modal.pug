@@ -1,0 +1,88 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Modal
+	p.mb-3.lead Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content. Read 
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/modal/") Bootstrap documentation
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+	.border.mb-5.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|button.btn.btn-primary(type='button', data-toggle='modal', data-target='#modal_demo_docs')
+						|	| Launch demo modal
+						|#modal_demo_docs.modal.fade(tabindex='-1', role='dialog', aria-labelledby='modal_demo_docs', aria-hidden='true')
+						|	.modal-dialog.modal-dialog-centered(role='document')
+						|		.modal-content
+						|			.modal-header.p-4
+						|				h5#modal_demo_docs.modal-title Modal title
+						|				button.close.text-muted(type='button', data-dismiss='modal', aria-label='Close')
+						|					i.fas.fa-times-circle(aria-hidden='true')
+						|			.modal-body.px-4
+						|				p.mb-0.lead
+						|					| Replacer has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Replacer of the site. Use of any such linked website is at the user's own risk.
+						|			.modal-footer.p-4
+						|				button.btn.btn-sm.btn-link.px-3(type='button', data-dismiss='modal') Close
+						|				button.btn.btn-sm.btn-primary.px-3.rounded-pill(type='button') Save changes
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modal_demo_docs">
+						|	Launch demo modal
+						|&lt;/button>
+						|&lt;div class="modal fade" id="modal_demo_docs" tabindex="-1" role="dialog" aria-labelledby="modal_demo_docs" style="display: none;" aria-hidden="true">
+						|	&lt;div class="modal-dialog modal-dialog-centered" role="document">
+						|		&lt;div class="modal-content">
+						|			&lt;div class="modal-header p-4">
+						|				&lt;h5 class="modal-title">Modal title&lt;/h5>
+						|				&lt;button class="close text-muted" type="button" data-dismiss="modal" aria-label="Close">
+						|					&lt;i class="fas fa-times-circle" aria-hidden="true">&lt;/i>
+						|				&lt;/button>
+						|			&lt;/div>
+						|			&lt;div class="modal-body px-4">
+						|				&lt;p class="mb-0 lead">
+						|					Replacer has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Replacer of the site. Use of any such linked website is at the user's own risk.
+						|				&lt;/p>
+						|			&lt;/div>
+						|			&lt;div class="modal-footer p-4">
+						|				&lt;button class="btn btn-sm btn-link px-3" type="button" data-dismiss="modal">Close&lt;/button>
+						|				&lt;button class="btn btn-sm btn-primary px-3 rounded-pill" type="button">Save changes&lt;/button>
+						|			&lt;/div>
+						|		&lt;/div>
+						|	&lt;/div>
+						|&lt;/div>
+		.bg-white.p-3.rounded.rounded-bottom
+			button.btn.btn-primary.mr-2(type='button', data-toggle='modal', data-target='#modal_demo_docs')
+				| Launch demo modal
+			button.btn.btn-secondary(type='button', data-toggle='modal', data-target='#login-modal')
+				| Login modal
+			#modal_demo_docs.modal.fade(tabindex='-1', role='dialog', aria-labelledby='modal_demo_docs', aria-hidden='true')
+				.modal-dialog.modal-dialog-centered(role='document')
+					.modal-content
+						.modal-header.p-4
+							h5.modal-title Modal title
+							button.close.text-muted(type='button', data-dismiss='modal', aria-label='Close')
+								i.fas.fa-times-circle(aria-hidden='true')
+						.modal-body.px-4
+							p.mb-0.lead
+								| Replacer has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Replacer of the site. Use of any such linked website is at the user's own risk.
+						.modal-footer.p-4
+							button.btn.btn-sm.btn-link.px-3(type='button', data-dismiss='modal') Close
+							button.btn.btn-sm.btn-primary.px-3.rounded-pill(type='button') Save changes
+
+
+	p.lead Visit
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/modal/") 
+			| Bootstrap documentation
+		|
+		| to learn more about this component

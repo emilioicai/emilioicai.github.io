@@ -1,0 +1,81 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Cards
+	p.mb-3.lead Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options. Read 
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/card/") Bootstrap documentation
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+	.border.mb-5.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|.card.rounded-lg.overflow-hidden.hvr-float
+						|	img.card-img-top(alt='Photo' src='/images/photos/1200x800/5.jpg')
+						|	.card-body.px-5.pt-4
+						|		.mt-2.mb-3.d-inline.d-flex.align-items-center.small
+						|			i.far.fa-clock.mr-2.text-muted
+						|			.text-muted March 14, 2021
+						|		a.h5.text-dark.stretched-link(href="#") How to make a theme 
+						|		p.text-muted.my-2 Replacer is the modern and powerful theme for making landing pages on Bootstrap 4. You may customize
+						|	.card-footer.text-muted.bg-white.border-0.pb-4.rounded-lg.px-5
+						|		hr.mb-4.mt-0
+						|		.d-flex.align-items-center
+						|			img.rounded-circle.my-auto.mr-3(alt='Photo' src='/images/people/1.jpg', height="32")
+						|			span.initialism.text-muted Maria Brooke
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;div class="card rounded-lg overflow-hidden hvr-float">
+						|	&lt;img alt="Photo" class="card-img-top" src="/images/photos/1200x800/5.jpg">
+						|	&lt;div class="card-body px-5 pt-4">
+						|		&lt;div class="mt-2 mb-3 d-inline d-flex align-items-center small">
+						|			&lt;i class="far fa-clock mr-2 text-muted">&lt;/i>
+						|			&lt;div class="text-muted">March 14, 2021&lt;/div>
+						|		&lt;/div>
+						|		&lt;a class="h5 text-dark stretched-link" href="#">
+						|			How to make a theme &lt;/a>
+						|		&lt;p class="text-muted my-2">
+						|			Replacer is the modern and powerful theme for making landing pages on Bootstrap 4. You may customize
+						|		&lt;/p>
+						|	&lt;/div>
+						|	&lt;div class="card-footer text-muted bg-white border-0 pb-4 rounded-lg px-5">
+						|		&lt;hr class="mb-4 mt-0">
+						|		&lt;div class="d-flex align-items-center">
+						|			&lt;img alt="Photo" class="rounded-circle my-auto mr-3" src="/images/people/1.jpg" height="32">
+						|			&lt;span class="initialism text-muted">Maria Brooke&lt;/span>
+						|		&lt;/div>
+						|	&lt;/div>
+						|&lt;/div>
+		.bg-white.p-3.rounded.rounded-bottom
+			.container.px-0
+				.row.no-gutters
+					.col-lg-6.col-md-12
+						.card.rounded-lg.overflow-hidden.hvr-float
+							img.card-img-top(alt='Photo' src='/images/photos/1200x800/5.jpg')
+							.card-body.px-5.pt-4
+								.mt-2.mb-3.d-inline.d-flex.align-items-center.small
+									i.far.fa-clock.mr-2.text-muted
+									.text-muted March 14, 2021
+								a.h5.text-dark.stretched-link(href="#") How to make a theme 
+								p.text-muted.my-2 Replacer is the modern and powerful theme for making landing pages on Bootstrap 4. You may customize
+							.card-footer.text-muted.bg-white.border-0.pb-4.rounded-lg.px-5
+								hr.mb-4.mt-0
+								.d-flex.align-items-center
+									img.rounded-circle.my-auto.mr-3(alt='Photo' src='/images/people/1.jpg', height="32")
+									span.initialism.text-muted Maria Brooke
+
+	p.lead Visit
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/card/") 
+			| Bootstrap documentation
+		|
+		| to learn more about this component

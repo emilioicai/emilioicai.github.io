@@ -1,0 +1,55 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Typed.js
+	p.mb-4.lead Typed.js is a library that types. Enter in any string, and watch it type at the speed you've set, backspace what it's typed, and begin a new sentence for however many strings you've set. For more information read the 
+		|
+		|
+		a(href="https://mattboldt.com/demos/typed-js/") plugin&nbsp;documentation
+
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+			a.nav-item.nav-link(id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="true")
+				| JS
+
+	.border.mb-3.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|h5.text-muted.m-3 Do it
+						|	|
+						|	|
+						|	span#typed
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;h5 class="text-muted m-3">
+						|	Do it
+						|	&lt;span id="typed">&lt;/span>
+						|&lt;/h5>
+			.tab-pane.fade(id="tab-3" role="tabpanel" aria-labelledby="nav-tab-3")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-js
+						|$(document).ready(function() {
+						|	if (document.getElementById("typed")) {
+						|		var typed = new Typed('#typed', {
+						|			strings: ["better", "fancy", "modern"],
+						|			typeSpeed: 200,
+						|			backSpeed: 200,
+						|			smartBackspace: false,
+						|			loop: true,
+						|			shuffle: true,
+						|		});
+						|	}
+						|});
+		.bg-white.p-2.rounded.rounded-bottom
+			// 3 elements with dots 
+			h5.text-muted.m-3 Do it
+				|
+				|
+				span#typed

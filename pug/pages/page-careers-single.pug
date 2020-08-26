@@ -1,0 +1,65 @@
+doctype html
+html(lang="en")
+	head
+		include /utilities/_head.pug
+	body
+
+
+		// HEADER 
+		#header.bg-light
+			include /utilities/_navbar.pug
+			+navbar-mixin('navbar-light', 'btn-secondary')
+			#breadcrumbs.container
+				.row
+					.col
+						hr.mt-10
+						include /utilities/_breadcrumb.pug
+						+breadcrumb-mixin('text-muted', ['Home', 'Pages', 'Career page'])
+
+
+		// CONTENT
+		#content.bg-light
+			.container
+				.row
+					.col-lg-10.col-md-12.col-sm-12.pt-10.pb-15.m-auto
+						.card.shadow-sm.rounded-lg
+							.card-header.bg-transparent.px-4.px-lg-10.pt-9.border-0.pb-0
+								.mb-3.lead.initialism
+									i.fas.fa-clock.mr-2
+									| 29 June, 2019
+								h1.display-4.mb-2 Senior python developer 
+								p.lead.mb-5 Replacer is a library of HTML templates and components 
+								a.btn.btn-primary.px-5(href="#")
+									| Apply now
+								hr.my-7
+							.card-block.px-4.px-lg-10.pb-10
+								blockquote.blockquote.lead.text-muted.py-2.px-5.mb-5.mr-10 Replacer uses Bootstrap components to the fullest. We didn't code new CSS styles if Bootstrap already had the solution, so the theme loads quickly and easy to customize, and in many cases you won't need to read more documentation than necessary
+								p.mb-5 Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
+								h5.mb-3 About our company
+								p.pb-3 Her old collecting she considered discovered. So at parties he warrant oh staying. Square new horses and put better end. Sincerity collected happiness do is contented. Sigh ever way now many. Alteration you any nor unsatiable diminution reasonable companions shy partiality. Leaf by left deal mile oh if easy. Added woman first get led joy not early jokes. 
+								.my-5.text-center
+									img.w-100.rounded.mb-3(alt='Photo' src="/images/photos/room-FZrn8fhqpp8-unsplash.jpg")
+									span.small.text-muted Caption text
+								h5.mb-3 Killer features 
+								p.mb-3 Admiration stimulated cultivated reasonable be projection possession of. Real no near room ye bred sake if some. Is arranging furnished knowledge agreeable so. Fanny as smile up small. It vulgar chatty simple months turned oh at change of. Astonished set expression solicitude way admiration. 
+								ul.mb-5
+									li modify or copy the materials;
+									li use the materials for any commercial purpose, or for any public display (commercial or non-commercial);
+									li attempt to decompile or reverse engineer any software contained on Elixir's website;
+									li remove any copyright or other proprietary notations from the materials;
+									li or transfer the materials to another person or "mirror" the materials on any other server.
+									li this license shall automatically terminate if you violate any of these restrictions and may be terminated by Elixir at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format
+								h5.mb-3 Your role
+								p Her old collecting she considered discovered. So at parties he warrant oh staying. Square new horses and put better end. Sincerity collected happiness do is contented. Sigh ever way now many. Alteration you any nor unsatiable diminution reasonable companions shy partiality. Leaf by left deal mile oh if easy. Added woman first get led joy not early jokes. 
+								hr.my-6
+								p.lead.mb-8 Replacer is a library of templates and web pages made with love to making it super easy to create and customize your own working websites in minutes
+								a.btn.btn-primary.px-5(href="#")
+									| Apply now
+
+
+		// FOOTER
+		include /utilities/_footer.pug
+		// light-footer(lead_bg_color, lead_border_color, lead_text_color, lead_btn_color, footer_bg, title_bg, text_color, link_color, subscribe_bg, subscribe_button, logo_file)
+		+light-footer('bg-light', '', '', 'btn-secondary', 'bg-white', 'text-dark', 'text-muted', 'text-muted', '', 'btn-gray', '/images/logo-mono-green.svg')
+
+		include /utilities/_scripts.pug

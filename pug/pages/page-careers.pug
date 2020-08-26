@@ -1,0 +1,293 @@
+doctype html
+html(lang="en")
+	head
+		include /utilities/_head.pug
+	body
+
+
+		// HEADER
+		#header.bg-info(style="background: linear-gradient(45deg, rgba(35, 83, 214, 0.85) 0%, rgba(35, 83, 214, 0.85)) 0%, url('/images/photos/room-FZrn8fhqpp8-unsplash.jpg') center; background-size: cover;")
+			include /utilities/_navbar.pug
+			+navbar-mixin('navbar-dark', 'btn-secondary')
+			#breadcrumbs.container
+				.row
+					.col
+						hr.mt-10.border-light.opacity-1
+						include /utilities/_breadcrumb.pug
+						+breadcrumb-mixin('text-white', ['Home', 'Pages', 'Careers'])
+				.row
+					.col-lg-9.col-md-12.mx-auto.text-center.pb-12.pt-8
+						div.mb-4.text-white.initialism 10 open positions
+						h1.display-2.mb-5.text-white Create a world that inspires human connection
+						a.hvr-sink(href="#shedulle")
+							img(alt='Icon' src='/images/icons/white/arrow-down-2.svg', height='80')
+
+
+		// NOTICE
+		#notice
+			.container(data-aos="fade")
+				.row.py-3
+					.col
+						.alert.p-0.my-0.mx-auto.d-flex.flex-column.flex-lg-row.justify-content-center
+							.my-auto.mr-auto.text-muted
+								span.icon.icon-sm.bg-secondary-light.text-secondary.rounded.mr-2
+									i.fas.fa-user
+								|  Develop beautiful landing pages, using top-notch layouts
+							.my-auto.py-2
+								a.btn.btn-primary.btn-sm.rounded-pill.px-3(href='#')
+									i.far.fa-clone.mr-2
+									| Register
+				hr
+		
+
+		// COUNTERS
+		#counters.pt-12
+			.container(data-aos="fade")
+				.row
+					.col-lg-4.col-md-6.col-sm-12.mb-5.text-center
+						h2.display-4.mb-2.text-dark
+							| $
+							span.counter#counter_4
+						.initialism.text-muted.mb-3 Main prize
+						p.lead.mx-2 If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.col-lg-4.col-md-6.col-sm-12.mb-5.text-center.mx-auto
+						h2.display-4.mb-2.text-dark
+							span.counter#counter_3
+						.initialism.text-muted.mb-3 Professionals
+						p.lead.mx-2 If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.col-lg-4.col-md-6.col-sm-12.mb-5.text-center
+						h2.display-4.mb-2.text-dark
+							span.counter#counter_1
+						.initialism.text-muted.mb-3 Experts
+						p.lead.mx-2 If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+
+
+		// SHEDULLE 
+		#shedulle.pt-5
+			.container
+				.row.mb-4
+					.col.text-center
+						nav.text-center
+							.nav.nav-tabs.d-inline-flex.mx-auto(role="tablist")
+								a.nav-item.nav-link.px-4.mx-auto.mb-5.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+									h5 Marketing
+								a.nav-item.nav-link.px-4.mx-auto.mb-5(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+									h5 Developers
+				.tab-content
+					.tab-pane.fade.show.active(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+						ul.list-group
+							li.list-group-item.py-4.px-4
+								.row
+									.col-lg-1.col-md-12.d-flex.align-items-center
+										.my-auto
+											.badge.bg-primary-light.rounded-lg.p-2.border-0.my-1
+												img(alt='Icon' src='/images/icons/primary/chart-up.svg', height='40')
+									.col-lg-7.col-md-12.d-flex.align-items-center
+										.my-auto
+											.my-2.initialism.text-muted Marketing
+											a.text-dark.font-weight-bold.mb-5(href='#')
+												h5 Marketing research manager
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.text-muted(href='#')
+											i.fas.fa-map-marker-alt.mr-2
+											| Remote
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.btn-link.hvr-icon-forward.text-right.ml-auto.mx-2(href="/pages/page-apply.html")
+											| Learn more
+											small
+												i.fas.fa-chevron-right.ml-2.hvr-icon
+							li.list-group-item.py-4.px-4
+								.row
+									.col-lg-1.col-md-12.d-flex.align-items-center
+										.my-auto
+											.badge.bg-primary-light.rounded-lg.p-2.border-0.my-1
+												img(alt='Icon' src='/images/icons/primary/chart-up.svg', height='40')
+									.col-lg-7.col-md-12.d-flex.align-items-center
+										.my-auto
+											.my-2.initialism.text-muted Marketing
+											a.text-dark.font-weight-bold.mb-5(href='#')
+												h5 Community Support Manager (ML)
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.text-muted(href='#')
+											i.fas.fa-map-marker-alt.mr-2
+											| Munich, Germany
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.btn-link.hvr-icon-forward.text-right.ml-auto.mx-2(href="/pages/page-apply.html")
+											| Learn more
+											small
+												i.fas.fa-chevron-right.ml-2.hvr-icon
+							li.list-group-item.py-4.px-4
+								.row
+									.col-lg-1.col-md-12.d-flex.align-items-center
+										.my-auto
+											.badge.bg-primary-light.rounded-lg.p-2.border-0.my-1
+												img(alt='Icon' src='/images/icons/primary/magic-1.svg', height='40')
+									.col-lg-7.col-md-12.d-flex.align-items-center
+										.my-auto
+											.my-2.initialism.text-muted Design
+											a.text-dark.font-weight-bold.mb-5(href='#')
+												h5 Lead product designer
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.text-muted(href='#')
+											i.fas.fa-map-marker-alt.mr-2
+											| Oakland, USA
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.btn-link.hvr-icon-forward.text-right.ml-auto.mx-2(href="/pages/page-apply.html")
+											| Learn more
+											small
+												i.fas.fa-chevron-right.ml-2.hvr-icon
+							li.list-group-item.py-4.px-4
+								.row
+									.col-lg-1.col-md-12.d-flex.align-items-center
+										.my-auto
+											.badge.bg-primary-light.rounded-lg.p-2.border-0.my-1
+												img(alt='Icon' src='/images/icons/primary/chart-up.svg', height='40')
+									.col-lg-7.col-md-12.d-flex.align-items-center
+										.my-auto
+											.my-2.initialism.text-muted Marketing
+											a.text-dark.font-weight-bold.mb-5(href='#')
+												h5 Sales manager
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.text-muted(href='#')
+											i.fas.fa-map-marker-alt.mr-2
+											| London, UK
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.btn-link.hvr-icon-forward.text-right.ml-auto.mx-2(href="/pages/page-apply.html")
+											| Learn more
+											small
+												i.fas.fa-chevron-right.ml-2.hvr-icon
+							li.list-group-item.py-4.px-4
+								.row
+									.col-lg-1.col-md-12.d-flex.align-items-center
+										.my-auto
+											.badge.bg-primary-light.rounded-lg.p-2.border-0.my-1
+												img(alt='Icon' src='/images/icons/primary/magic-1.svg', height='40')
+									.col-lg-7.col-md-12.d-flex.align-items-center
+										.my-auto
+											.my-2.initialism.text-muted Design
+											a.text-dark.font-weight-bold.mb-5(href='#')
+												h5 UI/UX Designer (Senior)
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.text-muted(href='#')
+											i.fas.fa-map-marker-alt.mr-2
+											| Remote
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.btn-link.hvr-icon-forward.text-right.ml-auto.mx-2(href="/pages/page-apply.html")
+											| Learn more
+											small
+												i.fas.fa-chevron-right.ml-2.hvr-icon
+					.tab-pane.fade.show(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+						ul.list-group
+							li.list-group-item.py-4.px-4
+								.row
+									.col-lg-1.col-md-12.d-flex.align-items-center
+										.my-auto
+											.badge.bg-primary-light.rounded-lg.p-2.border-0.my-1
+												img(alt='Icon' src='/images/icons/primary/invader.svg', height='40')
+									.col-lg-7.col-md-12.d-flex.align-items-center
+										.my-auto
+											.my-2.initialism.text-muted Development
+											a.text-dark.font-weight-bold.mb-5(href='#')
+												h5 Senior Software Developer
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.text-muted(href='#')
+											i.fas.fa-map-marker-alt.mr-2
+											| Remote
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.btn-link.hvr-icon-forward.text-right.ml-auto.mx-2(href="/pages/page-apply.html")
+											| Learn more
+											small
+												i.fas.fa-chevron-right.ml-2.hvr-icon
+							li.list-group-item.py-4.px-4
+								.row
+									.col-lg-1.col-md-12.d-flex.align-items-center
+										.my-auto
+											.badge.bg-primary-light.rounded-lg.p-2.border-0.my-1
+												img(alt='Icon' src='/images/icons/primary/invader.svg', height='40')
+									.col-lg-7.col-md-12.d-flex.align-items-center
+										.my-auto
+											.my-2.initialism.text-muted Development
+											a.text-dark.font-weight-bold.mb-5(href='#')
+												h5 Senior Java Developer
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.text-muted(href='#')
+											i.fas.fa-map-marker-alt.mr-2
+											| Munich, Germany
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.btn-link.hvr-icon-forward.text-right.ml-auto.mx-2(href="/pages/page-apply.html")
+											| Learn more
+											small
+												i.fas.fa-chevron-right.ml-2.hvr-icon
+							li.list-group-item.py-4.px-4
+								.row
+									.col-lg-1.col-md-12.d-flex.align-items-center
+										.my-auto
+											.badge.bg-primary-light.rounded-lg.p-2.border-0.my-1
+												img(alt='Icon' src='/images/icons/primary/invader.svg', height='40')
+									.col-lg-7.col-md-12.d-flex.align-items-center
+										.my-auto
+											.my-2.initialism.text-muted Development
+											a.text-dark.font-weight-bold.mb-5(href='#')
+												h5 Marketing Automations Developer
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.text-muted(href='#')
+											i.fas.fa-map-marker-alt.mr-2
+											| Oakland, USA
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.btn-link.hvr-icon-forward.text-right.ml-auto.mx-2(href="/pages/page-apply.html")
+											| Learn more
+											small
+												i.fas.fa-chevron-right.ml-2.hvr-icon
+							li.list-group-item.py-4.px-4
+								.row
+									.col-lg-1.col-md-12.d-flex.align-items-center
+										.my-auto
+											.badge.bg-primary-light.rounded-lg.p-2.border-0.my-1
+												img(alt='Icon' src='/images/icons/primary/invader.svg', height='40')
+									.col-lg-7.col-md-12.d-flex.align-items-center
+										.my-auto
+											.my-2.initialism.text-muted Development
+											a.text-dark.font-weight-bold.mb-5(href='#')
+												h5 Senior Infrastructure Java Engineer
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.text-muted(href='#')
+											i.fas.fa-map-marker-alt.mr-2
+											| London, UK
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.btn-link.hvr-icon-forward.text-right.ml-auto.mx-2(href="/pages/page-apply.html")
+											| Learn more
+											small
+												i.fas.fa-chevron-right.ml-2.hvr-icon
+							li.list-group-item.py-4.px-4
+								.row
+									.col-lg-1.col-md-12.d-flex.align-items-center
+										.my-auto
+											.badge.bg-primary-light.rounded-lg.p-2.border-0.my-1
+												img(alt='Icon' src='/images/icons/primary/invader.svg', height='40')
+									.col-lg-7.col-md-12.d-flex.align-items-center
+										.my-auto
+											.my-2.initialism.text-muted Development
+											a.text-dark.font-weight-bold.mb-5(href='#')
+												h5 Senior Software Developer
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.text-muted(href='#')
+											i.fas.fa-map-marker-alt.mr-2
+											| Remote
+									.col-lg-2.col-md-12.d-flex.align-items-center
+										a.btn-link.hvr-icon-forward.text-right.ml-auto.mx-2(href="/pages/page-apply.html")
+											| Learn more
+											small
+												i.fas.fa-chevron-right.ml-2.hvr-icon
+				.row.py-12
+					.col.text-center
+						span.text-muted 
+							a(href="#") Write us anyway 
+							| if your experience doesn’t quite match any of the open positions
+
+
+		// FOOTER
+		include /utilities/_footer.pug
+		// light-footer(lead_bg_color, lead_border_color, lead_text_color, lead_btn_color, footer_bg, title_bg, text_color, link_color, subscribe_bg, subscribe_button, logo_file)
+		+light-footer('bg-white', '', '', 'btn-secondary', 'bg-light', 'text-dark', 'text-muted', 'text-muted', '', 'btn-gray', '/images/logo-mono-green.svg')
+
+		include /utilities/_scripts.pug

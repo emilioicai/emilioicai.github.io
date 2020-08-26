@@ -1,0 +1,63 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Buttons
+	p.mb-3.lead Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more. Read 
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/buttons/") Bootstrap documentation
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+	.border.mb-5.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|button.btn.mr-2.mb-2.btn-primary(type="button") 
+						|	|Primary
+						|button.btn.mr-2.mb-2.btn-secondary-light.text-secondary(type="button") 
+						|	|Secondary
+						|button.btn.mr-2.mb-2.btn-outline-success(type="button") 
+						|	|Success
+						|button.btn.mr-2.mb-2.btn-danger.btn-sm(type="button") 
+						|	|Danger
+						|button.btn.mr-2.mb-2.btn-warning.rounded-pill.px-4(type="button") 
+						|	|Warning
+						|button.btn.mr-2.mb-2.btn-info(type="button") 
+						|	|Info
+						|button.btn.mr-2.mb-2.btn-gray(type="button") 
+						|	|Gray
+						|button.btn.mr-2.mb-2.btn-dark.rounded-pill.px-4(type="button") 
+						|	|Dark
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;button class="btn mr-2 mb-2 btn-primary" type="button">Primary&lt;/button>
+						|&lt;button class="btn mr-2 mb-2 btn-secondary-light text-secondary" type="button">Secondary&lt;/button>
+						|&lt;button class="btn mr-2 mb-2 btn-outline-success" type="button">Success&lt;/button>
+						|&lt;button class="btn mr-2 mb-2 btn-danger btn-sm" type="button">Danger&lt;/button>
+						|&lt;button class="btn mr-2 mb-2 btn-warning rounded-pill px-4" type="button">Warning&lt;/button>
+						|&lt;button class="btn mr-2 mb-2 btn-info" type="button">Info&lt;/button>
+						|&lt;button class="btn mr-2 mb-2 btn-gray" type="button">Gray&lt;/button>
+						|&lt;button class="btn mr-2 mb-2 btn-dark rounded-pill px-4" type="button">Dark&lt;/button>
+		.bg-white.p-3.rounded.rounded-bottom
+			button.btn.mr-2.mb-2.btn-primary(type="button") Primary
+			button.btn.mr-2.mb-2.btn-secondary-light.text-secondary(type="button") Secondary
+			button.btn.mr-2.mb-2.btn-outline-success(type="button") Success
+			button.btn.mr-2.mb-2.btn-danger.btn-sm(type="button") Danger
+			button.btn.mr-2.mb-2.btn-warning.rounded-pill.px-4(type="button") Warning
+			button.btn.mr-2.mb-2.btn-info(type="button") Info
+			button.btn.mr-2.mb-2.btn-gray(type="button") Gray
+			button.btn.mr-2.mb-2.btn-dark.rounded-pill.px-4(type="button") Dark
+
+	p.lead Visit
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/buttons/") 
+			| Bootstrap documentation
+		|
+		| to learn more about this component

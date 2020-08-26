@@ -1,0 +1,486 @@
+doctype html
+html(lang="en")
+	head
+		include /utilities/_head.pug
+	body
+		include /utilities/_navbar.pug
+		+navbar-mixin('navbar-light', 'btn-secondary')
+		
+
+		// HERO
+		#hero.bg-info-light
+			.container.d-flex.flex-column.jarallax(style="min-height: 46rem; background: url('/images/bg/bg_04.svg') center center no-repeat;")
+				.row.my-auto.pt-0.pt-lg-5
+					.col-lg-5.my-auto.pt-16.pb-6.pt-lg-0.pb-lg-0.mr-auto
+						.mb-3.d-flex.align-items-center
+							.icon.icon-sm.bg-secondary-light.rounded.text-secondary.mr-2
+								i.fas.fa-clock
+							span.text-muted Version 2.0.0 
+						h1.display-3.mb-2 Do it better with&nbsp;Replacer
+						p.lead.mb-5.pr-4
+							| Replacer is a perfect tool to start making landing pages with Bootstrap 4. We provide content-oriented, clean and mobile-first layouts, which you can easily customize
+						.mb-4
+							a.btn.btn-secondary.rounded-pill.px-5.mr-3(href="#")
+								| Register account
+							a.hvr-grow(href='https://www.youtube.com/watch?v=9E6b3swbnWg', data-fancybox='gallery')
+								img.shadow-sm.rounded-circle(alt='Play' src='/images/assets/video-play.svg', height='50')
+						span.text-muted.small
+							span
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star-half-alt.mr-2
+							span 4.8 points, based on 267 reviews
+					.col-lg-6.col-md-12.col-sm-12.my-auto(data-aos="fade-left") 
+						img.w-100(alt='Illustration' src='/images/illustrations/illustration_7.png')
+
+
+		// NOTICE
+		#notice
+			.container(data-aos="fade")
+				.row.py-3
+					.col
+						.alert.py-0.my-0.mx-auto.d-flex.flex-column.flex-lg-row.justify-content-center
+							.my-auto.py-2.text-center
+								span.my-3.badge.badge-pill.badge-primary-light.text-primary.initialism.mx-3.d-inline
+									i.fa.fa-bolt.mr-2
+									| Discount
+							.my-auto.py-2.text-center
+								span.text-muted To get &ndash;10% off use this coupone code: 
+								mark.rounded.px-2 RPLCR10
+				hr
+
+
+		// FEATURES
+		#features.pt-6.pb-3(data-aos="fade")
+			.container
+				.row.py-5
+					.col-lg-4.col-md-12.mb-4.text-center
+						.icon.bg-primary-light.rounded-lg.mb-4.p-2
+							img(alt='Icon' src='/images/icons/primary/cursor-click-2.svg', height='48')
+						h5.mb-3 Content-oriented design
+						p.lead.mx-2 If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.col-lg-4.col-md-12.mb-4.text-center
+						.icon.bg-primary-light.rounded-lg.mb-4.p-2
+							img(alt='Icon' src='/images/icons/primary/magic-1.svg', height='48')
+						h5.mb-3 Background system
+						p.lead.mx-2 If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.col-lg-4.col-md-12.mb-4.text-center
+						.icon.bg-primary-light.rounded-lg.mb-4.p-2
+							img(alt='Icon' src='/images/icons/primary/layers-3.svg', height='48')
+						h5.mb-3 Free updates
+						p.lead.mx-2 If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+
+
+		// VERTICAL TABS
+		#vertical-tabs.pb-6.pt-10.bg-light.border-top
+			.container(data-aos="fade")
+				.row
+					.col-lg-5.col-md-12.col-sm-12.my-auto.mr-auto.py-4
+						ul.nav.nav-v-tabs(role='tablist')
+							li.nav-item
+								a#home-tab.nav-link.active.py-3.px-7.text-dark(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true')
+									.mb-3.d-flex.align-items-center
+										.icon.icon-sm.bg-secondary-light.text-secondary.rounded.mr-3
+											i.fas.fa-cog
+										span.text-muted.initialism Killer feature
+									p.mb-0.pb-0.text-muted Replacer is a perfect tool to start making landing pages with Bootstrap 4. We provide content-oriented, clean, and mobile-first layouts, which you can easily customize for your special needs
+							li.nav-item
+								a#profile-tab.nav-link.py-3.px-7.text-dark(data-toggle='tab', href='#profile', role='tab', aria-controls='profile', aria-selected='false')
+									.mb-3.d-flex.align-items-center
+										.icon.icon-sm.bg-secondary-light.text-secondary.rounded.mr-3
+											i.fas.fa-user
+										span.text-muted.initialism Awesome feature
+									p.mb-0.pb-0.text-muted Replacer is a perfect tool to start making landing pages with Bootstrap 4. We provide content-oriented, clean, and mobile-first layouts, which you can easily customize for your special needs
+					.col-lg-6.col-md-12.col-sm-12.my-auto
+						.tab-content 
+							#home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+								img.m-auto.w-100.rounded.shadow-sm.border(src='/images/devices/browser_02.png', alt='Screenshot')
+							#profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+								img.m-auto.w-100.rounded.shadow-sm.border(src='/images/devices/browser_03.png', alt='Screenshot')
+
+
+		// BRANDS
+		#brands.pb-5.bg-light.border-bottom
+			.container
+				.row
+					.col-lg-5.col-md-12.mx-auto.text-center.py-8(data-aos="fade-up")
+						img.mb-6(alt='Logo' src='/images/brands/colored/amazon.svg', height='48')
+						p.lead.mx-3.mb-5 Replacer uses Bootstrap components to the fullest. We didn't code new CSS styles if Bootstrap already had the solution, so the theme loads quickly and easy to customize, and in many cases, you won't need to read more documentation than necessary
+						.d-flex.align-items-center.mx-auto.text-center.justify-content-center
+							img.rounded-circle.my-auto.border(alt='Photo' src='/images/people/4.jpg', width="48")
+							.ml-3.text-left
+								.initialism.text-primary Maria Jacobs
+								.text-muted Designer
+					.col-lg-5.col-md-12.mx-auto.text-center.py-8(data-aos="fade-up")
+						img.mb-6(alt='Logo' src='/images/brands/colored/babel.svg', height='48')
+						p.lead.mx-3.mb-5 Replacer uses Bootstrap components to the fullest. We didn't code new CSS styles if Bootstrap already had the solution, so the theme loads quickly and easy to customize, and in many cases, you won't need to read more documentation than necessary
+						.d-flex.align-items-center.mx-auto.text-center.justify-content-center
+							img.rounded-circle.my-auto.border(alt='Photo' src='/images/people/6.jpg', width="48")
+							.ml-3.text-left
+								.initialism.text-primary Mark Jacobs
+								.text-muted Manager
+		
+
+		// PRICING
+		#pricing.pt-12.pb-8
+			.container
+				.row(data-aos="fade")
+					.col.text-center
+						h2.display-3.mb-5 Simple pricing
+						nav.mb-5
+							.nav.nav-tabs.d-inline-flex.mx-auto(role="tablist")
+								a.nav-item.nav-link.px-4.active(id="nav-tab-4" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="true")
+									h5
+										| Monthly 
+								a.nav-item.nav-link.px-4(id="nav-tab-5" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-5" aria-selected="true")
+									h5 
+										| Annually
+										small.mb-1.ml-1
+											mark.bg-white.border.border-primary.text-primary.rounded-lg.px-2.font-weight-normal &minus;20%
+				.tab-content.rounded(data-aos="fade-up")
+					.tab-pane.fade.active.show(id="tab-4" role="tabpanel" aria-labelledby="nav-tab-4")
+						.row
+							.col-lg-12.mx-lg-auto
+								.card-group
+									.card
+										.card-body.pt-6.px-6
+											.icon.mb-4
+												img(alt='Icon' src='/images/icons/primary/home.svg', height='64')
+											h3.h5 Personal
+											p.lead.mb-4 For personal usage
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span 5 Collaborators
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Export reports
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Mobile app
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Integrations
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Support
+										.card-footer.bg-transparent.border-0.px-6.py-0
+											div.mb-4
+												span.display-4
+													| $29
+												span.initialism.text-muted
+													| 
+													|
+													| / Month
+											a.btn.btn-outline-primary.w-100.mb-5(href='#') Get started
+									.card
+										.card-body.pt-6.px-6
+											.icon.mb-4
+												img(alt='Icon' src='/images/icons/primary/users-group.svg', height='64')
+											h3.h5 Team
+											p.lead.mb-4 For teams up to 5 members
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span 5 Collaborators
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Export reports
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Mobile app
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Integrations
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Support
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span HTTPS
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+										.card-footer.bg-transparent.border-0.px-6.py-0
+											div.mb-4
+												span.display-4
+													| $129
+												span.initialism.text-muted
+													| 
+													|
+													| / Month
+											a.btn.btn-secondary.w-100.mb-5(href='#') Get started
+									.card
+										.card-body.pt-6.px-6
+											.icon.mb-4
+												img(alt='Icon' src='/images/icons/primary/moon.svg', height='64')
+											h3.h5 Enterprise
+											p.lead.mb-4 For real big teams
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span 5 Collaborators
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Export reports
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Mobile app
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Integrations
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Support
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span HTTPS
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-5.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span SSL
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+										.card-footer.bg-transparent.border-0.px-6.py-0
+											div.mb-4
+												span.display-4
+													| $999
+												span.initialism.text-muted
+													| 
+													|
+													| / Month
+											a.btn.btn-outline-primary.w-100.mb-5(href='#') Get started 
+					.tab-pane.fade.show(id="tab-5" role="tabpanel" aria-labelledby="nav-tab-5")
+						.row
+							.col-lg-12.mx-lg-auto
+								.card-group
+									.card
+										.card-body.pt-6.px-6
+											.icon.mb-4
+												img(alt='Icon' src='/images/icons/primary/home.svg', height='64')
+											h3.h5 Personal
+												|
+												|
+												span.text-muted.font-weight-normal (annually)
+											p.lead.mb-4 For personal usage
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span 5 Collaborators
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Export reports
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Mobile app
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Integrations
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Support
+										.card-footer.bg-transparent.border-0.px-6.py-0
+											div.mb-4
+												span.display-4
+													| $129
+												span.initialism.text-muted
+													| 
+													|
+													| / Month
+											a.btn.btn-outline-primary.w-100.mb-5(href='#') Get started
+									.card
+										.card-body.pt-6.px-6
+											.icon.mb-4
+												img(alt='Icon' src='/images/icons/primary/users-group.svg', height='64')
+											h3.h5 Team
+												|
+												|
+												span.text-muted.font-weight-normal (annually)
+											p.lead.mb-4 For teams up to 5 members
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span 5 Collaborators
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Export reports
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Mobile app
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Integrations
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Support
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span HTTPS
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+										.card-footer.bg-transparent.border-0.px-6.py-0
+											div.mb-4
+												span.display-4
+													| $999
+												span.initialism.text-muted
+													| 
+													|
+													| / Month
+											a.btn.btn-secondary.w-100.mb-5(href='#') Get started
+									.card
+										.card-body.pt-6.px-6
+											.icon.mb-4
+												img(alt='Icon' src='/images/icons/primary/moon.svg', height='64')
+											h3.h5 Enterprise
+												|
+												|
+												span.text-muted.font-weight-normal (annually)
+											p.lead.mb-4 For real big teams
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span 5 Collaborators
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Export reports
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Mobile app	
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Integrations
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span Support
+											.mb-2.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span HTTPS
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+											.mb-5.d-flex.align-items-start
+												.text-primary.mr-3
+													i.fas.fa-check
+												span SSL
+													a.mx-2.text-muted(href="#", data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+														i.fas.fa-question-circle
+										.card-footer.bg-transparent.border-0.px-6.py-0
+											div.mb-4
+												span.display-4
+													| $1999
+												span.initialism.text-muted
+													| 
+													|
+													| / Month
+											a.btn.btn-outline-primary.w-100.mb-5(href='#') Get started 
+
+
+		// TESTIMONIALS
+		#testimonials.bg-light.border-top(data-aos="fade-up")
+			.container.jarallax(style="background: url('/images/bg/bg_03.svg') center center; background-size: auto 100%;")
+				.row.text-center.py-12
+
+					.col-lg-10.col-md-12.col-sm-12.mx-auto
+						.carousel-1-arrows
+
+							.text-center
+								img.rounded-lg.mb-4.mx-auto(alt='Photo' src='/images/people/1.jpg', height="80")
+								.mb-4.lead.mx-0.mx-lg-20.mx-md-10.px-6
+									| Replacer uses Bootstrap components to the fullest. We didn't code new CSS styles if Bootstrap already had the solution, so the theme loads quickly and easy to customize, and in many cases, you won't need to read more documentation than necessary
+								h5.mb-2
+									| Max Markes 
+								span.initialism.text-muted Intercome
+
+							.text-center
+								img.rounded-lg.mb-4.mx-auto(alt='Photo' src='/images/people/2.jpg', height="80")
+								.mb-4.lead.mx-0.mx-lg-20.mx-md-10.px-6
+									| Replacer uses Bootstrap components to the fullest. We didn't code new CSS styles if Bootstrap already had the solution, so the theme loads quickly and easy to customize, and in many cases, you won't need to read more documentation than necessary
+								h5.mb-2
+									| Max Markes 
+								span.initialism.text-muted Intercome
+
+							.text-center
+								img.rounded-lg.mb-4.mx-auto(alt='Photo' src='/images/people/3.jpg', height="80")
+								.mb-4.lead.mx-0.mx-lg-20.mx-md-10.px-6
+									| Replacer uses Bootstrap components to the fullest. We didn't code new CSS styles if Bootstrap already had the solution, so the theme loads quickly and easy to customize, and in many cases, you won't need to read more documentation than necessary
+								h5.mb-2
+									| Max Markes 
+								span.initialism.text-muted Intercome
+
+					
+					
+
+
+		// FOOTER
+		include /utilities/_footer.pug
+		// light-footer(lead_bg_color, lead_border_color, lead_text_color, lead_btn_color, footer_bg, title_bg, text_color, link_color, subscribe_bg, subscribe_button, logo_file)
+
+		+light-footer('bg-white', '', '', 'btn-secondary', 'bg-white', 'text-dark', 'text-muted', 'text-muted', '', 'btn-gray', '/images/logo-mono-green.svg')
+
+		include /utilities/_scripts.pug

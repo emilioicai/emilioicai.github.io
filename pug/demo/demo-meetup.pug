@@ -1,0 +1,263 @@
+doctype html
+html(lang="en")
+	head
+		include /utilities/_head.pug
+	body 
+		include /utilities/_navbar.pug
+		+navbar-mixin('navbar-dark', 'btn-primary')
+
+
+		// HERO
+		#hero.bg-dark(style="background: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5)) 0%, url('/images/photos/room-FZrn8fhqpp8-unsplash.jpg') center; background-size: cover;") 
+			.container.d-flex.flex-column.hero-height
+				.row.my-auto(data-aos="fade-up")
+					.col-lg-9.col-md-12.mx-auto.text-center.pt-16
+						h1.display-2.mb-3.text-white Create a world that inspires humans
+						p.lead.text-white.mb-6.mx-0.mx-lg-15 Replacer has an extremely solid and clean design to focus your visitors on what you want to tell them, and this lightweight design will never go out of trends
+						.mb-4
+							a.btn.btn-secondary.rounded-pill.px-4.mr-3(href="#")
+								| Register account
+							a.hvr-grow(href='https://www.youtube.com/watch?v=9E6b3swbnWg', data-fancybox='gallery')
+								img(alt='Play' src='/images/assets/video-play.svg', height='50')
+				.row.mt-auto
+					.col
+						.carousel-6.py-4(data-aos="fade")
+							.slick-slide.py-4
+								img.m-auto.text-center(alt='Logo' src='/images/brands/white/tc.svg', height='28')
+							.slick-slide.py-4
+								img.m-auto.text-center(alt='Logo' src='/images/brands/white/forbes.svg', height='28')
+							.slick-slide.py-4
+								img.m-auto.text-center(alt='Logo' src='/images/brands/white/babel.svg', height='28')
+							.slick-slide.py-4
+								img.m-auto.text-center(alt='Logo' src='/images/brands/white/yahoo.svg', height='28')
+							.slick-slide.py-4
+								img.m-auto.text-center(alt='Logo' src='/images/brands/white/cnbc.svg', height='28')
+							.slick-slide.py-4
+								img.m-auto.text-center(alt='Logo' src='/images/brands/white/amazon.svg', height='28')
+							.slick-slide.py-4
+								img.m-auto.text-center(alt='Logo' src='/images/brands/white/vimeo.svg', height='28')
+
+
+		// NOTICE
+		#notice(data-aos="fade")
+			.alert.alert-primary-light.text-primary.rounded-0.border-0.py-4.px-0.my-1(role="alert")
+				.container
+					.row
+						.col.d-flex.flex-column.flex-lg-row.flex-xl-row
+							.my-auto.mr-auto.text-muted
+								span.icon.bg-white.text-secondary.rounded.border.mr-2
+									i.fas.fa-user
+								|  Develop beautiful landing pages, using top-notch layouts
+							.my-auto.py-1
+								a.btn-link.hvr-icon-forward.my-auto(href="/pages/page-apply.htm")
+									| Request a demo
+									small
+										i.fas.fa-chevron-right.ml-2.hvr-icon
+
+
+		// COUNTERS
+		#counters.pt-12.pb-6
+			.container(data-aos="fade")
+				.row
+					.col-lg-4.col-md-6.col-sm-12.mb-5.text-center
+						h2.display-4.mb-2.text-dark
+							| $
+							span.counter#counter_4
+						.initialism.text-muted.mb-3 Main prize
+						p.lead.mx-2 If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.col-lg-4.col-md-6.col-sm-12.mb-5.text-center.mx-auto
+						h2.display-4.mb-2.text-dark
+							span.counter#counter_3
+						.initialism.text-muted.mb-3 Professionals
+						p.lead.mx-2 If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.col-lg-4.col-md-6.col-sm-12.mb-5.text-center
+						h2.display-4.mb-2.text-dark
+							span.counter#counter_1
+						.initialism.text-muted.mb-3 Experts
+						p.lead.mx-2 If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+
+
+		// FEATURES
+		#features.bg-light.pb-4.pt-8
+			.container
+				.row.mb-4(data-aos="fade")
+					.col-lg-5.col-md-12.my-auto.py-5.mr-auto(data-aos="fade")
+						.initialism.mb-4.text-muted Killer features
+						.row.mb-1
+							.col.d-flex.py-2
+								img(alt='Icon' src='/images/icons/primary/energy.svg', height='48')
+								.ml-3
+									h3.h5 Background system
+									p.text-muted.mr-5 Replacer uses Bootstrap components to the fullest. We didn't code new CSS styles if Bootstrap already had the solution, so the theme loads quickly and easy to customize, and in many cases, you won't need to read more documentation than necessary
+						.row.mb-1
+							.col.d-flex.py-2
+								img(alt='Icon' src='/images/icons/primary/mac.svg', height='48')
+								.ml-3
+									h3.h5 Content-oriented design
+									p.text-muted.mr-5 Replacer provides an extremely solid and clean design to focus your visitors on what you want to tell them, and this lightweight design will never go out of trends
+						hr.mt-2.mb-4
+						a.btn-link.text-muted(href="#")
+							i.fas.fa-compass.mr-2
+							| Learn more
+
+					.col-lg-6.col-md-12.my-auto
+						img.m-auto.w-100(alt='Illustration' src='/images/illustrations/illustration_6.png')
+
+
+		#experts.bg-light.pb-12
+			.container
+				.row.mb-6.text-center(data-aos="fade")
+					.col
+						h2.display-3.mb-4
+							| Meet our experts
+						a.btn-link.hvr-icon-forward(href="/pages/page-apply.html")
+							| Request a demo
+							small
+								i.fas.fa-chevron-right.ml-2.hvr-icon
+				.row.carousel-3-dots.mb-5(data-aos="fade-up")
+					.card.mb-3.border-0.bg-transparent.bg-transparent
+						.card-body.text-center
+							img.rounded-circle.mb-4.mx-auto(alt='Photo' src='/images/people/1.jpg', height="80")
+							h5.mb-3
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.mb-3.border-0.bg-transparent
+						.card-body.text-center
+							img.rounded-circle.mb-4.mx-auto(alt='Photo' src='/images/people/2.jpg', height="80")
+							h5.mb-3
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.mb-3.border-0.bg-transparent
+						.card-body.text-center
+							img.rounded-circle.mb-4.mx-auto(alt='Photo' src='/images/people/3.jpg', height="80")
+							h5.mb-3
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.mb-3.border-0.bg-transparent
+						.card-body.text-center
+							img.rounded-circle.mb-4.mx-auto(alt='Photo' src='/images/people/4.jpg', height="80")
+							h5.mb-3
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.mb-3.border-0.bg-transparent
+						.card-body.text-center
+							img.rounded-circle.mb-4.mx-auto(alt='Photo' src='/images/people/5.jpg', height="80")
+							h5.mb-3
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.mb-3.border-0.bg-transparent
+						.card-body.text-center
+							img.rounded-circle.mb-4.mx-auto(alt='Photo' src='/images/people/6.jpg', height="80")
+							h5.mb-3
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+
+
+		// CONTACT
+		#contact.py-12
+			.container
+				.row
+					.col-lg-5.col-md-12.col-sm-12.mr-auto.my-auto
+						.d-flex.align-items-center.mb-4
+							.icon.icon-sm.bg-secondary-light.text-secondary.rounded.mr-2
+								i.fas.fa-fire-alt
+							span.text-muted Contact us
+						p.mb-3.mr-10.lead.text-dark
+							| 778 Folsom Avenue, Suite A-200, San&nbsp;Francisco, CA 54107
+						hr.mt-5.mb-6
+						.row.mt-2
+							.col-lg-5
+								.initialism.text-muted.mb-3 Social
+								ul.list-unstyled
+									li.mb-2
+										a.btn.text-dark.p-0(href='#')
+											.icon.icon-sm.bg-gray.rounded.mr-2
+												i.fab.fa-twitter
+											| Twitter 
+									li.mb-2
+										a.btn.text-dark.p-0(href='#')
+											.icon.icon-sm.bg-gray.rounded.mr-2
+												i.fab.fa-facebook
+											| Facebook
+									li.mb-2
+										a.btn.text-dark.p-0(href='#')
+											.icon.icon-sm.bg-gray.rounded.mr-2
+												i.fab.fa-dribbble
+											| Dribbble
+									li.mb-2
+										a.btn.text-dark.p-0(href='#')
+											.icon.icon-sm.bg-gray.rounded.mr-2
+												i.fab.fa-github
+											| Github
+							.col-lg-6
+								.initialism.text-muted.mb-3 Phones
+								ul.list-unstyled.mb-5
+									li.mb-2
+										a.btn.text-dark.p-0(href='tel:1-408-555-5555')
+											.icon.icon-sm.bg-gray.rounded.mr-2
+												i.fas.fa-phone
+											| +23 894 239 00 11
+									li.mb-2
+										a.btn.text-dark.p-0(href='tel:1-408-555-5555')
+											.icon.icon-sm.bg-gray.rounded.mr-2
+												i.fas.fa-phone
+											| +23 852 444 22 56
+									li.mb-2
+										a.btn.text-dark.p-0(href='tel:1-408-555-5555')
+											.icon.icon-sm.bg-gray.rounded.mr-2
+												i.fas.fa-phone
+											| +23 852 234 11 64
+					.col-lg-6.col-md-12.my-auto
+						script(src='/js/mapbox-gl.js')
+						div.rounded-lg#map(style='width: 100%; height: 380px;')
+						script.
+							mapboxgl.accessToken = 'pk.eyJ1IjoiYWxleGV5bGk0NCIsImEiOiJjazJseDJxeXkwYjFmM2NvZm8zdTc3enNsIn0.gdidA526YuiOQwOWFljLdw';
+							var map = new mapboxgl.Map({
+								container: 'map',
+								style: 'mapbox://styles/mapbox/streets-v11',
+								center: [-122.39, 37.79], // starting position [lng, lat]
+								zoom: 17 // starting zoom
+							});
+
+
+		// FAQ
+		#faq.bg-light.border-top
+			.container.py-10.jarallax(style="background: url('/images/bg/bg_09.svg') center center; background-size: auto 100%;")
+				.row
+					.col-lg-9.col-md-12.col-sm-12.mx-auto
+						.mb-8.initialism.text-muted.text-center Popular questions
+						ul.list-group.mb-9.rounded
+							mixin question(number, question, answer)
+								.card.accordion.border-0.p-0
+									a.card-header.btn.btn-link.px-1.py-2.mb-0.text-dark.collapsed.lead.text-left.border-0.rounded.d-flex(href="#" data-toggle='collapse', data-target="#a" + number, aria-expanded='true', aria-controls="a" + number, id= "q" + number)
+										span.lead.text-dark.mb-0.pb-0.mr-5= question
+									.card-body.collapse.text-muted.pt-0.pb-0.px-1.border-0(id= "a" + number, aria-labelledby = "q" + number)
+										p.my-3.py-0= answer 
+							li.list-group-item
+								+question(1, "How do I cancel service? ", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(2, "Do I need another web host?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(3, "Can I switch plans?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(4, "Do I need another web host?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+						.text-center
+							a.btn-link.text-primary.hvr-icon-forward(href="/pages/page-apply.html")
+								| Ask your question
+								small
+									i.fas.fa-chevron-right.ml-2.hvr-icon
+
+
+		// FOOTER 
+		include /utilities/_footer.pug
+		// light-footer(lead_bg_color, lead_border_color, lead_text_color, lead_btn_color, footer_bg, title_bg, text_color, link_color, subscribe_bg, subscribe_button, logo_file)
+
+		+light-footer('bg-light', '', '', 'btn-secondary', 'bg-white', 'text-dark', 'text-muted', 'text-muted', '', 'btn-gray', '/images/logo-mono-green.svg')
+
+		include /utilities/_scripts.pug

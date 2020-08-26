@@ -1,0 +1,322 @@
+doctype html
+html(lang="en")
+	head
+		include /utilities/_head.pug
+	body
+		include /utilities/_navbar.pug
+		+navbar-mixin('navbar-light', 'btn-primary')
+
+
+		// HERO 
+		#hero.bg-white
+			.container.my-auto.d-flex.flex-column(style="min-height: 46rem;")
+				.row.my-auto
+					.col-lg-6.col-md-12.my-auto.position-lg-absolute.vw-50.position-xl-absolute.d-flex.bg-primary-light.pt-5(style="left:0; top: 0; min-height: 46rem;", data-aos="fade")
+						.text-center.m-auto
+							img.w-100.my-5(alt='Macbook' src='/images/devices/macbook_00.png', style="max-width: 600px")
+							.text-muted.mb-2
+								| 4.8 points in App Store
+							.text-warning
+								span.icon.icon-sm.rounded.text-warning.bg-white.mb-3.mr-1
+									i.fas.fa-star
+								span.icon.icon-sm.rounded.text-warning.bg-white.mb-3.mr-1
+									i.fas.fa-star
+								span.icon.icon-sm.rounded.text-warning.bg-white.mb-3.mr-1
+									i.fas.fa-star
+								span.icon.icon-sm.rounded.text-warning.bg-white.mb-3.mr-1
+									i.fas.fa-star
+								span.icon.icon-sm.rounded.text-warning.bg-white.mb-3.mr-1
+									i.fas.fa-star-half-alt
+					.col-lg-5.col-md-12.my-auto.pt-8.pb-10.ml-auto(data-aos="fade-left")
+						h1.display-3.mb-2.pt-0.pt-lg-7 Do it better with&nbsp;Replacer
+						p.lead.mb-4
+							| Replacer is a modern and powerful theme for perfectionists with deadlines. It provides content-oriented, clean and mobile-first design
+						.input-group.mb-3
+							input.form-control.rounded.mx-0(type='text', placeholder="Email", aria-label="Email")
+							input.form-control.rounded.mx-1(type='password', placeholder="Password", aria-label="Password")
+							button.btn.btn-secondary(type='button') Register
+						.form-check.mb-4
+							input.form-check-input.mr-2(type='checkbox', value='', id='checkbox1')
+							label.form-check-label.small.text-muted(for="checkbox1")
+								| I agree with
+								|
+								a(href="/pages/page-privacy.html") Privacy Policy
+								|
+								| and
+								|
+								a(href="/pages/page-privacy.html") Terms
+						.mb-3.small.text-muted
+							| You can use social networks to register:
+						a.btn.btn-facebook.rounded-pill.btn-sm.px-3.mr-2(href='#')
+							i.fab.fa-facebook-f.mr-2
+							| Continue
+						a.icon.rounded-circle.btn.btn-gray.mr-2(href="#")
+							i.fab.fa-twitter
+						a.icon.rounded-circle.btn.btn-gray(href="#")
+							i.fab.fa-google
+
+
+		// NOTICE
+		#notice
+			.container(data-aos="fade")
+				.row.py-3
+					.col
+						.alert.py-0.my-0.mx-auto.d-flex.flex-column.flex-lg-row.justify-content-center
+							.my-auto.py-2.text-center
+								span.my-3.badge.badge-pill.badge-secondary-light.text-secondary.initialism.mx-3.d-inline
+									i.fa.fa-bolt.mr-2
+									| Discount
+							.my-auto.py-2.text-center
+								span.text-muted To get &ndash;10% off use this coupone code: 
+								mark.rounded.px-2 RPLCR10
+				hr
+
+
+		// FEATURES
+		#features.pt-3(data-aos="fade")
+			.container
+				.row.pt-8.pb-6
+					.col-lg-3.col-md-10.col-sm-12.mb-4
+						span.badge.badge-primary-light.rounded-lg.mb-3.p-2
+							img.mx-auto(alt='Icon' src='/images/icons/primary/cursor-click-2.svg', height='40')
+						h3.h5.mb-2 Design
+						p.text-muted.mr-5
+							| Replacer is a perfect tool to start making landing pages with Bootstrap 4. We provide content-oriented, clean and mobile-first layouts, which you can easily customize
+					.col-lg-3.col-md-10.col-sm-12.mb-4
+						span.badge.badge-primary-light.rounded-lg.mb-3.p-2
+							img.mx-auto(alt='Icon' src='/images/icons/primary/magic-1.svg', height='40')
+						h3.h5.mb-2 Marketing
+						p.text-muted.mr-5
+							| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background
+					.col-lg-3.col-md-10.col-sm-12.mb-4
+						span.badge.badge-primary-light.rounded-lg.mb-3.p-2
+							img.mx-auto(alt='Icon' src='/images/icons/primary/layers-3.svg', height='40')
+						h3.h5.mb-2 Free updates
+						p.text-muted.mr-5
+							| Replacer is constantly growing and updatable theme, and we have long-term plans to making it better according to your feedback
+					.col-lg-3.col-md-10.col-sm-12.mb-4
+						span.badge.badge-primary-light.rounded-lg.mb-3.p-2
+							img.mx-auto(alt='Icon' src='/images/icons/primary/user.svg', height='40')
+						h3.h5.mb-2 Free updates
+						p.text-muted.mr-5
+							| Replacer is constantly growing and updatable theme, and we have long-term plans to making it better according to your feedback
+
+
+		// CONTENT
+		#content.bg-light.border-top.border-bottom
+			.container
+				.row
+					.col-lg-5.col-md-12.mr-auto.my-auto.py-6(data-aos="fade")
+						.mb-3.initialism.text-primary Killer features
+						p.lead.mb-5.mr-6
+							| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system
+						.row
+							.col-lg-6.col-md-12
+								.icon.icon-sm.rounded.text-secondary.bg-secondary-light.mb-3
+									i.fa.fa-bone
+								h3.h5.mb-2 Design
+								p.text-muted.mb-0
+									| Replacer is constantly growing and updatable theme, and we have long-term plans to making it better according to your feedback
+							.col-lg-6.col-md-12
+								.icon.icon-sm.rounded.text-secondary.bg-secondary-light.mb-3
+									i.fas.fa-adjust
+								h3.h5.mb-2 Marketing
+								p.text-muted.mb-0
+									| Replacer is constantly growing and updatable theme, and we have long-term plans to making it better according to your feedback
+					.col-lg-6.col-md-12.my-auto(data-aos="fade")
+						img.w-100(alt='Illustration' src='/images/illustrations/illustration_4.png')
+
+
+		// TESIMONIALS
+		#testimonials
+			.container.pt-8.pb-16
+				.row.carousel-3-dots(data-aos="fade-top")
+					.card.pt-3.mb-3.rounded-0.border-0.mx-1.bg-transparent
+						.card-body.text-center
+							.mb-3.text-warning
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star-half-alt.mr-2
+							h5.mb-4
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.pt-3.mb-3.rounded-0.border-0.mx-1.bg-transparent
+						.card-body.text-center
+							.mb-3.text-warning
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star-half-alt.mr-2
+							h5.mb-4
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.pt-3.mb-3.rounded-0.border-0.mx-1.bg-transparent
+						.card-body.text-center
+							.mb-3.text-warning
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star-half-alt.mr-2
+							h5.mb-4
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.pt-3.mb-3.rounded-0.border-0.mx-1.bg-transparent
+						.card-body.text-center
+							.mb-3.text-warning
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star-half-alt.mr-2
+							h5.mb-4
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.pt-3.mb-3.rounded-0.border-0.mx-1.bg-transparent
+						.card-body.text-center
+							.mb-3.text-warning
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star-half-alt.mr-2
+							h5.mb-4
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.pt-3.mb-3.rounded-0.border-0.mx-1.bg-transparent
+						.card-body.text-center
+							.mb-3.text-warning
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star-half-alt.mr-2
+							h5.mb-4
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+
+
+		// FORM
+		#form.bg-light.border-top.border-bottom
+			.container.py-8
+				.row(data-aos="fade")
+					.col-lg-5.col-md-10.my-auto.mr-auto
+						.mb-6.text-muted.initialism Key features
+						.row.mb-3
+							.col-lg-2.col-md-2
+								.icon.bg-primary.rounded-lg.mb-4.p-2
+									img(alt='Icon' src='/images/icons/white/cursor-click-2.svg', height='48')
+							.col-lg-9.col-md-8
+								h3.h5.mb-2 Get started now!
+								p.text-muted Replacer is a perfect tool to start making landing pages with Bootstrap 4. We provide content-oriented, clean, and mobile-first layouts, which you can easily customize for your special needs
+						.row.mb-4
+							.col-lg-2.col-md-2
+								.icon.bg-primary.rounded-lg.mb-4.p-2
+									img(alt='Icon' src='/images/icons/white/location.svg', height='48')
+							.col-lg-9.col-md-8
+								h3.h5.mb-2 Perfect design
+								p.text-muted Replacer is a perfect tool to start making landing pages with Bootstrap 4. We provide content-oriented, clean, and mobile-first layouts, which you can easily customize for your special needs
+						hr.mt-3.mb-4
+						a.btn-link.text-primary(href="#")
+							i.fas.fa-compass.mr-2
+							| View all features
+					.col-lg-6.col-md-12.my-auto.ml-auto.py-5
+						.card.rounded-lg.shadow-sm
+							.card-header.px-lg-7.px-4.pt-3.pb-0.border-0.bg-transparent
+								.row.d-flex.justify-content-center
+									.col
+										nav
+											.nav.nav-tabs.text-center(role="tablist")
+												a.nav-item.nav-link.font-weight-bold.px-3.active(id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="true")
+													h5 Login
+												a.nav-item.nav-link.font-weight-bold.px-3(id="nav-register-tab" data-toggle="tab" href="#nav-register" role="tab" aria-controls="nav-register" aria-selected="true")
+													h5 Register
+							.tab-content  
+								.tab-pane.fade.show.active(id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab")
+									.card-block.px-lg-7.px-4.pt-6.pb-5
+										form
+											.form-group.mb-2
+												input.form-control.rounded(type='email', placeholder='E-mail')
+											.form-group.mb-3
+												input.form-control.rounded(type='password', placeholder='Password')
+											.form-check.mb-4
+												label.form-check-label.text-muted
+													input.form-check-input.mr-2(type='checkbox', value='')
+													span.small Remember me
+											button.btn.btn-secondary.mb-4.w-100(type='submit')
+												| Login
+											.text-muted.mb-3.small Login with social accounts:
+											.btn-group.w-100
+												button.btn.btn-outline-facebook.mb-5.px-4
+													i.fab.fa-facebook.mr-2
+													| Facebook
+												button.btn.btn-outline-twitter.mb-5.px-4
+													i.fab.fa-twitter.mr-2
+													| Twitter
+											a.text-muted.small(href='/pages/page-password-recovery.html')
+												i.fas.fa-question-circle.mr-2
+												| I forgot my password
+								.tab-pane.fade(id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab")
+									.card-block.px-lg-7.px-4.pt-6.pb-5
+										form
+											.form-group.mb-2
+												input.form-control.rounded(type='email', placeholder='E-mail')
+											.form-group.mb-2
+												input.form-control.rounded(type='password', placeholder='Password')
+											.form-group.mb-3
+												input.form-control.rounded(type='password', placeholder='Password again')
+											.form-check.mb-4
+												label.form-check-label.text-muted
+													input.form-check-input.mr-2(type='checkbox', value='')
+													small
+														| By sign up, you agree to our 
+														a(href='/pages/page-terms.html') terms
+														|  and 
+														a(href='/pages/page-privacy.html') data policy
+											button.btn.btn-secondary.mb-4.w-100(type='submit')
+												| Register
+											.text-muted.mb-3.small Login with social accounts:
+											.btn-group.w-100
+												button.btn.btn-outline-facebook.mb-5.px-4
+													i.fab.fa-facebook.mr-2
+													| Facebook
+												button.btn.btn-outline-twitter.mb-5.px-4
+													i.fab.fa-twitter.mr-2
+													| Twitter
+
+
+		// LEAD
+		#lead_section.bg-white
+			.container.py-11.jarallax(style="background: url('/images/bg/bg_03.svg') center center;")
+				.row(data-aos="fade-up")
+					.col-lg-9.mx-auto.text-center
+						.mb-3.text-muted.initialism Version 2
+						h5.display-3.mb-3 Get Replacer theme
+						p.lead.mx-0.mx-lg-15.pb-4
+							| Replacer is a perfect tool to start making landing pages with Bootstrap 4, it provides content-oriented, clean, modular and mobile-first design, which you can easily customize
+						.mb-5
+							a.btn.rounded-pill.btn-secondary.px-4.mx-2(href="https://themes.getbootstrap.com/product/replacer-2/")
+								| Purchase
+							a.btn.rounded-pill.btn-gray.px-4.mx-2(href="/docs/getting_started/docs-introduction.html")
+								| Documentation
+						p.mt-2.mb-0.small.text-muted.text-center
+							i.fas.fa-check-circle.mr-2.text-primary
+							span 100% money back guarantee
+
+
+		// FOOTER
+		include /utilities/_footer.pug
+		// light-footer(lead_bg_color, lead_border_color, lead_text_color, lead_btn_color, footer_bg, title_bg, text_color, link_color, subscribe_bg, subscribe_button, logo_file)
+
+		+light-footer('bg-white', '', '', 'btn-gray', 'bg-light', 'text-dark', 'text-muted', 'text-muted', '', 'btn-gray', '/images/logo-mono-green.svg')
+
+		include /utilities/_scripts.pug

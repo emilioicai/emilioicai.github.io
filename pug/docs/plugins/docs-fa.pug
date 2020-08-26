@@ -1,0 +1,54 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Font Awesome
+	p.mb-4.lead The web's most popular icon set. Read the
+		|
+		|
+		a(href="https://fontawesome.com") plugin documentation
+
+	h5.mb-3 How to use
+	p.mb-0 For glyphs and tiny icons Replacer uses a free version of Font Awesome, check 
+		a(href="https://fontawesome.com") fontawesome.com/icons
+		|
+		|
+		| for more information.	Check how to use it in the Replacer theme:
+
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+	.border.mb-5.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|.icon.icon-lg.bg-secondary.text-white.rounded-lg.mr-2
+						|	i.fas.fa-heart
+						|.icon.bg-primary.text-white.rounded-circle.mr-2
+						|	i.fas.fa-compass
+						|.icon.icon-sm.bg-info-light.text-info.rounded.mr-2
+						|	i.fab.fa-facebook-f
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;div class="icon icon-lg bg-secondary text-white rounded-lg mr-2">
+						|	&lt;i class="fas fa-heart">&lt;/i>
+						|&lt;/div>
+						|&lt;div class="icon bg-primary text-white rounded-circle mr-2">
+						|	&lt;i class="fas fa-compass">&lt;/i>
+						|&lt;/div>
+						|&lt;div class="icon icon-sm bg-info-light text-info rounded mr-2">
+						|	&lt;i class="fab fa-facebook-f">&lt;/i>
+						|&lt;/div>
+
+		.bg-white.p-3.rounded.rounded-bottom.d-inline-flex.align-items-end
+			.icon.icon-lg.bg-secondary.text-white.rounded-lg.mr-2
+				i.fas.fa-heart
+			.icon.bg-primary.text-white.rounded-circle.mr-2
+				i.fas.fa-compass
+			.icon.icon-sm.bg-info-light.text-info.rounded.mr-2
+				i.fab.fa-facebook-f
+	

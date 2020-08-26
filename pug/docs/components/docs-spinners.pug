@@ -1,0 +1,79 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Spinners
+	p.mb-3.lead Indicate the loading state of a component or page with Bootstrap spinners, built entirely with HTML, CSS, and no JavaScript. Read 
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/spinners/") Bootstrap documentation
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+	.border.mb-5.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|.spinner-border.text-primary.mr-2(role="status")
+						|	span.sr-only Loading...
+						|.spinner-border.text-secondary.mr-2(role="status")
+						|	span.sr-only Loading...
+						|.spinner-grow.text-success.mr-2(role="status")
+						|	span.sr-only Loading...
+						|.spinner-grow.text-danger.mr-2(role="status")
+						|	span.sr-only Loading...
+						|button.btn.btn-primary.btn-sm.mr-2(type="button" disabled="")
+						|	span.spinner-border.spinner-border-sm(role="status" aria-hidden="true")
+						|	span.sr-only Loading...
+						|button.btn.btn-primary.btn-sm.mr-2(type="button" disabled="")
+						|	span.spinner-border.spinner-border-sm(role="status" aria-hidden="true")
+						|	|   Loading...
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;div class="spinner-border text-primary mr-2" role="status">
+						|	&lt;span class="sr-only">Loading...&lt;/span>
+						|&lt;/div>
+						|&lt;div class="spinner-border text-secondary mr-2" role="status">
+						|	&lt;span class="sr-only">Loading...&lt;/span>
+						|&lt;/div>
+						|&lt;div class="spinner-grow text-success mr-2" role="status">
+						|	&lt;span class="sr-only">Loading...&lt;/span>
+						|&lt;/div>
+						|&lt;div class="spinner-grow text-danger mr-2" role="status">
+						|	&lt;span class="sr-only">Loading...&lt;/span>
+						|&lt;/div>
+						|&lt;button class="btn btn-primary btn-sm mr-2" type="button" disabled="">
+						|	&lt;span class="spinner-border spinner-border-sm" role="status" aria-hidden="true">&lt;/span>
+						|	&lt;span class="sr-only">Loading...&lt;/span>
+						|&lt;/button>
+						|&lt;button class="btn btn-primary btn-sm mr-2" type="button" disabled="">
+						|	&lt;span class="spinner-border spinner-border-sm" role="status" aria-hidden="true">&lt;/span>
+						|	Loading...
+						|&lt;/button>
+		.bg-white.p-3.rounded.rounded-bottom.d-inline-flex.align-items-center
+			.spinner-border.text-primary.mr-2(role="status")
+				span.sr-only Loading...
+			.spinner-border.text-secondary.mr-2(role="status")
+				span.sr-only Loading...
+			.spinner-grow.text-success.mr-2(role="status")
+				span.sr-only Loading...
+			.spinner-grow.text-danger.mr-2(role="status")
+				span.sr-only Loading...
+			button.btn.btn-primary.btn-sm.mr-2(type="button" disabled="")
+				span.spinner-border.spinner-border-sm(role="status" aria-hidden="true")
+				span.sr-only Loading...
+			button.btn.btn-primary.btn-sm.mr-2(type="button" disabled="")
+				span.spinner-border.spinner-border-sm(role="status" aria-hidden="true")
+				|   Loading...
+
+	p.lead Visit
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/spinners/") 
+			| Bootstrap documentation
+		|
+		| to learn more about this component

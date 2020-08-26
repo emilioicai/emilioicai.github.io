@@ -1,0 +1,131 @@
+doctype html
+html(lang="en")
+	head
+		include /utilities/_head.pug
+	body
+ 
+
+		// HEADER 
+		#header.bg-light
+			include /utilities/_navbar.pug
+			+navbar-mixin('navbar-light', 'btn-secondary')
+			.container
+				.row
+					.col
+						hr.mt-10
+						include /utilities/_breadcrumb.pug
+						+breadcrumb-mixin('text-muted', ['Home', 'Blog', 'Grid'])
+				.row
+					.col-lg-6.col-md-12.mx-auto.pt-12.text-center
+						h1.display-2.mb-3 Articles 
+						p.lead.mb-4.text-muted Replacer has extremely solid and clean design to focus your visitors on what you want to tell them, and this lightweight design will never go out of trends
+
+
+		// BLOG
+		#blog.bg-light
+			.container
+				.row
+					.col-lg-12.mr-auto.pt-11
+						.card-deck.mb-5
+							.card.rounded-lg.overflow-hidden.hvr-float
+								img.card-img-top(alt='Photo' src='/images/photos/1200x800/5.jpg')
+								.card-body.px-5.pt-4
+									.mt-2.mb-3.text-muted.small
+										i.far.fa-clock.mr-2
+										| March 14, 2021
+									a.h5.text-dark.stretched-link(href="#") How to make a theme 
+									p.text-muted.my-2 Replacer is the modern and powerful theme for making landing pages on Bootstrap 4. You may customize
+								.card-footer.text-muted.bg-white.border-0.pb-4.rounded-lg.px-5
+									hr.mb-4.mt-0
+									.d-flex.align-items-center
+										img.rounded-circle.my-auto.mr-3(alt='Photo' src='/images/people/1.jpg', height="32")
+										span.initialism.text-muted Maria Brooke
+							.card.rounded-lg.overflow-hidden.hvr-float
+								img.card-img-top(alt='Photo' src='/images/photos/1200x800/6.jpg')
+								.card-body.px-5.pt-4
+									.mt-2.mb-3.text-muted.small
+										i.far.fa-clock.mr-2
+										| March 14, 2021
+									a.h5.text-dark.stretched-link(href="#") AI in education
+									p.text-muted.my-2 Replacer is the modern and powerful theme for making landing pages on Bootstrap 4. You may customize
+								.card-footer.text-muted.bg-white.border-0.pb-4.rounded-lg.px-5
+									hr.mb-4.mt-0
+									.d-flex.align-items-center
+										img.rounded-circle.my-auto.mr-3(alt='Photo' src='/images/people/2.jpg', height="32")
+										span.initialism.text-muted Lisa Wayne
+							.card.rounded-lg.overflow-hidden.hvr-float
+								img.card-img-top(alt='Photo' src='/images/photos/1200x800/1.jpg')
+								.card-body.px-5.pt-4
+									.mt-2.mb-3.text-muted.small
+										i.far.fa-clock.mr-2
+										| March 14, 2021
+									a.h5.text-dark.stretched-link(href="#") Hello world! 
+									p.text-muted.my-2 Replacer is the modern and powerful theme for making landing pages on Bootstrap 4. You may customize
+								.card-footer.text-muted.bg-white.border-0.pb-4.rounded-lg.px-5
+									hr.mb-4.mt-0
+									.d-flex.align-items-center
+										img.rounded-circle.my-auto.mr-3(alt='Photo' src='/images/people/3.jpg', height="32")
+										span.initialism.text-muted Mark Sanders
+						.card-deck.mb-5
+							.card.rounded-lg.overflow-hidden.hvr-float
+								img.card-img-top(alt='Photo' src='/images/photos/1200x800/4.jpg')
+								.card-body.px-5.pt-4
+									.mt-2.mb-3.text-muted.small
+										i.far.fa-clock.mr-2
+										| March 14, 2021
+									a.h5.text-dark.stretched-link(href="#") How to make a theme 
+									p.text-muted.my-2 Replacer is the modern and powerful theme for making landing pages on Bootstrap 4. You may customize
+								.card-footer.text-muted.bg-white.border-0.pb-4.rounded-lg.px-5
+									hr.mb-4.mt-0
+									.d-flex.align-items-center
+										img.rounded-circle.my-auto.mr-3(alt='Photo' src='/images/people/1.jpg', height="32")
+										span.initialism.text-muted Maria Brooke
+							.card.rounded-lg.overflow-hidden.hvr-float
+								img.card-img-top(alt='Photo' src='/images/photos/1200x800/2.jpg')
+								.card-body.px-5.pt-4
+									.mt-2.mb-3.text-muted.small
+										i.far.fa-clock.mr-2
+										| March 14, 2021
+									a.h5.text-dark.stretched-link(href="#") AI in education
+									p.text-muted.my-2 Replacer is the modern and powerful theme for making landing pages on Bootstrap 4. You may customize
+								.card-footer.text-muted.bg-white.border-0.pb-4.rounded-lg.px-5
+									hr.mb-4.mt-0
+									.d-flex.align-items-center
+										img.rounded-circle.my-auto.mr-3(alt='Photo' src='/images/people/2.jpg', height="32")
+										span.initialism.text-muted Lisa Wayne
+							.card.rounded-lg.overflow-hidden.hvr-float
+								img.card-img-top(alt='Photo' src='/images/photos/1200x800/3.jpg')
+								.card-body.px-5.pt-4
+									.mt-2.mb-3.text-muted.small
+										i.far.fa-clock.mr-2
+										| March 14, 2021
+									a.h5.text-dark.stretched-link(href="#") Hello world! 
+									p.text-muted.my-2 Replacer is the modern and powerful theme for making landing pages on Bootstrap 4. You may customize
+								.card-footer.text-muted.bg-white.border-0.pb-4.rounded-lg.px-5
+									hr.mb-4.mt-0
+									.d-flex.align-items-center
+										img.rounded-circle.my-auto.mr-3(alt='Photo' src='/images/people/3.jpg', height="32")
+										span.initialism.text-muted Mark Sanders
+				.row.pt-8.pb-12
+					.col
+						nav(aria-label="Page navigation example")
+							ul.pagination
+								li.page-item.ml-auto
+									a.page-link.text-muted(href="#") Prev
+								li.page-item
+									a.page-link(href="#") 1
+								li.page-item
+									a.page-link(href="#") 2
+								li.page-item
+									a.page-link(href="#") 3
+								li.page-item.mr-auto
+									a.page-link.text-muted(href="#") Next
+
+		
+		// FOOTER
+		include /utilities/_footer.pug
+		// light-footer(lead_bg_color, lead_border_color, lead_text_color, lead_btn_color, footer_bg, title_bg, text_color, link_color, subscribe_bg, subscribe_button, logo_file)
+
+		+light-footer('bg-light', '', '', 'btn-secondary', 'bg-white', 'text-dark', 'text-muted', 'text-muted', '', 'btn-gray', '/images/logo-mono-green.svg')
+
+		include /utilities/_scripts.pug

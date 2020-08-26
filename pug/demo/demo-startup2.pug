@@ -1,0 +1,190 @@
+doctype html
+html(lang="en")
+	head
+		include /utilities/_head.pug
+	body
+		include /utilities/_navbar.pug
+		+navbar-mixin('navbar-dark', 'btn-secondary')
+
+
+		// HERO
+		#hero.bg-primary.mb-1
+			.container.d-flex.flex-column.jarallax(style="min-height: 46rem; background: url('/images/bg/bg_01.svg') center center no-repeat;")
+				.row.my-auto.pt-8
+					.col-lg-5.my-auto.pt-16.pt-lg-0.mr-auto
+						h1.display-3.mb-2.text-white Do it better with&nbsp;Replacer
+						p.lead.mb-6.pr-4.text-white
+							| Replacer is a perfect tool to start making landing pages with Bootstrap 4. We provide a content-oriented and clean design
+						.mb-4
+							a.btn.btn-white.rounded-pill.px-5.mr-2(href="#")
+								| Register account
+							a.hvr-grow(href='https://www.youtube.com/watch?v=9E6b3swbnWg', data-fancybox='gallery')
+								img.shadow-sm.rounded-circle(alt='Play' src='/images/assets/video-play.svg', height='50')
+						span.text-white.small
+							span
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-1
+								i.fas.fa-star.mr-2
+							span Chrome Store reviews
+					.col-lg-6.col-md-12.my-auto.py-8(data-aos="fade-left")
+						img.w-100.rounded(alt='Browser' src='/images/devices/browser_02.png')
+				.row.mb-3
+					.col
+						.carousel-6
+							.slick-slide.py-4
+								img.m-auto.text-center(alt='Logo' src='/images/brands/white/tc.svg', height='28')
+							.slick-slide.py-4
+								img.m-auto.text-center(alt='Logo' src='/images/brands/white/forbes.svg', height='28')
+							.slick-slide.py-4
+								img.m-auto.text-center(alt='Logo' src='/images/brands/white/babel.svg', height='28')
+							.slick-slide.py-4
+								img.m-auto.text-center(alt='Logo' src='/images/brands/white/yahoo.svg', height='28')
+							.slick-slide.py-4
+								img.m-auto.text-center(alt='Logo' src='/images/brands/white/cnbc.svg', height='28')
+							.slick-slide.py-4
+								img.m-auto.text-center(alt='Logo' src='/images/brands/white/amazon.svg', height='28')
+							.slick-slide.py-4
+								img.m-auto.text-center(alt='Logo' src='/images/brands/white/vimeo.svg', height='28')
+		
+
+		// NOTICE
+		#notice
+			.alert.alert-info-light.text-primary.rounded-0.border-0.py-4.my-1(role="alert")
+				.container
+					.row.no-gutters
+						.col.d-flex.flex-column.flex-lg-row.flex-xl-row
+							.my-auto.mr-auto.text-muted
+								span.icon.icon-sm.bg-secondary.text-white.rounded.mr-2
+									i.fas.fa-user
+								|  Develop beautiful landing pages, using top-notch layouts
+							a.btn-link.hvr-icon-forward.my-auto(href="/pages/page-apply.html")
+								| Request a demo
+								small
+									i.fas.fa-chevron-right.ml-2.hvr-icon
+
+
+		// FEATURES
+		#features.pt-9.pb-4(data-aos="fade")
+			.container
+				.row.py-5
+					.col-lg-4.col-md-12.mb-4.text-center
+						.icon.bg-primary-light.rounded-lg.mb-4.p-2
+							img(alt='Icon' src='/images/icons/primary/cursor-click-2.svg', height='48')
+						h5.mb-3 Content-oriented design
+						p.lead.mx-2 If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.col-lg-4.col-md-12.mb-4.text-center
+						.icon.bg-primary-light.rounded-lg.mb-4.p-2
+							img(alt='Icon' src='/images/icons/primary/magic-1.svg', height='48')
+						h5.mb-3 Background system
+						p.lead.mx-2 If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.col-lg-4.col-md-12.mb-4.text-center
+						.icon.bg-primary-light.rounded-lg.mb-4.p-2
+							img(alt='Icon' src='/images/icons/primary/layers-3.svg', height='48')
+						h5.mb-3 Free updates
+						p.lead.mx-2 If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+
+
+		// CONTENT
+		#content.bg-light.border-top.border-bottom(data-aos="fade")
+			.container
+				.row
+					.col-lg-5.col-md-12.my-auto.mr-auto.pt-8.pb-5
+						.mb-3.initialism.text-primary Killer features
+						p.lead.mb-4.mr-8
+							| Replacer is constantly growing and updatable teme, and we have long-term plans to making it better
+						.row.mb-3
+							.col
+								.mb-2
+									span.display-4.text-dark.mr-2 320
+									span.initialism.text-muted gb
+								p.text-muted If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+							.col
+								.mb-2
+									span.display-4.text-dark.mr-2 2.4
+									span.initialism.text-muted millions
+								p.text-muted If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.col-lg-6.col-md-12.my-auto
+						img.w-100(alt='Illustration' src='/images/illustrations/illustration_9.png')
+
+
+		// LEAD
+		#lead_section(data-aos="fade")
+			.container.py-10.jarallax(style="background: url('/images/bg/bg_05.svg') center center no-repeat;")
+				.row.text-center
+					.col-lg-7.col-md-12.col-sm-12.mx-auto
+						.icon.bg-primary-light.rounded-lg.mb-5.p-2
+							img(alt='Icon' src='/images/icons/primary/cursor-click-2.svg', height='48')
+						h5.mb-3 Content-oriented design
+						p.lead.mb-5.mx-0.mx-md-6.mx-lg-8 Replacer is a perfect tool to start making landing pages with Bootstrap 4. We provide content-oriented, clean, and mobile-first layouts, which you can easily customize for your needs. Here are some carefully designed demos, use it out of the box or customize the way you want
+						a.btn-link.text-primary.hvr-icon-forward(href="/pages/page-apply.html")
+							| Request a demo
+							small
+								i.fas.fa-chevron-right.ml-2.hvr-icon
+
+		
+		// SPLIT
+		#split.bg-light.border-top.border-bottom.py-4
+			.container
+				.row.my-auto
+					
+					.col-lg-5.col-md-12.col-sm-12.my-auto.py-8.mr-auto(data-aos="fade")
+						.initialism.mb-4.text-muted Demo video
+						h5.mb-2 Power of good design
+						p.lead.mb-5.mr-5 Replacer is a perfect tool to start making landing pages with Bootstrap 4. We provide content-oriented, clean, and mobile-first layouts, which you can easily customize for your needs. Here are some carefully designed demos, use it out of the box or customize the way you want. We also made illustrations and line icons, lorem ipsum dolor set amet
+						hr.mb-4
+						a.btn-link.text-primary.hvr-icon-forward(href="/pages/page-apply.html")
+							| Request a demo
+							small
+								i.fas.fa-chevron-right.ml-2.hvr-icon
+
+
+					.col-lg-6.col-md-12.col-sm-12.my-auto(data-aos="fade-left")
+						.carousel-1-arrows.arrows-white
+							.card.rounded-lg.overflow-hidden.border-0
+								img.w-100(alt='Slide' src='/images/photos/slide3.jpg')
+							.card.rounded-lg.overflow-hidden.border-0
+								img.w-100(alt='Slide' src='/images/photos/slide2.jpg')
+							.card.rounded-lg.overflow-hidden.border-0
+								img.w-100(alt='Slide' src='/images/photos/slide1.jpg')
+
+
+		// FORM
+		#form
+			.container.pt-11.pb-11.jarallax(style="background: url('/images/bg/bg_03.svg') center center;")
+				.row(data-aos="fade")
+					.col-lg-9.mx-auto.text-center
+						.mb-3.text-muted.initialism Free registration
+						h5.display-3.mb-3 Create an account
+						p.lead.mx-0.mx-lg-15.pb-4
+							| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with attached Figma file
+						form.mb-4
+							.form-row
+								.input-group.col-lg-4.mb-3
+									input.form-control.rounded.mx-0(type='text', placeholder="Email", aria-label="Email")
+								.input-group.col-lg-4.mb-3
+									input.form-control.rounded.mx-0.mx-lg-1.mx-xl-1(type='password', placeholder="Password", aria-label="Password")
+								.input-group.col-lg-4.mb-3
+									button.btn.btn-primary.w-100(type='button') Get started
+										i.fas.fa-arrow-right.ml-2.small
+						p.mt-2.mb-5.mb-0.small.text-muted.text-center
+							i.fas.fa-check-circle.mr-2
+							span Your personal data is safe with us 
+						.mx-auto
+							a.btn.btn-outline-facebook.rounded-pill.btn-sm.px-3.mr-2(href='#')
+								i.fab.fa-facebook-f.mr-2
+								| Continue
+							a.icon.btn.btn-outline-twitter.rounded-circle.mr-2(href="#")
+								i.fab.fa-twitter
+							a.icon.btn.btn-outline-google.rounded-circle(href="#")
+								i.fab.fa-google
+
+
+		// FOOTER
+		include /utilities/_footer.pug
+		// light-footer(lead_bg_color, lead_border_color, lead_text_color, lead_btn_color, footer_bg, title_bg, text_color, link_color, subscribe_bg, subscribe_button, logo_file)
+
+		+light-footer('bg-white', '', '', 'btn-secondary', 'bg-light', 'text-dark', 'text-muted', 'text-muted', '', 'btn-gray', '/images/logo-mono-green.svg')
+
+		include /utilities/_scripts.pug

@@ -1,0 +1,46 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Fancybox
+	p.mb-4.lead JavaScript lightbox library for presenting various types of media. Responsive, touch-enabled, and customizable. Read the
+		|
+		|
+		a(href="https://fancyapps.com/fancybox/3/") plugin&nbsp;documentation
+
+	h5.mb-3 How to use
+	p.mb-0 Just set lightbox using the
+		|
+		code.bg-secondary-light.text-secondary.py-1.px-2.rounded data-fancybox
+		|
+		|
+		| attribute and link. Display HTML elements, web pages, video, google maps, and also load content via AJAX with ease. You can mix images, videos, and any HTML content in each gallery.
+
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+	.border.mb-5.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|a.hvr-grow.mr-2(data-fancybox='gallery', href='https://www.youtube.com/watch?v=hkXHsK4AQPs')
+						|	img(alt='Example' src='/images/assets/video-play-2.svg', height='50px')
+						|a.btn.btn-gray(data-fancybox='gallery', href='https://www.youtube.com/watch?v=hkXHsK4AQPs')
+						|	| Launch video
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;a class="hvr-grow mr-2" data-fancybox="gallery" href="https://www.youtube.com/watch?v=hkXHsK4AQPs">
+						|	&lt;img alt="Example" src="/images/assets/video-play-2.svg" height="50px">
+						|&lt;/a>
+						|&lt;a class="btn btn-gray" data-fancybox="gallery" href="https://www.youtube.com/watch?v=hkXHsK4AQPs">
+						|	Launch video
+						|&lt;/a>
+		.bg-white.p-3.rounded.rounded-bottom
+			a.hvr-grow.mr-2(data-fancybox='gallery', href='https://www.youtube.com/watch?v=hkXHsK4AQPs')
+				img(alt='Example' src='/images/assets/video-play-2.svg', height='50px')
+			a.btn.btn-gray(data-fancybox='gallery', href='https://www.youtube.com/watch?v=hkXHsK4AQPs')
+				| Launch video

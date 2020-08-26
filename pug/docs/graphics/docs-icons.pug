@@ -1,0 +1,66 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Icons
+	p.mb-4.lead 400 exclusive icons, made for Replacer 
+
+	h5.mb-3 How to use
+	p.mb-0 We made 400 line icons, especially for Replacer, so feel free to customize them in the Figma file, which is also included and look at how to use them in your markups:
+
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+	
+	.border.mb-5.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug.bg-light
+						| .icon.bg-primary.rounded-lg.p-2.mr-2
+						|	img(alt='Icon', src='/images/icons/white/cursor-click-2.svg', height='48')
+						| .icon.bg-primary-light.rounded-lg.p-2.mr-2
+						|	img(alt='Icon', src='/images/icons/primary/layers-3.svg', height='48')
+						| .icon.bg-secondary-light.rounded-circle.p-2.mr-2
+						|	img(alt='Icon', src='/images/icons/secondary/mac.svg', height='48')
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup.bg-light
+						|&lt;div class="icon bg-primary rounded-lg p-2 mr-2">
+						|	&lt;img alt="Icon" src="/images/icons/white/cursor-click-2.svg" height="48px">
+						|&lt;/div>
+						|&lt;div class="icon bg-primary-light rounded-lg p-2 mr-2">
+						|	&lt;img alt="Icon" src="/images/icons/primary/layers-3.svg" height="48px">
+						|&lt;/div>
+						|&lt;div class="icon bg-secondary-light rounded-circle p-2 mr-2">
+						|	&lt;img alt="Icon" src="/images/icons/secondary/mac.svg" height="48px">
+						|&lt;/div>
+
+		.bg-white.p-3.rounded.rounded-bottom
+			.icon.bg-primary.rounded-lg.p-2.mr-3
+				img(alt='Icon' src='/images/icons/white/cursor-click-2.svg', height='48')
+			.icon.bg-primary-light.rounded-lg.p-2.mr-3
+				img(alt='Icon' src='/images/icons/primary/layers-3.svg', height='48')
+			.icon.bg-secondary-light.rounded-circle.p-2.mr-3
+				img(alt='Icon' src='/images/icons/secondary/mac.svg', height='48')
+
+	h5.mb-3 List of icons
+	p.mb-5 All icons placed in 
+		code.bg-secondary-light.text-secondary.py-1.px-2.rounded /images/icons/*style*
+		|
+		| folder where 
+		|
+		code.bg-secondary-light.text-secondary.py-1.px-2.rounded *style*
+		|
+		| is the name of color style like primary, secondary and white, but you can easily make your own color style through Figma file, which is also included. Here's a full list of icons:
+	- var icons_list = ['alien.svg','aperture.svg','apple-1.svg','apple-2.svg','arrow-down-1.svg','arrow-down-2.svg','arrow-left-1.svg','arrow-left-2.svg','arrow-right-1.svg','arrow-right-2.svg','arrow-up-1.svg','arrow-up-2.svg','attention.svg','backward.svg','bag.svg','ballon.svg','ban.svg','bank.svg','baseball.svg','basket.svg','basketball.svg','battery-1.svg','battery-2.svg','battery-3.svg','battery-charge.svg','battery-empty.svg','bell-christmas.svg','bill.svg','birthday.svg','bitcoin.svg','book.svg','bookmark-minus.svg','bookmark-plus.svg','bookmark.svg','bow.svg','box-gift.svg','boy-sad.svg','boy-smile.svg','branch.svg','bread.svg','browser.svg','brush.svg','bulb.svg','calendar-1.svg','call-block.svg','call-input.svg','call-love.svg','call-message.svg','call-minus.svg','call-output.svg','call-plus.svg','call-reject.svg','call-timer.svg','call.svg','camera-1.svg','camera-2.svg','camera-3.svg','candle.svg','candy.svg','card-1.svg','card-2.svg','card-3.svg','cart.svg','case.svg','cash-1.svg','cash-2.svg','cash-income.svg','cash-outcome.svg','cash.svg','cell.svg','chaplin.svg','charge.svg','chart-down.svg','chart-up.svg','chart.svg','charts-up.svg','check-1.svg','check-2.svg','cheese.svg','chemistry.svg','cherry.svg','chess.svg','christmas-tree.svg','cinema.svg','clip.svg','cloud.svg','clover.svg','cocktail.svg','coffee.svg','coffin.svg','coin.svg','coins.svg','colors.svg','comet-2.svg','comet.svg','condom.svg','cone.svg','console.svg','contacts.svg','cookie.svg','coube.svg','croissant.svg','cross.svg','crown.svg','cup.svg','cursor-click-1.svg','cursor-click-2.svg','cursor.svg','cylinder.svg','death-star.svg','delivery.svg','diamond.svg','disabled.svg','discount.svg','divider.svg','dna.svg','document.svg','dollar.svg','drop.svg','drugs.svg','drums.svg','duck.svg','ear.svg','earth-1.svg','earth-2.svg','egg.svg','eject.svg','elixir.svg','email.svg','energy.svg','envelope-open-1.svg','envelope-open-2.svg','envelope.svg','euro.svg','expand-1.svg','expand-2.svg','eye-1.svg','eye-2.svg','eye-3.svg','eye-4.svg','female.svg','file-copy.svg','file-download.svg','file-empty.svg','file-picture.svg','file-portrait.svg','file-stats.svg','file-table.svg','file-text.svg','files.svg','film-1.svg','film-2.svg','fire.svg','firework.svg','fish.svg','flag-1.svg','flag-2.svg','flash.svg','flower-2.svg','flower.svg','folder-open.svg','folder.svg','folders-copy.svg','football.svg','forward.svg','frost.svg','galaxy.svg','gift.svg','giftcard.svg','glasses-love.svg','glasses.svg','gold.svg','gopro.svg','grapes.svg','grave.svg','grid-1.svg','grid-2.svg','growth.svg','halloween.svg','headphones.svg','healthcare-1.svg','healthcare-2.svg','healthcare-bill.svg','heart-cupid.svg','heart.svg','heartbeat.svg','heartbreak.svg','holy-cross.svg','home.svg','hotdog.svg','icon-96.svg','inbox-income.svg','inbox-outcome.svg','inbox-papers.svg','inbox.svg','input.svg','invader.svg','ipad-pro.svg','ipad.svg','iphone.svg','juice.svg','kayak.svg','kitchen.svg','law.svg','layers-1.svg','layers-2.svg','layers-3.svg','leaf.svg','learn.svg','lemon.svg','libra.svg','list.svg','location.svg','locator.svg','lolipop.svg','loupe-1.svg','loupe-2.svg','mac.svg','magic-1.svg','magic-2.svg','magnet.svg','mailbox.svg','male.svg','maracas.svg','marker.svg','meat.svg','medal.svg','megaphone.svg','menu.svg','message-1.svg','message-2.svg','message-3.svg','message-love.svg','message-smile.svg','messages.svg','microphone-1.svg','microphone-2.svg','microscope.svg','minus-1.svg','minus-2.svg','mixer.svg','moon.svg','mouse-1.svg','mouse-2.svg','multiplication-1.svg','multiplication-2.svg','music-2.svg','network.svg','newspaper.svg','next.svg','nipple.svg','nose.svg','note-1.svg','note-2.svg','notebook-1.svg','notebook-2.svg','nuclear.svg','number-0.svg','number-1.svg','number-2.svg','number-3.svg','number-4.svg','number-5.svg','number-6.svg','number-7.svg','number-8.svg','number-9.svg','oil.svg','omelette.svg','orange.svg','output.svg','palette.svg','paper-plane.svg','pause.svg','pc.svg','pear.svg','pearl.svg','pen-1.svg','pen-2.svg','pen-3.svg','pen.svg','pencil.svg','piano.svg','pictures.svg','pie-chart-1.svg','pie-chart-2.svg','pin.svg','pipette-1.svg','pipette-2.svg','planet.svg','play.svg','plus-1.svg','plus-2.svg','pocket-1.svg','pocket-2.svg','pocket-3.svg','popcorn.svg','potatos.svg','pound.svg','previous.svg','printer.svg','processor.svg','quote-1.svg','quote-2.svg','radio.svg','rainbow.svg','receipt-1.svg','receipt-2.svg','record.svg','recycling.svg','remove.svg','resize.svg','ring-bell.svg','ring.svg','robot-1.svg','robot-2.svg','robot-3.svg','rocket.svg','roller.svg','router.svg','ruble.svg','rugby.svg','ruller.svg','satellite.svg','save.svg','school-bell.svg','scissors.svg','server.svg','settings-1.svg','settings-2.svg','settings-3.svg','settings-4.svg','settings-5.svg','shuffle.svg','signal.svg','sim.svg','skates.svg','skull.svg','snowflakes.svg','sock.svg','socket.svg','solar-panel.svg','sound-graph.svg','sound.svg','spaceship.svg','star-1.svg','star-2.svg','stomach.svg','stop.svg','structure-1.svg','structure-2.svg','sun-2.svg','sun.svg','support.svg','sushi.svg','sweep.svg','switch-off.svg','switch-on.svg','switchers.svg','tablet-1.svg','tablet-2.svg','tablet-3.svg','tea.svg','teeth.svg','telephone-2.svg','telephone.svg','telescope.svg','test-tube.svg','time.svg','timer.svg','towel.svg','trash.svg','trumpet.svg','tv-1.svg','tv-2.svg','ufo-1.svg','ufo-2.svg','umbrella.svg','university.svg','usa-flag.svg','user-love.svg','user-rating.svg','user.svg','users-group.svg','videos.svg','vinyl.svg','violin.svg','volume-1.svg','volume-2.svg','watch-1.svg','watch-2.svg','watermelon.svg','webcamera.svg','whistle.svg','wine.svg','yen.svg','yuan.svg','zapper.svg','zoom-in.svg','zoom-out.svg'];
+	
+	.container.mx-0.px-0
+		.row.no-gutters
+			each val in icons_list
+				.col-lg-4.mb-4.mx-0.px-0.d-flex.align-items-center
+					div.icon.bg-primary-light.rounded-lg.p-2.mr-3
+						img(alt=val src='/images/icons/primary/' + val, height='48')
+					div.small.text-muted= val

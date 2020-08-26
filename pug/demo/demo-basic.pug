@@ -1,0 +1,271 @@
+doctype html
+html(lang="en")
+	head
+		include /utilities/_head.pug
+	body
+		include /utilities/_navbar.pug
+		+navbar-mixin('navbar-light', 'btn-primary')
+
+
+		// HERO 
+		#hero
+			.container.d-flex.flex-column.jarallax(style="min-height: 46rem; background: url('/images/bg/bg_06.svg') center center no-repeat;")
+				.row.my-auto
+					.col-lg-5.col-md-12.col-sm-12.pt-16.pt-lg-6.my-auto(data-aos="fade")
+						h1.display-3.mb-2 Do it 
+							span#typed
+							|
+							| with&nbsp;Replacer
+						p.lead.mb-4
+							| Replacer is a modern and powerful theme for perfectionists with deadlines. It provides content-oriented, clean and mobile-first design
+						.input-group.mb-3
+							input.form-control.rounded.mx-0(type='text', placeholder="Email", aria-label="Email")
+							input.form-control.rounded.mx-1(type='password', placeholder="Password", aria-label="Password")
+							button.btn.btn-secondary(type='button') Register
+						.form-check.mb-4
+							input.form-check-input.mr-2(type='checkbox', value='', id='checkbox1')
+							label.form-check-label.small.text-muted(for="checkbox1")
+								| I agree with
+								|
+								a(href="/pages/page-privacy.html") Privacy Policy
+								|
+								| and
+								|
+								a(href="/pages/page-privacy.html") Terms
+						.mb-3.small.text-muted
+							| You can use social networks to register:
+						a.btn.btn-facebook.rounded-pill.btn-sm.px-3.mr-2(href='#')
+							i.fab.fa-facebook-f.mr-2
+							| Continue
+						a.icon.btn.btn-outline-twitter.rounded-circle.mr-2(href="#")
+							i.fab.fa-twitter
+						a.icon.btn.btn-outline-google.rounded-circle(href="#")
+							i.fab.fa-google
+					.col-lg-6.col-md-12.col-sm-12.ml-auto.my-auto(data-aos="fade-left")
+						img.w-100(alt='Illustration' src='/images/illustrations/illustration_1.png')
+
+
+		// NOTICE
+		#notice(data-aos="fade")
+			.alert.alert-primary-light.rounded-0.border-0.py-3(role="alert")
+				.container
+					.row.no-gutters
+						.col.d-flex.flex-column.flex-lg-row.flex-xl-row
+							.my-auto.mr-auto.text-muted
+								span.icon.icon-sm.bg-secondary.text-white.rounded.border.mr-2
+									i.fas.fa-user
+								|  Develop beautiful landing pages, using top-notch layouts
+							.my-auto.py-2
+								a.btn.btn-primary.btn-sm.rounded-pill.px-3(data-toggle="modal" data-target="#login-modal")
+									i.far.fa-clone.mr-2
+									| Register for free
+
+
+		// COUNTERS
+		#counters.pt-12.pb-8
+			.container
+				.row
+					.col-lg-3.col-md-6.col-sm-12.text-center.mb-5
+						.icon.bg-primary-light.rounded-lg.mb-4.p-3
+							img(alt='Icon' src='/images/icons/primary/cursor-click-2.svg', height='48')
+						h5
+							span.counter#counter_1
+							|
+							|
+							span.text-muted clicks
+					.col-lg-3.col-md-6.col-sm-12.text-center.mb-5
+						.icon.bg-primary-light.rounded-lg.mb-4.p-3
+							img(alt='Icon' src='/images/icons/primary/magic-1.svg', height='48')
+						h5
+							span.counter#counter_2
+							| +
+							|
+							span.text-muted sponsors
+					.col-lg-3.col-md-6.col-sm-12.text-center.mb-5
+						.icon.bg-primary-light.rounded-lg.mb-4.p-3
+							img(alt='Icon' src='/images/icons/primary/layers-3.svg', height='48')
+						h5
+							span.counter#counter_3
+							|
+							|
+							span.text-muted bits
+					.col-lg-3.col-md-6.col-sm-12.text-center.mb-5
+						.icon.bg-primary-light.rounded-lg.mb-4.p-3
+							img(alt='Icon' src='/images/icons/primary/chart-up.svg', height='48')
+						h5
+							| $
+							span.counter#counter_4
+							|
+							|
+							span.text-muted prize
+
+
+		// TABS
+		#tabs
+			.container
+				.row
+					.col.text-center
+						nav.mb-5
+							.nav.nav-tabs.d-inline-flex.mx-auto(role="tablist")
+								a.nav-item.nav-link.px-4.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+									h5 Billing
+								a.nav-item.nav-link.px-4(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+									h5 Profile
+								a.nav-item.nav-link.px-4(id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="true")
+									h5 Admin
+				.tab-content
+					.tab-pane.fade.show.active(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+						.row
+							.col-lg-8.col-md-12.col-sm-12.order-lg-1.order-xl-1.my-auto(data-aos="fade-up")
+								img.w-100.mb-5(alt='Macbook' src='/images/devices/macbook_01.png')
+							.col-lg-2.col-md-12.col-sm-12.my-auto.order-lg-0.order-xl-0(data-aos="fade-right")
+								.icon.rounded.text-secondary.bg-secondary-light.mb-3
+									i.fas.fa-cloud-download-alt
+								h3.h5 Free updates
+								p.text-muted.mb-5 Replacer is constantly growing and updatable theme, and we have long-term plans to making it better according to your feedback
+							.col-lg-2.col-md-12.col-sm-12.my-auto.order-lg-2.order-xl-2(data-aos="fade-left")
+								.icon.rounded.text-secondary.bg-secondary-light.mb-3
+									i.fas.fa-adjust
+								h3.h5 Background system
+								p.text-muted.mb-5 If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system
+					.tab-pane.fade.show(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+						.row
+							.col-lg-8.col-md-12.col-sm-12.order-lg-1.order-xl-1.my-auto
+								img.w-100.mb-5(alt='Macbook' src='/images/devices/macbook_02.png')
+							.col-lg-2.col-md-12.col-sm-12.my-auto.order-lg-0.order-xl-0
+								.icon.rounded.text-secondary.bg-secondary-light.mb-3
+									i.fas.fa-paint-brush
+								h3.h5 Content-oriented design
+								p.text-muted.mb-5 Replacer has an extremely solid and clean design to focus your visitors on what you want to tell them
+							.col-lg-2.col-md-12.col-sm-12.my-auto.order-lg-2.order-xl-2
+								.icon.rounded.text-secondary.bg-secondary-light.mb-3
+									i.fas.fa-image
+								h3.h5 Exclusive illustrations
+								p.text-muted.mb-5 We made illustrations and line icons, especially for Replacer. Feel free to customize them in Figma file, which also included
+					.tab-pane.fade.show(id="tab-3" role="tabpanel" aria-labelledby="nav-tab-3")
+						.row
+							.col-lg-8.col-md-12.col-sm-12.order-lg-1.order-xl-1.my-auto
+								img.w-100.mb-5(alt='Macbook' src='/images/devices/macbook_03.png')
+							.col-lg-2.col-md-12.col-sm-12.my-auto.order-lg-0.order-xl-0
+								.icon.rounded.text-secondary.bg-secondary-light.mb-3
+									i.fas.fa-file
+								h3.h5 Easy to understand
+								p.text-muted.mb-5 Replacer uses Bootstrap components to the fullest. We didn't code new CSS styles if Bootstrap already had the solution
+							.col-lg-2.col-md-12.col-sm-12.my-auto.order-lg-2.order-xl-2
+								.icon.rounded.text-secondary.bg-secondary-light.mb-3
+									i.fas.fa-question-circle
+								h3.h5 6 months free support
+								p.text-muted.mb-5 We are here for you to provide excellent support for 6 months, feel free to ask anything 
+
+
+		// FEATURES
+		#features
+			.container
+				.row
+					.col-lg-6.col-md-12.py-8(data-aos="fade-right")
+						img.w-100(alt='Illustration' src='/images/illustrations/illustration_5.png')
+					.col-lg-5.col-md-12.my-auto.py-5(data-aos="fade")
+						.initialism.mb-5.text-primary Killer features
+						.row.mb-1
+							.col.d-flex.py-2
+								img(alt='Icon' src='/images/icons/primary/energy.svg', height='48')
+								.ml-3
+									h3.h5 Background system
+									p.text-muted.mr-5 Replacer uses Bootstrap components to the fullest. We didn't code new CSS styles if Bootstrap already had the solution, so the theme loads quickly and easy to customize, and in many cases, you won't need to read more documentation than necessary
+						.row.mb-1
+							.col.d-flex.py-2
+								img(alt='Icon' src='/images/icons/primary/mac.svg', height='48')
+								.ml-3
+									h3.h5 Content-oriented design
+									p.text-muted.mr-5 Replacer has an extremely solid and clean design to focus your visitors on what you want to tell them, and this lightweight design will never go out of trends
+						hr.mt-2.mb-4
+						a.btn-link.text-muted(href="#")
+							i.fas.fa-compass.mr-2
+							| Learn more
+
+
+		// VIDEO
+		#video.bg-light.border-top.border-bottom(data-aos="fade")
+			.container.jarallax.py-5(style="background: url('/images/bg/bg_06.svg') center center no-repeat;")
+				.row
+					.col-lg-5.col-md-12.col-sm-12.my-auto.py-10.mr-auto
+						div.d-flex.mb-3
+							.icon.mr-3.my-auto
+								img(alt='Icon' src='/images/icons/primary/video-2.svg', height='48')  
+							.initialism.text-primary.my-auto Demo video
+						h5.mb-3 Power of good design
+						p.lead.mb-5 Replacer is a perfect tool to start making landing pages with Bootstrap 4. We provide content-oriented, clean, and mobile-first layouts, which you can easily customize for your needs. Here are some carefully designed demos, use it out of the box or customize it
+						hr.mt-2.mb-4
+						a.btn-link.text-muted(href="#")
+							i.fas.fa-compass.mr-2
+							| Learn more
+					.col-lg-6.col-md-12.col-sm-12.my-auto.py-10
+						.card.border-0.rounded-lg
+							img.w-100.rounded-lg(alt='Video' src='/images/photos/aideal-hwa-dbwuE1t6T7o-unsplash.jpg')
+							a.btn.btn-link.position-absolute.d-flex.w-100.h-100(href='https://www.youtube.com/watch?v=9E6b3swbnWg', data-fancybox='gallery')
+								img.hvr-grow.m-auto.rounded-circle.shadow-lg(alt='Play' src='/images/assets/video-play.svg', height='80')
+
+
+		// TESTIMONIALS
+		#testimonials.py-14
+			.container
+				.row.mb-6.text-center(data-aos="fade")
+					.col
+						h2.display-3.mb-4
+							| 100+ customers
+						a.btn-link.hvr-icon-forward(href="/pages/page-apply.html")
+							| Request a demo
+							small
+								i.fas.fa-chevron-right.ml-2.hvr-icon
+				.row.carousel-3-dots.mb-6(data-aos="fade-up")
+					.card.mb-4.border-0
+						.card-body.text-center
+							img.rounded-circle.mb-4.mx-auto(alt='Photo' src='/images/people/1.jpg', height="80")
+							h5.mb-3
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.mb-4.border-0
+						.card-body.text-center
+							img.rounded-circle.mb-4.mx-auto(alt='Photo' src='/images/people/2.jpg', height="80")
+							h5.mb-3
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.mb-4.border-0
+						.card-body.text-center
+							img.rounded-circle.mb-4.mx-auto(alt='Photo' src='/images/people/3.jpg', height="80")
+							h5.mb-3
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.mb-4.border-0
+						.card-body.text-center
+							img.rounded-circle.mb-4.mx-auto(alt='Photo' src='/images/people/4.jpg', height="80")
+							h5.mb-3
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.mb-4.border-0
+						.card-body.text-center
+							img.rounded-circle.mb-4.mx-auto(alt='Photo' src='/images/people/5.jpg', height="80")
+							h5.mb-3
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+					.card.mb-4.border-0
+						.card-body.text-center
+							img.rounded-circle.mb-4.mx-auto(alt='Photo' src='/images/people/6.jpg', height="80")
+							h5.mb-3
+								| Marta Markes 
+							p.mb-0.text-muted.lead
+								| If you want to add a bit of noise in your design, so it did not look too boring, you can use ready-made dot background system or make your own background with Figma file, which is also included
+
+
+		// FOOTER 
+		include /utilities/_footer.pug
+		// light-footer(lead_bg_color, lead_border_color, lead_text_color, lead_btn_color, footer_bg, title_bg, text_color, link_color, subscribe_bg, subscribe_button, logo_file)
+
+		+light-footer('bg-white', '', '', 'btn-secondary', 'bg-light', 'text-dark', 'text-muted', 'text-muted', 'bg-gray', 'btn-gray', '/images/logo-mono-green.svg')
+
+		include /utilities/_scripts.pug

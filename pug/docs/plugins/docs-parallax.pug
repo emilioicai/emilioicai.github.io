@@ -1,0 +1,35 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Parallax
+	p.mb-4.lead Jarallax is an open-source javascript library which makes adjusting css based on interaction easy. With Jarallax it's easy to create a parallax scrolling website. Read the 
+		|
+		|
+		a(href="http://www.jarallax.com/") plugin&nbsp;documentation
+
+	h5.mb-3 How to use
+	p.mb-0 Just set parallax using 
+		|
+		code.bg-secondary-light.text-secondary.py-1.px-2.rounded .jarallax
+		|
+		|
+		| CSS class:
+
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+	.border.mb-5.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|.card.border-0.bg-light.jarallax(style="min-height: 46rem; background: url('/images/docs/bg_export.svg') center center no-repeat;")
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;div class="card border-0 bg-light jarallax" style="min-height: 46rem; background: url('/images/docs/bg_export.svg') center center no-repeat;">&lt;/div>
+		.bg-white.p-3.rounded.rounded-bottom
+			.card.border-0.bg-light.jarallax(style="min-height: 32rem; background: url('/images/docs/bg_export.svg') center center no-repeat;")

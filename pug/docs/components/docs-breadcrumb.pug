@@ -1,0 +1,64 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Breadcrumb
+	p.mb-3.lead Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS. Read 
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/breadcrumb/") Bootstrap documentation
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+	.border.mb-5.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|nav.mb-0(aria-label='breadcrumb')
+						|	ol.breadcrumb.mb-0
+						|		li.breadcrumb-item
+						|			a(href='#')
+						|				| Page 1
+						|		li.breadcrumb-item
+						|			a(href='#')
+						|				| Page 2
+						|		li.breadcrumb-item.active(aria-current="page")
+						|			| Page 3
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;nav class="mb-0" aria-label="breadcrumb">
+						|	&lt;ol class="breadcrumb mb-0">
+						|		&lt;li class="breadcrumb-item">
+						|			&lt;a href="#">Page 1&lt;/a>
+						|		&lt;/li>
+						|		&lt;li class="breadcrumb-item">
+						|			&lt;a href="#">Page 2&lt;/a>
+						|		&lt;/li>
+						|		&lt;li class="breadcrumb-item active" aria-current="page">
+						|			Page 3
+						|		&lt;/li>
+						|	&lt;/ol>
+						|&lt;/nav>
+		.bg-white.p-3.rounded.rounded-bottom
+			nav.mb-0(aria-label='breadcrumb')
+				ol.breadcrumb.mb-0
+					li.breadcrumb-item
+						a(href='#')
+							| Page 1
+					li.breadcrumb-item
+						a(href='#')
+							| Page 2
+					li.breadcrumb-item.active(aria-current="page")
+						| Page 3
+
+	p.lead Visit
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/breadcrumb/") 
+			| Bootstrap documentation
+		|
+		| to learn more about this component

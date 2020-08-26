@@ -1,0 +1,155 @@
+doctype html
+html(lang="en")
+	head
+		include /utilities/_head.pug
+	body
+
+
+		// HEADER
+		#header.bg-info-light
+			include /utilities/_navbar.pug
+			+navbar-mixin('navbar-light', 'btn-secondary')
+			.container.jarallax(style="background: url('/images/bg/bg_07.svg') center center no-repeat;")
+				.row
+					.col
+						hr.mt-10.border-white.opacity-5
+						include /utilities/_breadcrumb.pug
+						+breadcrumb-mixin('text-muted', ['Home', 'Pages', 'FAQ'])
+				.row
+					.col-lg-9.col-md-12.pb-12.pt-8.mx-auto
+						h1.display-2.mb-3 Questions
+						p.lead To spread the power of good&nbsp;design
+
+
+		// NOTICE
+		#notice.bg-white
+			.container
+				.row
+					.col-lg-9.mx-auto.d-flex.flex-column.flex-lg-row.flex-xl-row.py-2 
+						.text-muted.my-auto.mr-auto.py-2
+							| Develop beautiful landing pages, using top-notch layouts
+						.my-auto.py-2
+							a.btn.btn-primary.btn-sm.rounded-pill.px-3(href='#')
+								i.far.fa-clone.mr-2
+								| Register
+				hr
+
+
+		// FAQ 
+		#faq
+			.container
+				.row.mb-15
+					.col-lg-9.col-md-10.col-sm-12.mx-auto
+						.d-flex.align-items-center.mb-4#general.pt-11
+							.icon.bg-primary-light.text-primary.rounded.mr-2
+								i.fas.fa-cog
+							span.text-primary General
+						ul.list-group
+							mixin question(number, question, answer)
+								.card.accordion.border-0.p-0
+									a.card-header.btn.btn-link.px-1.py-1.mb-0.text-dark.collapsed.lead.text-left.border-0.rounded.d-flex(href="#" data-toggle='collapse', data-target="#a" + number, aria-expanded='true', aria-controls="a" + number, id= "q" + number)
+										span.lead.text-dark.mb-0.pb-0.mr-5= question
+									.card-body.collapse.text-muted.pt-0.pb-0.px-1.border-0(id= "a" + number, aria-labelledby = "q" + number)
+										p.my-3.py-0= answer 
+							li.list-group-item
+								+question(0, "How do I cancel service? ", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(1, "Do I need another web host?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(2, "Can I switch plans?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(3, "I need a personal manager", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(4, "Do I need SSL?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+						.d-flex.align-items-center.mb-4#accounts.pt-11
+							.icon.bg-primary-light.text-primary.rounded.mr-2
+								i.fas.fa-user
+							span.text-primary Accounts
+						ul.list-group
+							mixin question(number, question, answer)
+								.card.accordion.border-0.p-0
+									a.card-header.btn.btn-link.px-1.py-2.mb-0.text-dark.collapsed.lead.text-left.border-0.rounded.d-flex(href="#" data-toggle='collapse', data-target="#a" + number, aria-expanded='true', aria-controls="a" + number, id= "q" + number)
+										span.lead.text-dark.mb-0.pb-0.mr-5= question
+									.card-body.collapse.text-muted.pt-0.pb-0.px-1.border-0(id= "a" + number, aria-labelledby = "q" + number)
+										p.my-3.py-0= answer 
+							li.list-group-item
+								+question(5, "How do I cancel service? ", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(6, "Do I need another web host?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(7, "Can I switch plans?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(8, "I need a personal manager", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(9, "Do I need SSL?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+						.d-flex.align-items-center.mb-4#licenses.pt-11
+							.icon.bg-primary-light.text-primary.rounded.mr-2
+								i.fas.fa-file
+							span.text-primary Licenses
+						ul.list-group
+							mixin question(number, question, answer)
+								.card.accordion.border-0.p-0
+									a.card-header.btn.btn-link.px-1.py-2.mb-0.text-dark.collapsed.lead.text-left.border-0.rounded.d-flex(href="#" data-toggle='collapse', data-target="#a" + number, aria-expanded='true', aria-controls="a" + number, id= "q" + number)
+										span.lead.text-dark.mb-0.pb-0.mr-5= question
+									.card-body.collapse.text-muted.pt-0.pb-0.px-1.border-0(id= "a" + number, aria-labelledby = "q" + number)
+										p.my-3.py-0= answer 
+							li.list-group-item
+								+question(10, "How do I cancel service? ", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(11, "Do I need another web host?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(12, "Can I switch plans?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(13, "I need a personal manager", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(14, "Do I need SSL?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+						.d-flex.align-items-center.mb-4#payments.pt-11
+							.icon.bg-primary-light.text-primary.rounded.mr-2
+								i.fas.fa-coins
+							span.text-primary Payments
+						ul.list-group
+							mixin question(number, question, answer)
+								.card.accordion.border-0.p-0
+									a.card-header.btn.btn-link.px-1.py-2.mb-0.text-dark.collapsed.lead.text-left.border-0.rounded.d-flex(href="#" data-toggle='collapse', data-target="#a" + number, aria-expanded='true', aria-controls="a" + number, id= "q" + number)
+										span.lead.text-dark.mb-0.pb-0.mr-5= question
+									.card-body.collapse.text-muted.pt-0.pb-0.px-1.border-0(id= "a" + number, aria-labelledby = "q" + number)
+										p.my-3.py-0= answer 
+							li.list-group-item
+								+question(15, "How do I cancel service? ", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(16, "Do I need another web host?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(17, "Can I switch plans?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(18, "I need a personal manager", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(19, "Do I need SSL?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+						.d-flex.align-items-center.mb-4#orders.pt-11
+							.icon.bg-primary-light.text-primary.rounded.mr-2
+								i.fas.fa-box
+							span.text-primary Orders
+						ul.list-group
+							mixin question(number, question, answer)
+								.card.accordion.border-0.p-0
+									a.card-header.btn.btn-link.px-1.py-2.mb-0.text-dark.collapsed.lead.text-left.border-0.rounded.d-flex(href="#" data-toggle='collapse', data-target="#a" + number, aria-expanded='true', aria-controls="a" + number, id= "q" + number)
+										span.lead.text-dark.mb-0.pb-0.mr-5= question
+									.card-body.collapse.text-muted.pt-0.pb-0.px-1.border-0(id= "a" + number, aria-labelledby = "q" + number)
+										p.my-3.py-0= answer 
+							li.list-group-item
+								+question(20, "How do I cancel service? ", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(21, "Do I need another web host?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(22, "Can I switch plans?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(23, "I need a personal manager", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+							li.list-group-item
+								+question(24, "Do I need SSL?", "Yes, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase, we offer discounts on up-front long-term commitments. You will also receive one year off of a new domain registration with your annual purchase")
+		
+
+		// FOOTER
+		include /utilities/_footer.pug
+		// light-footer(lead_bg_color, lead_border_color, lead_text_color, lead_btn_color, footer_bg, title_bg, text_color, link_color, subscribe_bg, subscribe_button, logo_file)
+		+light-footer('bg-light', '', '', 'btn-secondary', 'bg-white', 'text-dark', 'text-muted', 'text-muted', '', 'btn-gray', '/images/logo-mono-green.svg')
+
+		include /utilities/_scripts.pug

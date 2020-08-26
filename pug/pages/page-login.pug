@@ -1,0 +1,93 @@
+doctype html
+html(lang="en")
+	head
+		include /utilities/_head.pug
+	body
+
+
+		// HEADER
+		#header.bg-light
+			include /utilities/_navbar.pug
+			+navbar-mixin('navbar-light', 'btn-primary')
+			#breadcrumbs.container
+				.row
+					.col
+						hr.mt-10
+						include /utilities/_breadcrumb.pug
+						+breadcrumb-mixin('text-muted', ['Home', 'Pages', 'Login'])
+
+		// FORM 
+		#form.pt-10.pb-16.bg-light
+			.container
+				.row
+					.col-lg-6.col-md-10.m-auto
+						.card.rounded-lg.shadow-sm
+							.card-header.px-lg-7.px-4.pt-3.pb-0.border-0.bg-transparent
+								.row.d-flex.justify-content-center
+									.col
+										nav
+											.nav.nav-tabs.text-center(role="tablist")
+												a.nav-item.nav-link.font-weight-bold.px-3.active(id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="true")
+													h5 Login
+												a.nav-item.nav-link.font-weight-bold.px-3(id="nav-register-tab" data-toggle="tab" href="#nav-register" role="tab" aria-controls="nav-register" aria-selected="true")
+													h5 Register
+							.tab-content
+								.tab-pane.fade.show.active(id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab")
+									.card-block.px-lg-7.px-4.pt-6.pb-5
+										form
+											.form-group.mb-2
+												input.form-control.rounded(type='email', placeholder='E-mail')
+											.form-group.mb-3
+												input.form-control.rounded(type='password', placeholder='Password')
+											.form-check.mb-4
+												label.form-check-label.text-muted
+													input.form-check-input.mr-2(type='checkbox', value='')
+													span.small Remember me
+											button.btn.btn-secondary.mb-4.w-100(type='submit')
+												| Login
+											.text-muted.mb-3.small Login with social accounts:
+											.btn-group.w-100
+												button.btn.btn-outline-facebook.mb-5.px-4
+													i.fab.fa-facebook.mr-2
+													| Facebook
+												button.btn.btn-outline-twitter.mb-5.px-4
+													i.fab.fa-twitter.mr-2
+													| Twitter
+											a.text-muted.small(href='/pages/page-password-recovery.html')
+												i.fas.fa-question-circle.mr-2
+												| I forgot my password
+								.tab-pane.fade(id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab")
+									.card-block.px-lg-7.px-4.pt-6.pb-5
+										form
+											.form-group.mb-2
+												input.form-control.rounded(type='email', placeholder='E-mail')
+											.form-group.mb-2
+												input.form-control.rounded(type='password', placeholder='Password')
+											.form-group.mb-3
+												input.form-control.rounded(type='password', placeholder='Password again')
+											.form-check.mb-4
+												label.form-check-label.text-muted
+													input.form-check-input.mr-2(type='checkbox', value='')
+													small
+														| By sign up, you agree to our 
+														a(href='/pages/page-privacy.html') Terms
+														|  and 
+														a(href='/pages/page-privacy.html') Data Policy
+											button.btn.btn-secondary.mb-4.w-100(type='submit')
+												| Register
+											.text-muted.mb-3.small Login with social accounts:
+											.btn-group.w-100
+												button.btn.btn-outline-facebook.mb-5.px-4
+													i.fab.fa-facebook.mr-2
+													| Facebook
+												button.btn.btn-outline-twitter.mb-5.px-4
+													i.fab.fa-twitter.mr-2
+													| Twitter
+
+											
+		// FOOTER
+		include /utilities/_footer.pug
+		// light-footer(lead_bg_color, lead_border_color, lead_text_color, lead_btn_color, footer_bg, title_bg, text_color, link_color, subscribe_bg, subscribe_button, logo_file)
+		+light-footer('bg-light', '', '', 'btn-secondary', 'bg-white', 'text-dark', 'text-muted', 'text-muted', '', 'btn-gray', '/images/logo-mono-green.svg')
+
+		include /utilities/_scripts.pug

@@ -1,0 +1,67 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Progress
+	p.mb-3.lead Documentation and examples for using Bootstrap custom progress bars featuring support for stacked bars, animated backgrounds, and text labels. Read 
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/progress/") Bootstrap documentation
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+	.border.mb-5.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|.progress.mb-3
+						|	.progress-bar(role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100")
+						|.progress.mb-3
+						|	.progress-bar(role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+						|.progress.mb-3
+						|	.progress-bar(role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100")
+						|.progress.mb-3
+						|	.progress-bar(role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100")
+						|.progress
+						|	.progress-bar(role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100")
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+							|&lt;div class="progress mb-3">
+							|	&lt;div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+							|&lt;/div>
+							|&lt;div class="progress mb-3">
+							|	&lt;div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+							|&lt;/div>
+							|&lt;div class="progress mb-3">
+							|	&lt;div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+							|&lt;/div>
+							|&lt;div class="progress mb-3">
+							|	&lt;div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+							|&lt;/div>
+							|&lt;div class="progress">
+							|	&lt;div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+							|&lt;/div>
+		.bg-white.p-3.rounded.rounded-bottom
+			.progress.mb-3
+				.progress-bar(role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100")
+			.progress.mb-3
+				.progress-bar(role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+			.progress.mb-3
+				.progress-bar(role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100")
+			.progress.mb-3
+				.progress-bar(role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100")
+			.progress
+				.progress-bar(role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100")
+
+
+	p.lead Visit
+		|
+		|
+		a(href="https://getbootstrap.com/docs/4.4/components/progress/") 
+			| Bootstrap documentation
+		|
+		| to learn more about this component

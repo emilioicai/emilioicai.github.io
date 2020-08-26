@@ -1,0 +1,121 @@
+doctype html
+html(lang="en")
+	head
+		include /utilities/_head.pug
+	body
+
+
+		// HEADER
+		#header.bg-info(style="background: linear-gradient(45deg, rgba(35, 83, 214, 0.8) 0%, rgba(35, 83, 214, 0.8)) 0%, url('/images/photos/aideal-hwa-dbwuE1t6T7o-unsplash.jpg') center; background-size: cover;")
+			include /utilities/_navbar.pug
+			+navbar-mixin('navbar-dark', 'btn-primary')
+			.container
+				.row
+					.col
+						hr.mt-10.border-light.opacity-1
+						include /utilities/_breadcrumb.pug
+						+breadcrumb-mixin('text-white', ['Home', 'Pages', 'About'])
+				.row
+					.col-lg-8.col-md-12.pb-6.pt-8.mx-auto
+						.mb-3.text-white.initialism
+							i.fa.fa-bolt.mr-2
+							| Hot article 
+						h1.display-4.mb-3.text-white How to make a theme
+						p.lead.mb-4.text-white Replacer is a perfect tool to start making landing pages with Bootstrap 4. We provide content-oriented, clean and mobile-first layouts, which you can easily customize for your needs. Here are some carefully designed demos, use it out of the box or customize the way you want
+						.d-flex.mb-8
+							img.rounded-circle.mr-3.my-auto(alt='Photo' src='/images/people/1.jpg', height="50")
+							div.my-auto
+								.text-white Alexandra Rosenbaum
+								.text-white.small April 22, 2019
+
+
+		// NOTICE
+		#notice.bg-light
+			.container(data-aos="fade")
+				.row.py-3
+					.col
+						.alert.py-0.my-0.mx-auto.d-flex.flex-column.flex-lg-row.justify-content-center
+							.my-auto.py-2.text-center
+								span.my-3.badge.badge-pill.badge-secondary-light.text-secondary.initialism.mx-3.d-inline
+									i.fa.fa-bolt.mr-2
+									| Discount
+							.my-auto.py-2.text-center
+								span.text-muted To get &ndash;10% off use this coupone code: 
+								mark.rounded.px-2 RPLCR10
+				hr
+
+
+		// BLOG
+		#blog.bg-light
+			.container
+				.row
+					.col-lg-8.mx-auto.pt-8
+
+						p.mb-5 Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
+
+						h5.mb-3 Key features
+
+						p.mb-5 Her old collecting she considered discovered. So at parties he warrant oh staying. Square new horses and put better end. Sincerity collected happiness do is contented. Sigh ever way now many. Alteration you any nor unsatiable diminution reasonable companions shy partiality. Leaf by left deal mile oh if easy.
+
+						blockquote.blockquote.lead.text-muted.py-2.px-5.mb-5.mr-10 Replacer uses Bootstrap components to the fullest. We didn't code new CSS styles if Bootstrap already had the solution, so the theme loads quickly and easy to customize, and in many cases you won't need to read more documentation than necessary
+
+						p.mb-6 Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
+
+						hr.mb-6
+
+						.d-flex.mb-8
+							img.rounded-circle.mr-3.border.my-auto(alt='Photo' src='/images/people/1.jpg', height="50")
+							div.my-auto
+								a.text-primary(href="#") Alexandra Rosenbaum
+								.text-muted.small April 22, 2019
+					
+				.row.pt-10.pb-10.bg-light
+					.col
+						.card-deck.mb-5
+							.card.rounded-lg.overflow-hidden.hvr-float
+								img.card-img-top(alt='Photo' src='/images/photos/1200x800/2.jpg')
+								.card-body.px-5.pt-4
+									.mt-2.mb-3.text-muted.small
+										i.far.fa-clock.mr-2
+										| March 14, 2021
+									a.h5.text-dark.stretched-link(href="#") AI in education
+									p.text-muted.my-2 Replacer is the modern and powerful theme for making landing pages on Bootstrap 4. You may customize
+								.card-footer.text-muted.bg-white.border-0.pb-4.rounded-lg.px-5
+									hr.mb-4.mt-0
+									.d-flex.align-items-center
+										img.rounded-circle.my-auto.mr-3(alt='Photo' src='/images/people/2.jpg', height="32")
+										span.initialism.text-muted Lisa Wayne
+							.card.rounded-lg.overflow-hidden.hvr-float
+								img.card-img-top(alt='Photo' src='/images/photos/1200x800/3.jpg')
+								.card-body.px-5.pt-4
+									.mt-2.mb-3.text-muted.small
+										i.far.fa-clock.mr-2
+										| March 14, 2021
+									a.h5.text-dark.stretched-link(href="#") Hello world! 
+									p.text-muted.my-2 Replacer is the modern and powerful theme for making landing pages on Bootstrap 4. You may customize
+								.card-footer.text-muted.bg-white.border-0.pb-4.rounded-lg.px-5
+									hr.mb-4.mt-0
+									.d-flex.align-items-center
+										img.rounded-circle.my-auto.mr-3(alt='Photo' src='/images/people/3.jpg', height="32")
+										span.initialism.text-muted Mark Sanders
+							.card.rounded-lg.overflow-hidden.hvr-float
+								img.card-img-top(alt='Photo' src='/images/photos/1200x800/1.jpg')
+								.card-body.px-5.pt-4
+									.mt-2.mb-3.text-muted.small
+										i.far.fa-clock.mr-2
+										| March 14, 2021
+									a.h5.text-dark.stretched-link(href="#") Hello world! 
+									p.text-muted.my-2 Replacer is the modern and powerful theme for making landing pages on Bootstrap 4. You may customize
+								.card-footer.text-muted.bg-white.border-0.pb-4.rounded-lg.px-5
+									hr.mb-4.mt-0
+									.d-flex.align-items-center
+										img.rounded-circle.my-auto.mr-3(alt='Photo' src='/images/people/3.jpg', height="32")
+										span.initialism.text-muted Mark Sanders
+
+		
+		// FOOTER
+		include /utilities/_footer.pug
+		// light-footer(lead_bg_color, lead_border_color, lead_text_color, lead_btn_color, footer_bg, title_bg, text_color, link_color, subscribe_bg, subscribe_button, logo_file)
+		+light-footer('bg-light', '', '', 'btn-secondary', 'bg-white', 'text-dark', 'text-muted', 'text-muted', '', 'btn-gray', '/images/logo-mono-green.svg')
+
+		include /utilities/_scripts.pug

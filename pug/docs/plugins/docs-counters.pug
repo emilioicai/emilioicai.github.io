@@ -1,0 +1,68 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Counters
+	p.mb-4.lead CountUp.js is a dependency-free, lightweight JavaScript class that can be used to quickly create animations that display numerical data in a more interesting way. Read the 
+		|
+		|
+		a(href="hhttps://inorganik.github.io/countUp.js/") plugin&nbsp;documentation
+
+	h5.mb-3 How to use
+	p.mb-0 Just look at the examples:
+
+	nav.mb-3
+		.nav.nav-tabs(role="tablist")
+			a.nav-item.nav-link.active(id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true")
+				| Pug
+			a.nav-item.nav-link(id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true")
+				| HTML
+			a.nav-item.nav-link(id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="true")
+				| JS
+	.border.mb-5.rounded
+		.tab-content.bg-light.rounded.rounded-top
+			.tab-pane.fade.active.show(id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-pug
+						|h1.display-4.text-muted.counter#counter_1
+						|h1.display-4.text-muted
+						|	span.counter#counter_2
+						|	|+
+						|h1.display-4.text-muted.counter#counter_3
+						|h1.display-4.text-muted.counter#counter_4
+			.tab-pane.fade(id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-markup
+						|&lt;h1 class="display-4 text-muted counter" id="counter_1">2,000&lt;/h1>
+						|&lt;h1 class="display-4 text-muted">
+						|	&lt;span class="counter" id="counter_2">52&lt;/span>+&lt;/h1>
+						|&lt;h1 class="display-4 text-muted counter" id="counter_3">30,000&lt;/h1>
+						|&lt;h1 class="display-4 text-muted counter" id="counter_4">999&lt;/h1>
+			.tab-pane.fade(id="tab-3" role="tabpanel" aria-labelledby="nav-tab-3")
+				pre.my-0.bg-light.rounded.rounded-top
+					code.language-js
+						|// Counters
+						|import { CountUp } from '/js/countUp.js';
+						|
+						|var counter_1 = new CountUp('counter_1', 2000);
+						|var counter_2 = new CountUp('counter_2', 52);
+						|var counter_3 = new CountUp('counter_3', 30000);
+						|var counter_4 = new CountUp('counter_4', 999);
+						|
+						|// Start when counters becomes visible
+						|$('.counter').one('inview', function(event, isInView) {
+						|	if (isInView) {
+						|		counter_1.start();
+						|		counter_2.start();
+						|		counter_3.start();
+						|		counter_4.start();
+						|	} else {
+						|		countUp.pauseResume();
+						|	}
+						|});
+		.bg-white.p-3.rounded.rounded-bottom
+			h1.display-4.text-muted.counter#counter_1
+			h1.display-4.text-muted
+				span.counter#counter_2
+				|+
+			h1.display-4.text-muted.counter#counter_3
+			h1.display-4.text-muted.counter#counter_4

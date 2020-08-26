@@ -1,0 +1,95 @@
+mixin light-footer(lead_bg_color, lead_border_color, lead_text_color, lead_btn_color, footer_bg, title_bg, text_color, link_color, subscribe_bg, subscribe_button, logo_file)
+
+	// LEAD
+	#lead(class='border-top border-bottom ' + lead_bg_color + ' ' + lead_border_color)
+		.container
+			.row.py-3
+				.col.mx-auto.text-center
+					p.lead.p-0.m-0(class=lead_text_color)
+						| To spread the power of good design 
+						button.btn.btn-primary.badge-pill.btn-sm.px-3.m-3(type='button', data-toggle='modal', data-target='#login-modal', class=lead_btn_color)
+							i.far.fa-clone.mr-2
+							| Register
+
+	// FOOTER
+	#footer(class=footer_bg)
+		.container.py-5
+			.row.py-4
+
+				.col-lg-2.col-md-12
+					img.mb-5(src=logo_file, alt='Replacer', height="64", style="opacity: 1")
+
+				.col-lg-3.col-md-6
+					ul.list-unstyled.mb-3
+						li.mb-3
+							span.initialism(class=title_bg) Contact us
+						li.mb-3(class=text_color)
+							p.my-0 778 Folsom Avenue, Suite A-200, San&nbsp;Francisco, CA&nbsp;54107
+						li(class=text_color)
+							i.fa.fa-phone-square.mr-2
+							| +23 894 239 00 11
+						li.mb-3(class=text_color)
+							i.fa.fa-phone-square.mr-2
+							| +23 852 444 22 56
+						li
+							a(href='mailto:hello@getreplacer.com', class=link_color)
+								i.fa.fa-envelope-square.mr-2
+								| hello@getreplacer.com
+
+				.col-lg-2.col-md-6
+					ul.list-unstyled.mb-3
+						li.mb-3
+							span.initialism(class=title_bg) Company
+						li.mb-2
+							a(href='/pages/page-about.html', class=link_color) About us
+						li.mb-2
+							a(href='/pages/page-pricing.html', class=link_color) Pricing
+						li.mb-2
+							a(href='/pages/page-careers.html', class=link_color) Careers
+						li.mb-2
+							a(href='/pages/page-privacy.html', class=link_color) Privacy policy
+						li.mb-2
+							a(href='/pages/page-faq.html', class=link_color) FAQ
+
+				.col-lg-2.col-md-6
+					ul.list-unstyled.mb-3
+						li.mb-3
+							span.initialism(class=title_bg) Documentation
+						li.mb-2
+							a(href='/docs/getting_started/docs-introduction.html', class=link_color) Getting started
+						li.mb-2
+							a(href='/docs/getting_started/docs-changelog.html', class=link_color) Changelog
+						li.mb-2
+							a(href='/docs/getting_started/docs-support.html', class=link_color) Support
+						li.mb-2
+							a(href='/docs/graphics/docs-icons.html', class=link_color) Icons
+
+				.col-lg-3.col-md-6
+
+					.initialism.mb-3(class=title_bg) Daily offers
+
+					p.small(class=text_color) Join over 10000 others to get access to&nbsp;exclusive content
+
+					.input-group.mb-3.p-0.rounded
+						input.form-control.p-3.border-0.rounded-left(type='text', placeholder="Email address", aria-label="Recipient's email", aria-describedby='button-addon', class=subscribe_bg)
+						.input-group-append
+							button#button-addon.btn.px-3.border-0(type='button', class=subscribe_button + ' ' + link_color)
+								i.fas.fa-paper-plane  
+
+					span
+						a(href='#', class=link_color)
+							i.fab.fa-twitter.mr-3
+						a(href='#', class=link_color)
+							i.fab.fa-facebook.mr-3
+						a(href='#', class=link_color)
+							i.fab.fa-dribbble.mr-3
+						a(href='#', class=link_color)
+							i.fab.fa-pinterest.mr-3
+						a(href='#', class=link_color)
+							i.fab.fa-github.mr-3
+
+			.row
+				.col.text-center.pb-3.pt-4
+					span(class=text_color) &copy; 2017 &mdash; 2021, Replacer
+	// LOGIN MODAL
+	include /utilities/_login-modal.pug 

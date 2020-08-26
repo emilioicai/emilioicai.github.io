@@ -1,0 +1,86 @@
+doctype html
+html(lang="en")
+	head
+		include /utilities/_head.pug
+	body
+
+		
+		// HEADER
+		#header
+			include /utilities/_navbar.pug
+			+navbar-mixin('navbar-light', 'btn-secondary')
+			.container
+				.row
+					.col
+						hr.mt-10
+						include /utilities/_breadcrumb.pug
+						+breadcrumb-mixin('text-muted', ['Home', 'Pages', 'Apply'])
+				.row
+					.col-lg-8.mx-auto.text-center.pt-8.pb-6
+						h1.display-1.mb-3
+							| Apply
+						p.lead.text-muted.mx-lg-12.mx-sm-0.mb-6.mx-5 Use the form below or drop us a line on
+							|
+							|
+							a.text-primary(href='mailto:hello@getreplacer.com')
+								| hello@example.com
+
+
+		// FORM
+		#form.container
+			.row
+				.col-lg-8.col-md-8.col-sm-12.pb-15.m-auto
+					form
+						.form-row
+							.form-group.mb-5.col-lg-6.col-md-12.col-sm-12.pr-2
+								label.text-muted(for='forms-3-first-name')
+									small First name
+								input#forms-3-first-name.form-control.rounded(type='text', placeholder='Enter your first name')
+							.form-group.mb-5.col-lg-6.col-md-12.col-sm-12.pl-2
+								label.text-muted(for='forms-3-last-name')
+									small Last name
+								input#forms-3-last-name.form-control.rounded(type='text', placeholder='Enter your last name')
+						.form-group.mb-5
+							label.text-muted(for='forms-3-mail')
+								small E-mail
+							input#forms-3-mail.form-control.rounded(type='email', placeholder='Enter your e-mail')
+						.form-group.mb-5
+							label.text-muted(for='forms-3-mail')
+								small Resume
+							.custom-file.rounded
+								input#customFile.custom-file-input.rounded(type='file')
+								label.custom-file-label.rounded.text-muted(for='customFile') Choose file
+						.form-group.mb-5
+							label.text-muted(for='select-1')
+								small Department
+							select#select-1.form-control.rounded
+								option Marketing
+								option Development
+								option Design
+						fieldset.form-group.mb-5
+							label.text-muted(for='forms-3-mail')
+								small E-mail
+							.form-check.mb-2
+								input#option-1.form-check-input(type='radio', name='gridRadios', value='option1', checked='')
+								label.form-check-label(for='option-1')
+									| I want to subscribe
+							.form-check.mb-1
+								input#option-2.form-check-input(type='radio', name='gridRadios', value='option2')
+								label.form-check-label(for='option-2')
+									| I don't want to subscribe
+						.form-group.mb-3
+							label.text-muted.small(for='exampleFormControlTextarea1') Message
+							textarea#exampleFormControlTextarea1.form-control.rounded(rows='4')
+						p.mb-5.mb-0.small.text-muted
+							i.fas.fa-check-circle.mr-2
+							span Your personal data is safe with us 
+						button.btn.btn-primary.mb-4.w-100(type='submit')
+							| Submit
+
+		
+		// FOOTER
+		include /utilities/_footer.pug
+		// light-footer(lead_bg_color, lead_border_color, lead_text_color, lead_btn_color, footer_bg, title_bg, text_color, link_color, subscribe_bg, subscribe_button, logo_file)
+		+light-footer('bg-white', '', '', 'btn-secondary', 'bg-light', 'text-dark', 'text-muted', 'text-muted', '', 'btn-gray', '/images/logo-mono-green.svg')
+
+		include /utilities/_scripts.pug

@@ -1,0 +1,62 @@
+extends /docs/docs-layout.pug
+
+block content
+	h1.display-4 Backgrounds
+	p.mb-4.lead Replacer's background system
+	h5.mb-3 How it works
+	p.mb-4 Replacer has several premade SVG backgrounds for decorating your pages, but it's also has something we called Background System, it's just an artboard in Figma with 12 cells, and each of them you can fill with one of 9 premade figures, and then just export the artboard and you will get your exclusive background
+
+	img.w-100.mb-6.rounded.border(alt='Figma' src='/images/docs/bg_figma.png')
+
+	h5.mb-3 Exported SVG
+	p.mb-4 All premade backgrounds are in
+		|
+		|
+		code.bg-secondary-light.text-secondary.py-1.px-2.rounded /images/bg/
+		|
+		| folder, and this is just an example of customization:
+
+	div.icon.bg-light.rounded.px-0.pt-3.mx-auto.mb-6.border
+		img.w-100(alt='Example' src='/images/docs/bg_export.svg')
+
+	h5.mb-3 List of figures
+	p.mb-4 Figures from Figma file, which you can use to make your exclusive background (notice, that you also can make your own figures by yourself an use them with our grid):
+
+	.container.mx-0.px-0
+		.row
+			.col-lg-6.mb-3
+				div.icon.bg-light.rounded.p-2.mx-auto.mb-2.border.w-100
+					img.w-100(alt='Figure' src='/images/bg/figures/figure_1.svg')
+				div.small.text-muted figure_1
+			.col-lg-6.mb-3
+				div.icon.bg-light.rounded.p-2.mx-auto.mb-2.border.w-100
+					img.w-100(alt='Figure' src='/images/bg/figures/figure_2.svg')
+				div.small.text-muted figure_2
+			.col-lg-6.mb-3
+				div.icon.bg-light.rounded.p-2.mx-auto.mb-2.border.w-100
+					img.w-100(alt='Figure' src='/images/bg/figures/figure_3.svg')
+				div.small.text-muted figure_3
+			.col-lg-6.mb-3
+				div.icon.bg-light.rounded.p-2.mx-auto.mb-2.border.w-100
+					img.w-100(alt='Figure' src='/images/bg/figures/figure_4.svg')
+				div.small.text-muted figure_4
+			.col-lg-6.mb-3
+				div.icon.bg-light.rounded.p-2.mx-auto.mb-2.border.w-100
+					img.w-100(alt='Figure' src='/images/bg/figures/figure_5.svg')
+				div.small.text-muted figure_5
+			.col-lg-6.mb-3
+				div.icon.bg-light.rounded.p-2.mx-auto.mb-2.border.w-100
+					img.w-100(alt='Figure' src='/images/bg/figures/figure_6.svg')
+				div.small.text-muted figure_6
+			.col-lg-6.mb-3
+				div.icon.bg-light.rounded.p-2.mx-auto.mb-2.border.w-100
+					img.w-100(alt='Figure' src='/images/bg/figures/figure_7.svg')
+				div.small.text-muted figure_7
+			.col-lg-6.mb-3
+				div.icon.bg-light.rounded.p-2.mx-auto.mb-2.border.w-100
+					img.w-100(alt='Figure' src='/images/bg/figures/figure_8.svg')
+				div.small.text-muted figure_8
+			.col-lg-6.mb-3
+				div.icon.bg-light.rounded.p-2.mx-auto.mb-2.border.w-100
+					img.w-100(alt='Figure' src='/images/bg/figures/figure_9.svg')
+				div.small.text-muted figure_9
