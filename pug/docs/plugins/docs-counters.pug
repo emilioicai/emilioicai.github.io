@@ -2,7 +2,7 @@ extends /docs/docs-layout.pug
 
 block content
 	h1.display-4 Counters
-	p.mb-4.lead CountUp.js is a dependency-free, lightweight JavaScript class that can be used to quickly create animations that display numerical data in a more interesting way. Read the 
+	p.mb-4.lead countUp.js is a dependency-free, lightweight JavaScript class that can be used to quickly create animations that display numerical data in a more interesting way. Read the 
 		|
 		|
 		a(href="hhttps://inorganik.github.io/countUp.js/") plugin&nbsp;documentation
@@ -41,12 +41,12 @@ block content
 				pre.my-0.bg-light.rounded.rounded-top
 					code.language-js
 						|// Counters
-						|import { CountUp } from '/js/countUp.js';
+						|import { countUp } from '/js/countUp.js';
 						|
-						|var counter_1 = new CountUp('counter_1', 2000);
-						|var counter_2 = new CountUp('counter_2', 52);
-						|var counter_3 = new CountUp('counter_3', 30000);
-						|var counter_4 = new CountUp('counter_4', 999);
+						|var counter_1 = new countUp('counter_1', 2000);
+						|var counter_2 = new countUp('counter_2', 52);
+						|var counter_3 = new countUp('counter_3', 30000);
+						|var counter_4 = new countUp('counter_4', 999);
 						|
 						|// Start when counters becomes visible
 						|$('.counter').one('inview', function(event, isInView) {

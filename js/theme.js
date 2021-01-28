@@ -70,12 +70,12 @@ $(function () {
 
 
 // Counters
-import { CountUp } from '/js/countUp.js';
+import { countUp } from '/js/countUp.js';
 
-var counter_1 = new CountUp('counter_1', 2000);
-var counter_2 = new CountUp('counter_2', 52);
-var counter_3 = new CountUp('counter_3', 30000);
-var counter_4 = new CountUp('counter_4', 9999);
+var counter_1 = new countUp('counter_1', 2000);
+var counter_2 = new countUp('counter_2', 52);
+var counter_3 = new countUp('counter_3', 30000);
+var counter_4 = new countUp('counter_4', 9999);
 
 // Start when counters becomes visible
 $('.counter').one('inview', function(event, isInView) {
